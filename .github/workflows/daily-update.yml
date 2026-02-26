@@ -1,0 +1,80 @@
+name: Daily Tracker Update
+
+on:
+  schedule:
+    # 5:00 AM EST = 10:00 UTC (Mon-Fri)
+    - cron: '0 10 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      lookback_days:
+        description: 'Number of days to look back'
+        required: false
+        default: '2'
+      dry_run:
+        description: 'Dry run (no commit)'
+        required: false
+        default: 'false'
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  update-tracker:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
+          COURTLISTENER_TOKEN: ${{ secrets.COURTLISTENER_TOKEN }}
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+          LOOKBACK_DAYS: ${{ github.event.inputs.lookback_days || '2' }}
+          DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+        run: python -m pipeline
+
+      - name: Validate data.json
+        run: python -c "import json; d=json.load(open('data/data.json')); print(f'Valid JSON: {d[\"meta\"][\"total\"]} entries')"
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet data/data.json index.html data/state.json 2>/dev/null; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No new entries found."
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "Changes detected."
+          fi
+
+      - name: Commit and push
+        if: steps.changes.outputs.has_changes == 'true' && github.event.inputs.dry_run != 'true'
+        run: |
+          git config user.name "TCKC Pipeline Bot"
+          git config user.email "pipeline@culturekeeperscircle.org"
+          git add data/data.json data/state.json index.html
+          ENTRY_COUNT=$(python -c "import json; print(json.load(open('data/state.json')).get('last_run_new_entries', 0))")
+          git commit -m "Daily update: ${ENTRY_COUNT} new entries [$(date +%Y-%m-%d)]"
+          git push
+
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-log-${{ github.run_id }}
+          path: pipeline/logs/
+          retention-days: 30

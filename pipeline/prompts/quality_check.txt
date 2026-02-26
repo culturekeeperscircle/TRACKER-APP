@@ -1,0 +1,22 @@
+Review this Cultural Resource Threat Tracker entry for accuracy, completeness, and schema compliance.
+
+Check:
+1. Threat level matches the impact described (SEVERE = direct elimination/defunding, HARMFUL = significant negative impact, PROTECTIVE = safeguarding action)
+2. Community impacts are SPECIFIC (real names, places, programs) not generic
+3. Legal mechanisms are correctly cited (correct EO numbers, public law numbers, court case names)
+4. Date format is YYYY-MM-DD
+5. Administration matches the date
+6. All required fields are present: i/id, t, n, T, s, d, a, A, S, L, D, I, c
+7. Title has correct HTML color span for threat level
+8. Description is substantive (500+ words)
+9. Impact 4P fields are each 150+ words
+
+ENTRY:
+{ENTRY_DATA}
+
+Respond with ONLY this JSON (no other text):
+{
+  "valid": true or false,
+  "issues": ["list of specific issues found, empty array if valid"],
+  "severity": "pass" or "minor" or "major"
+}
