@@ -45,12 +45,15 @@ def fetch_bill_detail(congress, bill_type, bill_number):
     return resp.json().get('bill', {})
 
 
+MAX_RESULTS = 300  # Cap to avoid pipeline timeouts
+
+
 def fetch_since(since_date, rate_limiter=None):
-    """Fetch all relevant bills since the given date."""
+    """Fetch relevant bills since the given date (capped at MAX_RESULTS)."""
     results = []
     offset = 0
 
-    while True:
+    while len(results) < MAX_RESULTS:
         if rate_limiter:
             rate_limiter.wait_if_needed('congress_gov')
 
@@ -79,6 +82,8 @@ def fetch_since(since_date, rate_limiter=None):
             break
         offset += 100
 
+    if len(results) >= MAX_RESULTS:
+        logger.warning(f'Congress.gov: hit {MAX_RESULTS}-result cap, some bills may be skipped')
     logger.info(f'Congress.gov: fetched {len(results)} bills since {since_date}')
     return results
 

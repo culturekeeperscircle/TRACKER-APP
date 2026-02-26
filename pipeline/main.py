@@ -131,6 +131,13 @@ def run():
 
     logger.info(f'AI-relevant items: {len(relevant_items)}')
 
+    # Cap to prevent timeout — process highest-confidence items first
+    MAX_ENTRIES_PER_RUN = 25
+    if len(relevant_items) > MAX_ENTRIES_PER_RUN:
+        relevant_items.sort(key=lambda x: x.get('_ai_threat', ''), reverse=True)
+        logger.warning(f'Capping entry generation at {MAX_ENTRIES_PER_RUN} items (had {len(relevant_items)})')
+        relevant_items = relevant_items[:MAX_ENTRIES_PER_RUN]
+
     # ── Phase 4: Generate full entries (Tier 2) ──
     new_entries_by_category = {}
     for item in relevant_items:

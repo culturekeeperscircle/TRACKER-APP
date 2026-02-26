@@ -43,12 +43,15 @@ def fetch_documents(since_date, page=1, per_page=100):
     return resp.json()
 
 
+MAX_PAGES = 3  # Cap at 300 documents to avoid pipeline timeouts
+
+
 def fetch_since(since_date, rate_limiter=None):
-    """Fetch all relevant documents since the given date."""
+    """Fetch relevant documents since the given date (capped at MAX_PAGES pages)."""
     results = []
     page = 1
 
-    while True:
+    while page <= MAX_PAGES:
         if rate_limiter:
             rate_limiter.wait_if_needed('federal_register')
 
@@ -80,6 +83,8 @@ def fetch_since(since_date, rate_limiter=None):
             break
         page += 1
 
+    if page > MAX_PAGES:
+        logger.warning(f'Federal Register: hit {MAX_PAGES}-page cap, some documents may be skipped')
     logger.info(f'Federal Register: fetched {len(results)} documents since {since_date}')
     return results
 
