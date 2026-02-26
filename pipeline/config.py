@@ -1,6 +1,6 @@
 """Pipeline configuration — reads API keys from environment variables."""
 import os
-from datetime import date
+from datetime import date, timedelta
 
 # API Keys (set via GitHub Secrets or local env)
 ANTHROPIC_API_KEY = os.environ.get('ANTHROPIC_API_KEY', '')
@@ -15,7 +15,10 @@ INDEX_HTML_PATH = os.path.join(os.path.dirname(__file__), '..', 'index.html')
 PROMPTS_DIR = os.path.join(os.path.dirname(__file__), 'prompts')
 
 # Pipeline settings
-LOOKBACK_DAYS = int(os.environ.get('LOOKBACK_DAYS', '2'))
+# Monday (weekday 0) looks back 4 days to cover Fri+Sat+Sun+Mon
+# All other days look back 2 days for overlap safety
+_default_lookback = 4 if date.today().weekday() == 0 else 2
+LOOKBACK_DAYS = int(os.environ.get('LOOKBACK_DAYS', str(_default_lookback)))
 DRY_RUN = os.environ.get('DRY_RUN', 'false').lower() == 'true'
 SOURCE_FILTER = os.environ.get('SOURCE_FILTER', 'all')
 

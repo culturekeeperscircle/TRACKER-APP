@@ -10,7 +10,7 @@ Respond with ONLY this JSON (no other text):
 {
   "relevant": true or false,
   "confidence": 0.0 to 1.0,
-  "category": "executive_orders" or "agency_actions" or "legislation" or "litigation" or "international",
+  "category": "executive_orders" or "agency_actions" or "legislation" or "litigation" or "other_domestic" or "international",
   "threat_level": "SEVERE" or "HARMFUL" or "PROTECTIVE",
   "brief_reason": "one sentence explaining why this is or isn't relevant"
 }
