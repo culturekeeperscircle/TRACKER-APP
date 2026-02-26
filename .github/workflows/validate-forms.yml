@@ -1,0 +1,26 @@
+name: Validate Google Form IDs
+
+on:
+  push:
+    paths:
+      - 'index.html'
+      - 'scripts/validate_forms.py'
+  schedule:
+    # Every Monday at 9:00 AM EST (14:00 UTC) — weekly check
+    - cron: '0 14 * * 1'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+
+      - name: Validate Google Form entry IDs
+        run: python scripts/validate_forms.py
