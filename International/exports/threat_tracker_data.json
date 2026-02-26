@@ -1,0 +1,295 @@
+{
+  "extracted_at": "2026-01-24T16:48:51.430886",
+  "us_relevant": {
+    "wto_disputes": [],
+    "icj_cases": [],
+    "unsc_resolutions": [],
+    "economic_data": []
+  },
+  "culturally_relevant": {
+    "wto_disputes": [],
+    "icj_cases": [],
+    "unsc_resolutions": []
+  },
+  "economic_indicators": [
+    {
+      "id": 1,
+      "indicator_code": "NY.GDP.MKTP.CD",
+      "indicator_name": "GDP (current US$)",
+      "country_code": "USA",
+      "country_name": "United States",
+      "year": 2024,
+      "value": 28750956130731.2,
+      "extracted_at": "2026-01-24 21:48:25"
+    },
+    {
+      "id": 15,
+      "indicator_code": "ER.PTD.TOTL.ZS",
+      "indicator_name": "Terrestrial and marine protected areas (% of total territorial area)",
+      "country_code": "USA",
+      "country_name": "United States",
+      "year": 2024,
+      "value": 15.8,
+      "extracted_at": "2026-01-24 21:48:45"
+    },
+    {
+      "id": 20,
+      "indicator_code": "ER.MRN.PTMR.ZS",
+      "indicator_name": "Marine protected areas (% of territorial waters)",
+      "country_code": "USA",
+      "country_name": "United States",
+      "year": 2024,
+      "value": 19.0,
+      "extracted_at": "2026-01-24 21:48:46"
+    },
+    {
+      "id": 2,
+      "indicator_code": "NY.GDP.MKTP.CD",
+      "indicator_name": "GDP (current US$)",
+      "country_code": "USA",
+      "country_name": "United States",
+      "year": 2023,
+      "value": 27292170793214.4,
+      "extracted_at": "2026-01-24 21:48:25"
+    },
+    {
+      "id": 6,
+      "indicator_code": "GC.XPN.TOTL.GD.ZS",
+      "indicator_name": "Expense (% of GDP)",
+      "country_code": "USA",
+      "country_name": "United States",
+      "year": 2023,
+      "value": 24.8982825568771,
+      "extracted_at": "2026-01-24 21:48:42"
+    },
+    {
+      "id": 16,
+      "indicator_code": "ER.PTD.TOTL.ZS",
+      "indicator_name": "Terrestrial and marine protected areas (% of total territorial area)",
+      "country_code": "USA",
+      "country_name": "United States",
+      "year": 2023,
+      "value": 15.9,
+      "extracted_at": "2026-01-24 21:48:45"
+    },
+    {
+      "id": 21,
+      "indicator_code": "ER.MRN.PTMR.ZS",
+      "indicator_name": "Marine protected areas (% of territorial waters)",
+      "country_code": "USA",
+      "country_name": "United States",
+      "year": 2023,
+      "value": 19.1,
+      "extracted_at": "2026-01-24 21:48:46"
+    },
+    {
+      "id": 3,
+      "indicator_code": "NY.GDP.MKTP.CD",
+      "indicator_name": "GDP (current US$)",
+      "country_code": "USA",
+      "country_name": "United States",
+      "year": 2022,
+      "value": 25604848907611.0,
+      "extracted_at": "2026-01-24 21:48:25"
+    },
+    {
+      "id": 7,
+      "indicator_code": "GC.XPN.TOTL.GD.ZS",
+      "indicator_name": "Expense (% of GDP)",
+      "country_code": "USA",
+      "country_name": "United States",
+      "year": 2022,
+      "value": 25.0456420310833,
+      "extracted_at": "2026-01-24 21:48:42"
+    },
+    {
+      "id": 12,
+      "indicator_code": "GB.XPD.RSDV.GD.ZS",
+      "indicator_name": "Research and development expenditure (% of GDP)",
+      "country_code": "USA",
+      "country_name": "United States",
+      "year": 2022,
+      "value": 3.58623,
+      "extracted_at": "2026-01-24 21:48:43"
+    },
+    {
+      "id": 17,
+      "indicator_code": "ER.PTD.TOTL.ZS",
+      "indicator_name": "Terrestrial and marine protected areas (% of total territorial area)",
+      "country_code": "USA",
+      "country_name": "United States",
+      "year": 2022,
+      "value": 15.9,
+      "extracted_at": "2026-01-24 21:48:45"
+    },
+    {
+      "id": 22,
+      "indicator_code": "ER.MRN.PTMR.ZS",
+      "indicator_name": "Marine protected areas (% of territorial waters)",
+      "country_code": "USA",
+      "country_name": "United States",
+      "year": 2022,
+      "value": 19.0,
+      "extracted_at": "2026-01-24 21:48:46"
+    },
+    {
+      "id": 25,
+      "indicator_code": "SH.XPD.CHEX.GD.ZS",
+      "indicator_name": "Current health expenditure (% of GDP)",
+      "country_code": "USA",
+      "country_name": "United States",
+      "year": 2022,
+      "value": 16.49613953,
+      "extracted_at": "2026-01-24 21:48:48"
+    },
+    {
+      "id": 4,
+      "indicator_code": "NY.GDP.MKTP.CD",
+      "indicator_name": "GDP (current US$)",
+      "country_code": "USA",
+      "country_name": "United States",
+      "year": 2021,
+      "value": 23315080560000.0,
+      "extracted_at": "2026-01-24 21:48:25"
+    },
+    {
+      "id": 8,
+      "indicator_code": "GC.XPN.TOTL.GD.ZS",
+      "indicator_name": "Expense (% of GDP)",
+      "country_code": "USA",
+      "country_name": "United States",
+      "year": 2021,
+      "value": 31.7949992963696,
+      "extracted_at": "2026-01-24 21:48:42"
+    },
+    {
+      "id": 10,
+      "indicator_code": "SE.XPD.TOTL.GD.ZS",
+      "indicator_name": "Government expenditure on education, total (% of GDP)",
+      "country_code": "USA",
+      "country_name": "United States",
+      "year": 2021,
+      "value": 5.42038011550903,
+      "extracted_at": "2026-01-24 21:48:42"
+    },
+    {
+      "id": 13,
+      "indicator_code": "GB.XPD.RSDV.GD.ZS",
+      "indicator_name": "Research and development expenditure (% of GDP)",
+      "country_code": "USA",
+      "country_name": "United States",
+      "year": 2021,
+      "value": 3.48313,
+      "extracted_at": "2026-01-24 21:48:43"
+    },
+    {
+      "id": 18,
+      "indicator_code": "ER.PTD.TOTL.ZS",
+      "indicator_name": "Terrestrial and marine protected areas (% of total territorial area)",
+      "country_code": "USA",
+      "country_name": "United States",
+      "year": 2021,
+      "value": 15.9,
+      "extracted_at": "2026-01-24 21:48:45"
+    },
+    {
+      "id": 23,
+      "indicator_code": "ER.MRN.PTMR.ZS",
+      "indicator_name": "Marine protected areas (% of territorial waters)",
+      "country_code": "USA",
+      "country_name": "United States",
+      "year": 2021,
+      "value": 19.0,
+      "extracted_at": "2026-01-24 21:48:46"
+    },
+    {
+      "id": 26,
+      "indicator_code": "SH.XPD.CHEX.GD.ZS",
+      "indicator_name": "Current health expenditure (% of GDP)",
+      "country_code": "USA",
+      "country_name": "United States",
+      "year": 2021,
+      "value": 17.5063858,
+      "extracted_at": "2026-01-24 21:48:48"
+    },
+    {
+      "id": 5,
+      "indicator_code": "NY.GDP.MKTP.CD",
+      "indicator_name": "GDP (current US$)",
+      "country_code": "USA",
+      "country_name": "United States",
+      "year": 2020,
+      "value": 21060473613000.0,
+      "extracted_at": "2026-01-24 21:48:25"
+    },
+    {
+      "id": 9,
+      "indicator_code": "GC.XPN.TOTL.GD.ZS",
+      "indicator_name": "Expense (% of GDP)",
+      "country_code": "USA",
+      "country_name": "United States",
+      "year": 2020,
+      "value": 32.2719048246125,
+      "extracted_at": "2026-01-24 21:48:42"
+    },
+    {
+      "id": 11,
+      "indicator_code": "SE.XPD.TOTL.GD.ZS",
+      "indicator_name": "Government expenditure on education, total (% of GDP)",
+      "country_code": "USA",
+      "country_name": "United States",
+      "year": 2020,
+      "value": 5.39531993865967,
+      "extracted_at": "2026-01-24 21:48:42"
+    },
+    {
+      "id": 14,
+      "indicator_code": "GB.XPD.RSDV.GD.ZS",
+      "indicator_name": "Research and development expenditure (% of GDP)",
+      "country_code": "USA",
+      "country_name": "United States",
+      "year": 2020,
+      "value": 3.42467,
+      "extracted_at": "2026-01-24 21:48:43"
+    },
+    {
+      "id": 19,
+      "indicator_code": "ER.PTD.TOTL.ZS",
+      "indicator_name": "Terrestrial and marine protected areas (% of total territorial area)",
+      "country_code": "USA",
+      "country_name": "United States",
+      "year": 2020,
+      "value": 23.9,
+      "extracted_at": "2026-01-24 21:48:45"
+    },
+    {
+      "id": 24,
+      "indicator_code": "ER.MRN.PTMR.ZS",
+      "indicator_name": "Marine protected areas (% of territorial waters)",
+      "country_code": "USA",
+      "country_name": "United States",
+      "year": 2020,
+      "value": 37.4,
+      "extracted_at": "2026-01-24 21:48:46"
+    },
+    {
+      "id": 27,
+      "indicator_code": "SH.XPD.CHEX.GD.ZS",
+      "indicator_name": "Current health expenditure (% of GDP)",
+      "country_code": "USA",
+      "country_name": "United States",
+      "year": 2020,
+      "value": 18.8132534,
+      "extracted_at": "2026-01-24 21:48:48"
+    }
+  ],
+  "statistics": {
+    "wto_trade_data": 0,
+    "wto_disputes": 0,
+    "imf_economic_data": 0,
+    "world_bank_indicators": 27,
+    "unsc_resolutions": 0,
+    "icj_cases": 0,
+    "nato_documents": 0
+  }
+}

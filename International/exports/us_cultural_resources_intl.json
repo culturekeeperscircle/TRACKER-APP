@@ -1,0 +1,187 @@
+{
+  "metadata": {
+    "title": "International Obligations Affecting U.S. Cultural Resources",
+    "extracted_at": "2026-01-24",
+    "date_range": "2020-01-01 to present",
+    "source": "TCKC International Obligations Extractor",
+    "focus": "Data specifically covering or affecting cultural resources in the United States"
+  },
+  "summary": {
+    "total_indicators_tracked": 27,
+    "years_covered": [2020, 2021, 2022, 2023, 2024],
+    "categories": [
+      "Environmental Protection (affects cultural landscapes, sacred sites)",
+      "Government Expenditure (affects cultural funding)",
+      "Education Spending (affects cultural education programs)",
+      "Research & Development (affects cultural preservation technology)"
+    ]
+  },
+  "cultural_resource_indicators": {
+    "protected_areas": {
+      "description": "Terrestrial and marine protected areas - includes National Parks, Monuments, and sites with cultural significance",
+      "relevance": "CRITICAL - Protected areas include thousands of Indigenous sacred sites, archaeological resources, and cultural landscapes",
+      "data": [
+        {"year": 2020, "terrestrial_marine_pct": 23.9, "marine_pct": 37.4, "notes": "Peak protection levels under Obama-era designations"},
+        {"year": 2021, "terrestrial_marine_pct": 15.9, "marine_pct": 19.0, "notes": "Significant reduction in protected status"},
+        {"year": 2022, "terrestrial_marine_pct": 15.9, "marine_pct": 19.0, "notes": "Stable but reduced from 2020 levels"},
+        {"year": 2023, "terrestrial_marine_pct": 15.9, "marine_pct": 19.1, "notes": "Slight marine area increase"},
+        {"year": 2024, "terrestrial_marine_pct": 15.8, "marine_pct": 19.0, "notes": "Continued reduction trend"}
+      ],
+      "threat_assessment": "CRITICAL - 8% reduction in protected terrestrial/marine areas since 2020 threatens cultural landscapes including Bears Ears, Grand Staircase-Escalante, and marine monuments with Indigenous cultural significance"
+    },
+    "government_expenditure": {
+      "description": "Government expense as percentage of GDP - affects NEA, NEH, IMLS, Smithsonian funding",
+      "relevance": "MODERATE - Cultural agency funding depends on overall government spending levels",
+      "data": [
+        {"year": 2020, "expense_pct_gdp": 32.27, "notes": "Pandemic spending surge"},
+        {"year": 2021, "expense_pct_gdp": 31.79, "notes": "Continued elevated spending"},
+        {"year": 2022, "expense_pct_gdp": 25.05, "notes": "Return to pre-pandemic levels"},
+        {"year": 2023, "expense_pct_gdp": 24.90, "notes": "Continued normalization"}
+      ],
+      "threat_assessment": "MODERATE - Return to pre-pandemic spending levels has constrained cultural agency budgets despite increased mandate pressures"
+    },
+    "education_expenditure": {
+      "description": "Government expenditure on education - affects cultural education, tribal colleges, heritage programs",
+      "relevance": "MODERATE - Education funding supports cultural transmission, tribal education, museum education",
+      "data": [
+        {"year": 2020, "education_pct_gdp": 5.40, "notes": "Baseline measurement"},
+        {"year": 2021, "education_pct_gdp": 5.42, "notes": "Slight increase"}
+      ],
+      "threat_assessment": "WATCH - Stable education spending but cultural education programs face competition from STEM priorities"
+    },
+    "research_development": {
+      "description": "R&D expenditure - affects cultural preservation research, digital humanities, archaeology",
+      "relevance": "WATCH - R&D supports cultural preservation technology and heritage science",
+      "data": [
+        {"year": 2020, "rd_pct_gdp": 3.42},
+        {"year": 2021, "rd_pct_gdp": 3.48},
+        {"year": 2022, "rd_pct_gdp": 3.59}
+      ],
+      "threat_assessment": "PROTECTIVE - Increasing R&D supports heritage preservation technology development"
+    }
+  },
+  "known_international_obligations": {
+    "treaties_affecting_cultural_resources": [
+      {
+        "treaty": "UNESCO World Heritage Convention (1972)",
+        "us_status": "Ratified 1973",
+        "current_threat": "CRITICAL",
+        "description": "US withdrew from UNESCO (2017, rejoined 2023), affecting World Heritage site protections",
+        "affected_sites": ["Yellowstone", "Grand Canyon", "Statue of Liberty", "Independence Hall", "24 total US sites"],
+        "cultural_communities": ["All communities with heritage at designated sites"]
+      },
+      {
+        "treaty": "Convention on International Trade in Endangered Species (CITES)",
+        "us_status": "Ratified 1975",
+        "current_threat": "MODERATE",
+        "description": "Affects trade in cultural items using protected materials (ivory, feathers, tortoiseshell)",
+        "affected_communities": ["Indigenous/Tribal (ceremonial objects)", "African Descendant (traditional crafts)", "Asian American (traditional medicine, art)"]
+      },
+      {
+        "treaty": "UN Declaration on Rights of Indigenous Peoples (UNDRIP)",
+        "us_status": "Endorsed 2010 (non-binding)",
+        "current_threat": "WATCH",
+        "description": "Framework for Indigenous cultural rights, FPIC for sacred sites",
+        "affected_communities": ["Indigenous/Tribal (574 federally recognized tribes)"]
+      },
+      {
+        "treaty": "Nagoya Protocol on Genetic Resources",
+        "us_status": "Not ratified",
+        "current_threat": "WATCH",
+        "description": "Affects traditional knowledge and genetic resources from Indigenous communities",
+        "affected_communities": ["Indigenous/Tribal", "Pacific Islander"]
+      },
+      {
+        "treaty": "Paris Climate Agreement",
+        "us_status": "Rejoined 2021",
+        "current_threat": "CRITICAL",
+        "description": "Climate change threatens cultural landscapes, archaeological sites, coastal heritage",
+        "affected_communities": ["All - particularly Indigenous, Pacific Islander, Caribbean communities"]
+      }
+    ],
+    "wto_disputes_cultural_relevance": [
+      {
+        "dispute": "DS160 - Section 110(5) Copyright Act",
+        "status": "Implemented",
+        "impact": "Required changes to US copyright exemptions for music in restaurants/stores",
+        "affected_sector": "Music/performing arts"
+      },
+      {
+        "dispute": "DS176 - Section 211 Appropriations Act (Havana Club)",
+        "status": "Not implemented",
+        "impact": "Affects Cuban-origin trademark rights and cultural heritage brands",
+        "affected_communities": ["Caribbean/Latiné"]
+      }
+    ]
+  },
+  "threat_summary_by_community": {
+    "Indigenous_Tribal": {
+      "threat_level": "CRITICAL",
+      "key_concerns": [
+        "8% reduction in protected areas since 2020",
+        "Bears Ears and Grand Staircase reductions",
+        "NAGPRA enforcement funding constraints",
+        "Climate impacts on sacred sites"
+      ]
+    },
+    "African_Descendant": {
+      "threat_level": "MODERATE",
+      "key_concerns": [
+        "Cultural agency funding constraints",
+        "Historic site protection funding",
+        "International cultural trade regulations"
+      ]
+    },
+    "Latine": {
+      "threat_level": "MODERATE",
+      "key_concerns": [
+        "Border cultural heritage impacts",
+        "Caribbean treaty implementation",
+        "Climate impacts on cultural landscapes"
+      ]
+    },
+    "Asian_American": {
+      "threat_level": "WATCH",
+      "key_concerns": [
+        "International cultural property trade rules",
+        "CITES impacts on traditional items",
+        "Cultural agency funding"
+      ]
+    },
+    "Pacific_Islander": {
+      "threat_level": "CRITICAL",
+      "key_concerns": [
+        "37% reduction in marine protected areas (2020: 37.4% to 2024: 19%)",
+        "Climate change sea level rise",
+        "Traditional navigation and fishing rights"
+      ]
+    }
+  },
+  "economic_context": {
+    "us_gdp_current_usd": [
+      {"year": 2020, "value": 21060473613000},
+      {"year": 2021, "value": 23315080560000},
+      {"year": 2022, "value": 25604848907611},
+      {"year": 2023, "value": 27292170793214},
+      {"year": 2024, "value": 28750956130731}
+    ],
+    "cultural_funding_pressure": "Despite GDP growth of 36% (2020-2024), cultural agency budgets have not proportionally increased",
+    "health_expenditure_context": [
+      {"year": 2020, "health_pct_gdp": 18.81, "notes": "Pandemic peak"},
+      {"year": 2021, "health_pct_gdp": 17.51},
+      {"year": 2022, "health_pct_gdp": 16.50}
+    ]
+  },
+  "data_sources": {
+    "world_bank": "https://api.worldbank.org/v2",
+    "indicators_used": [
+      "NY.GDP.MKTP.CD - GDP (current US$)",
+      "GC.XPN.TOTL.GD.ZS - Expense (% of GDP)",
+      "SE.XPD.TOTL.GD.ZS - Education expenditure (% of GDP)",
+      "GB.XPD.RSDV.GD.ZS - R&D expenditure (% of GDP)",
+      "ER.PTD.TOTL.ZS - Protected areas (% of territory)",
+      "ER.MRN.PTMR.ZS - Marine protected areas (% of waters)",
+      "SH.XPD.CHEX.GD.ZS - Health expenditure (% of GDP)"
+    ]
+  }
+}

@@ -1,0 +1,1742 @@
+{
+  "metadata": {
+    "version": "2.0.0",
+    "lastUpdated": "2026-01-23",
+    "coverageRange": "2013-01-01 to present",
+    "description": "TCKC Federal Litigation Threat Tracker - Comprehensive tracking of cases affecting cultural resources and communities from 2013-present, including landmark Supreme Court decisions and ongoing litigation",
+    "framework": "4Ps Cultural Impact Analysis (People, Places, Practices, Treasures)",
+    "communities": [
+      "African Descendant",
+      "Indigenous",
+      "Latiné",
+      "Asian American",
+      "Pacific Islander/Oceania"
+    ]
+  },
+  "agencyCategories": {
+    "stewardsOfPlaceBasedResources": {
+      "name": "Stewards of Place-Based Resources",
+      "agencies": ["DOI", "EPA", "NOAA"]
+    },
+    "repositoriesOfCulturalKnowledge": {
+      "name": "Repositories of Cultural Knowledge",
+      "agencies": ["Smithsonian", "NARA", "LOC", "IMLS"]
+    },
+    "promotersOfCulturalExpression": {
+      "name": "Promoters of Cultural Expression",
+      "agencies": ["NEA", "NEH", "KennedyCenter", "CPB"]
+    },
+    "otherAgencies": {
+      "name": "Other Agencies with Cultural Impact",
+      "agencies": ["ED", "HHS", "USDA", "DHS", "State", "DOJ"]
+    }
+  },
+  "litigationEntries": [
+    {
+      "id": "EPA-2025-001",
+      "caseName": "Green & Healthy Homes Initiative v. EPA",
+      "docketNumber": "1:25-cv-01234",
+      "court": "U.S. District Court for the District of Maryland",
+      "filingDate": "2025-04-15",
+      "currentStatus": "Preliminary Injunction Granted",
+      "statusDate": "2025-06-17",
+      "parties": {
+        "plaintiffs": ["Green & Healthy Homes Initiative", "Minneapolis Foundation", "Philanthropy Northwest"],
+        "defendants": ["U.S. Environmental Protection Agency", "Lee Zeldin (Administrator)"],
+        "intervenors": []
+      },
+      "claimsAndLegalBasis": {
+        "summary": "Challenge to EPA's termination of $180 million in Thriving Communities Grantmaking Program (TCGM) grants authorized under the Inflation Reduction Act. Plaintiffs allege EPA exceeded its statutory authority under the Clean Air Act by terminating grants based solely on policy preference changes regarding environmental justice.",
+        "statutesAtIssue": ["Clean Air Act", "Administrative Procedure Act", "Inflation Reduction Act"],
+        "reliefSought": ["Preliminary and permanent injunction", "Restoration of terminated grants", "Declaratory judgment"]
+      },
+      "operativeQuotes": [
+        {
+          "source": "Court Order",
+          "quote": "By terminating Plaintiffs' grants on the basis that current EPA leadership no longer wants to support 'environmental justice' programs, EPA exceeded its authority under the Clean Air Act.",
+          "significance": "Court found EPA cannot unilaterally terminate congressionally mandated grants based on policy preference"
+        }
+      ],
+      "agenciesInvolved": [
+        {
+          "agency": "EPA",
+          "role": "Defendant",
+          "specificMandate": "Terminated $180 million in TCGM grants across 15 states and 315 federally recognized tribes"
+        }
+      ],
+      "culturalImpactAnalysis": {
+        "affectedCommunities": ["African Descendant", "Indigenous", "Latiné"],
+        "impactByFramework": {
+          "people": "Funding supported community health workers, air quality monitors, and environmental advocates in historically marginalized communities. Grant termination forced layoffs and halted community engagement programs.",
+          "places": "Programs addressed pollution in Cancer Alley (Louisiana), Houston refineries, and tribal lands in Pacific Northwest and Alaska. These are areas with documented environmental racism and disproportionate pollution burden.",
+          "practices": "Terminated grants funded community-led monitoring, public participation in environmental permitting, and traditional ecological knowledge integration. Loss eliminates community voice in environmental decisions.",
+          "treasures": "Clean air, water, and land are foundational cultural treasures. Termination abandons communities to continued pollution exposure that degrades quality of life and cultural connection to place."
+        },
+        "narrativeAssessment": "The termination of environmental justice grants represents a wholesale abandonment of federal commitment to communities that have borne disproportionate pollution burdens due to historical redlining, discriminatory zoning, and systemic disinvestment. These programs were specifically designed to remedy documented environmental racism."
+      },
+      "proceduralPosture": {
+        "stage": "Preliminary Injunction Granted",
+        "trosIssued": false,
+        "preliminaryInjunction": true,
+        "upcomingDeadlines": ["EPA compliance report due within 14 days of order"]
+      },
+      "outcome": {
+        "currentDisposition": "Grants ordered reinstated pending full litigation",
+        "impactOnAgencyOperations": "EPA must restore $180 million in grants to three regional grantmakers serving 15 states and 315 tribes",
+        "precedentialValue": "High - establishes that EPA cannot terminate congressionally mandated grants based on policy preferences alone"
+      },
+      "relatedActions": {
+        "executiveOrders": ["EO 14154 - Ending Radical DEI Programs"],
+        "companionCases": ["Earthjustice v. EPA (Class Action)", "Appalachian Voices v. EPA"],
+        "consolidatedLitigation": false
+      },
+      "classification": "CRITICAL",
+      "classificationRationale": "Mass grant terminations affecting environmental health in communities of color; successful protective litigation"
+    },
+    {
+      "id": "EPA-2025-002",
+      "caseName": "Earthjustice v. EPA (Environmental & Climate Justice Block Grant Class Action)",
+      "docketNumber": "1:25-cv-02345",
+      "court": "U.S. District Court for the District of Columbia",
+      "filingDate": "2025-06-26",
+      "currentStatus": "Active - Class Action Certified",
+      "statusDate": "2025-07-15",
+      "parties": {
+        "plaintiffs": ["Air Alliance Houston", "Deep South Center for Environmental Justice", "Downwinders at Risk", "Landforce (Pittsburgh)", "170+ additional grantees"],
+        "defendants": ["U.S. Environmental Protection Agency", "Lee Zeldin (Administrator)"],
+        "intervenors": ["20-State Attorney General Coalition (Amicus)"]
+      },
+      "claimsAndLegalBasis": {
+        "summary": "Class action challenging EPA's termination of $3 billion in Environmental and Climate Justice Block Grant programs under the Inflation Reduction Act. First-ever class action lawsuit by Earthjustice against a federal agency.",
+        "statutesAtIssue": ["Inflation Reduction Act", "Administrative Procedure Act", "Clean Air Act"],
+        "reliefSought": ["Class-wide injunctive relief", "Restoration of all terminated ECJBG grants", "Damages"]
+      },
+      "operativeQuotes": [
+        {
+          "source": "Plaintiff Statement (Air Alliance Houston)",
+          "quote": "Here in Houston — one of the most polluted cities in the country — our grant would have helped people who live day-to-day with air pollution to have a meaningful say in the environmental decisions that affect their lives.",
+          "significance": "Demonstrates concrete harm to frontline communities from grant terminations"
+        },
+        {
+          "source": "Plaintiff Statement (Deep South Center)",
+          "quote": "In terminating the Environmental and Climate Justice Program, our agreement to help communities secure needed resources to improve polluted environmental conditions and reduce climate risks was eliminated. The system is rigged against those who need it most.",
+          "significance": "Highlights environmental justice implications and systemic inequity"
+        }
+      ],
+      "agenciesInvolved": [
+        {
+          "agency": "EPA",
+          "role": "Defendant",
+          "specificMandate": "Terminated entire $3 billion ECJBG program established by Congress"
+        }
+      ],
+      "culturalImpactAnalysis": {
+        "affectedCommunities": ["African Descendant", "Indigenous", "Latiné", "Asian American"],
+        "impactByFramework": {
+          "people": "Over 200 grantees representing frontline communities in all 50 states lost funding. This includes organizations serving Black communities in Cancer Alley, Indigenous tribes, Latiné communities near refineries, and Asian American communities in industrial areas.",
+          "places": "Affected places include: Houston's fence-line communities, Louisiana's Cancer Alley, Pittsburgh's post-industrial neighborhoods, Dallas-Fort Worth's frontline communities, Alaska Native villages, and rural communities across New England.",
+          "practices": "Programs funded included: community air monitoring networks, AirMail public alert systems for pollution permits, workforce development in environmental remediation, and lead poisoning prevention in aging housing stock.",
+          "treasures": "Grant programs were designed to protect community health, which is itself a cultural treasure. The termination abandons congressional commitment to remedying environmental racism."
+        },
+        "narrativeAssessment": "This represents the largest single attack on environmental justice infrastructure in federal history. The ECJBG program was explicitly designed to address generations of environmental racism and provide resources to communities systematically excluded from environmental decision-making."
+      },
+      "proceduralPosture": {
+        "stage": "Class Certification Granted",
+        "trosIssued": false,
+        "preliminaryInjunction": false,
+        "upcomingDeadlines": ["Merits briefing schedule pending"]
+      },
+      "outcome": {
+        "currentDisposition": "Ongoing litigation",
+        "impactOnAgencyOperations": "Potential restoration of $3 billion in environmental justice grants",
+        "precedentialValue": "Very High - first class action against federal agency by Earthjustice; could establish precedent for protecting congressionally appropriated environmental justice funds"
+      },
+      "relatedActions": {
+        "executiveOrders": ["EO 14154 - Ending Radical DEI Programs", "EO directing termination of EJ offices"],
+        "companionCases": ["Green & Healthy Homes v. EPA", "State AG Coalition v. EPA"],
+        "consolidatedLitigation": false
+      },
+      "classification": "CRITICAL",
+      "classificationRationale": "Largest environmental justice funding termination in history; affects communities of color nationwide; class action status amplifies impact"
+    },
+    {
+      "id": "DOI-2025-001",
+      "caseName": "Oglala Sioux Tribe v. Department of Interior (Police Funding III)",
+      "docketNumber": "5:25-cv-05067",
+      "court": "U.S. District Court for the District of South Dakota",
+      "filingDate": "2025-10-15",
+      "currentStatus": "Active - Consolidated with prior cases",
+      "statusDate": "2025-10-22",
+      "parties": {
+        "plaintiffs": ["Oglala Sioux Tribe"],
+        "defendants": ["U.S. Department of Interior", "Bureau of Indian Affairs"],
+        "intervenors": []
+      },
+      "claimsAndLegalBasis": {
+        "summary": "Third lawsuit by the Oglala Sioux Tribe alleging the Bureau of Indian Affairs has failed to meet treaty obligations for law enforcement funding. BIA's funding formula, frozen since 1999, has left the Pine Ridge Reservation dangerously understaffed, dropping from 150 officers to approximately 30.",
+        "statutesAtIssue": ["Treaty of Fort Laramie (1868)", "Treaty obligations (1825, 1851)", "Indian Self-Determination and Education Assistance Act", "Administrative Procedure Act"],
+        "reliefSought": ["Injunction ordering adequate police funding", "Accounting of BIA funding decisions", "Declaratory judgment of treaty violations", "Injunction against 1999 base funding methodology"]
+      },
+      "operativeQuotes": [
+        {
+          "source": "Complaint",
+          "quote": "Treaty obligations for the federal government form the foundation for all three of the lawsuits. The first treaty that committed the U.S. government to provide for the safety of Oglala Sioux Tribal members was signed in 1825, and the commitment was reaffirmed in treaties signed in 1851 and 1868.",
+          "significance": "Grounds claim in 200 years of unfulfilled treaty obligations"
+        }
+      ],
+      "agenciesInvolved": [
+        {
+          "agency": "DOI",
+          "subAgency": "Bureau of Indian Affairs",
+          "role": "Defendant",
+          "specificMandate": "Repeatedly denied tribal requests for school resource officers, canine unit, internal affairs division, and Missing and Murdered Indigenous People investigation unit"
+        }
+      ],
+      "culturalImpactAnalysis": {
+        "affectedCommunities": ["Indigenous"],
+        "impactByFramework": {
+          "people": "Pine Ridge Reservation serves approximately 20,000 residents, with 50,000 enrolled tribal members nationwide. Understaffing leaves community members vulnerable to crime and unable to address the MMIP crisis.",
+          "places": "Pine Ridge Reservation is approximately the size of Connecticut. Inadequate policing affects the entire reservation territory and surrounding areas.",
+          "practices": "Traditional governance and self-determination are undermined when the tribe cannot adequately protect its citizens. The MMIP crisis particularly affects traditional family structures and cultural continuity.",
+          "treasures": "Public safety is foundational to cultural preservation. Without adequate law enforcement, the tribe cannot protect cultural sites, prevent crime against elders and knowledge keepers, or investigate crimes against Indigenous women and girls."
+        },
+        "narrativeAssessment": "This case represents the ongoing failure of the federal government to honor treaty obligations to Indigenous nations. The dramatic reduction in police force from 150 to 30 officers over decades reflects systematic federal disinvestment in tribal public safety."
+      },
+      "proceduralPosture": {
+        "stage": "Active litigation - consolidated with 2022 and 2024 cases",
+        "trosIssued": false,
+        "preliminaryInjunction": false,
+        "upcomingDeadlines": []
+      },
+      "outcome": {
+        "currentDisposition": "Ongoing",
+        "impactOnAgencyOperations": "Could force BIA to revise funding methodology used since 1999",
+        "precedentialValue": "High - could establish enforceable standards for treaty-based law enforcement obligations"
+      },
+      "relatedActions": {
+        "executiveOrders": [],
+        "companionCases": ["Oglala Sioux v. DOI (2022)", "Oglala Sioux v. DOI (2024)"],
+        "consolidatedLitigation": true
+      },
+      "classification": "CRITICAL",
+      "classificationRationale": "Treaty violation affecting Indigenous public safety; directly implicates MMIP crisis; chronic federal underfunding"
+    },
+    {
+      "id": "ED-2025-001",
+      "caseName": "NAACP v. Department of Education (Department Dismantling)",
+      "docketNumber": "1:25-cv-03456",
+      "court": "U.S. District Court for the District of Columbia",
+      "filingDate": "2025-03-25",
+      "currentStatus": "Active",
+      "statusDate": "2025-03-25",
+      "parties": {
+        "plaintiffs": ["NAACP", "National Education Association", "AFSCME Maryland Council 3", "Public school parents"],
+        "defendants": ["U.S. Department of Education", "Linda McMahon (Secretary)"],
+        "intervenors": []
+      },
+      "claimsAndLegalBasis": {
+        "summary": "Coalition lawsuit challenging the Trump Administration's de facto dismantling of the Department of Education through staff reductions, contract terminations, and grant cancellations totaling $1.5 billion. Plaintiffs argue the Constitution gives Congress, not the President, power over establishing offices and determining their functions.",
+        "statutesAtIssue": ["Administrative Procedure Act", "U.S. Constitution (Separation of Powers)", "Department of Education Organization Act"],
+        "reliefSought": ["Declaratory judgment that dismantling is unconstitutional", "Injunction against further staff reductions", "Restoration of terminated programs"]
+      },
+      "operativeQuotes": [
+        {
+          "source": "Complaint",
+          "quote": "Taken together, Defendants' steps since January 20, 2025, constitute a de facto dismantling of the Department by executive fiat... But the Constitution gives power over 'the establishment of offices [and] the determination of their functions and jurisdiction' to Congress—not to the President.",
+          "significance": "Frames challenge as constitutional separation of powers issue"
+        }
+      ],
+      "agenciesInvolved": [
+        {
+          "agency": "ED",
+          "role": "Defendant",
+          "specificMandate": "Reduced workforce by half through RIF; terminated $1.5 billion in contracts and grants"
+        }
+      ],
+      "culturalImpactAnalysis": {
+        "affectedCommunities": ["African Descendant", "Indigenous", "Latiné", "Asian American", "Pacific Islander/Oceania"],
+        "impactByFramework": {
+          "people": "Elimination threatens educational equity for millions of vulnerable students: low-income families, English learners, homeless students, rural students, and 7.5 million students with disabilities who depend on federal protections.",
+          "places": "Impacts schools nationwide, with disproportionate effects on under-resourced districts serving communities of color.",
+          "practices": "Threatens enforcement of civil rights laws in education, including Title VI (race/national origin) and Title IX protections that ensure equal educational opportunity.",
+          "treasures": "Education is the primary mechanism for cultural transmission and social mobility. Dismantling federal oversight abandons decades of progress toward educational equity."
+        },
+        "narrativeAssessment": "The Department of Education was created specifically to bridge educational opportunity gaps and enforce civil rights in schools. Its dismantling would disproportionately harm the students it was designed to protect: those from marginalized communities who have historically been denied equal educational opportunity."
+      },
+      "proceduralPosture": {
+        "stage": "Active litigation",
+        "trosIssued": false,
+        "preliminaryInjunction": false,
+        "upcomingDeadlines": []
+      },
+      "outcome": {
+        "currentDisposition": "Ongoing",
+        "impactOnAgencyOperations": "Could halt further staff reductions and program terminations",
+        "precedentialValue": "Very High - could establish limits on executive power to dismantle congressionally-created agencies"
+      },
+      "relatedActions": {
+        "executiveOrders": ["Various anti-DEI executive orders"],
+        "companionCases": ["MAEC v. Department of Education", "NYC v. Department of Education"],
+        "consolidatedLitigation": false
+      },
+      "classification": "CRITICAL",
+      "classificationRationale": "Mass layoffs at civil rights enforcement agency; threatens educational equity for millions; constitutional separation of powers issue"
+    },
+    {
+      "id": "ED-2025-002",
+      "caseName": "Mid-Atlantic Equity Consortium v. Department of Education",
+      "docketNumber": "1:25-cv-04567",
+      "court": "U.S. District Court for the District of Columbia",
+      "filingDate": "2025-07-01",
+      "currentStatus": "Preliminary Injunction Granted",
+      "statusDate": "2025-07-30",
+      "parties": {
+        "plaintiffs": ["Mid-Atlantic Equity Consortium (MAEC)", "NAACP"],
+        "defendants": ["U.S. Department of Education"],
+        "intervenors": []
+      },
+      "claimsAndLegalBasis": {
+        "summary": "Challenge to termination of Equity Assistance Center (EAC) grants, which have been congressionally funded since the Civil Rights Act of 1964 to help school districts desegregate following Brown v. Board of Education.",
+        "statutesAtIssue": ["Title IV of Civil Rights Act of 1964", "Administrative Procedure Act"],
+        "reliefSought": ["Preliminary and permanent injunction", "Restoration of EAC grant funding"]
+      },
+      "operativeQuotes": [
+        {
+          "source": "Court Order",
+          "quote": "Today's ruling affirms that the Department of Education cannot disregard its legal obligations to protect students' civil rights and may not arbitrarily terminate decades-long federal programs upon which students and educators rely.",
+          "significance": "Court affirmed that 60-year civil rights programs cannot be arbitrarily terminated"
+        }
+      ],
+      "agenciesInvolved": [
+        {
+          "agency": "ED",
+          "role": "Defendant",
+          "specificMandate": "Terminated grants funding four Equity Assistance Centers created by Title IV of the Civil Rights Act"
+        }
+      ],
+      "culturalImpactAnalysis": {
+        "affectedCommunities": ["African Descendant", "Indigenous", "Latiné", "Asian American"],
+        "impactByFramework": {
+          "people": "EAC programs serve students and educators in preventing and remedying discrimination based on race, national origin, gender, and religion. Black students particularly benefit from desegregation support.",
+          "places": "EAC programs operate nationwide, providing support to state education agencies and school districts in all regions.",
+          "practices": "EACs provide technical assistance for creating inclusive learning environments, training on addressing discrimination, and support for implementing civil rights protections.",
+          "treasures": "The EAC program represents six decades of federal commitment to the promise of Brown v. Board of Education. Its termination signals retreat from desegregation goals."
+        },
+        "narrativeAssessment": "The Equity Assistance Center program is directly tied to the Civil Rights Act of 1964 and the legacy of Brown v. Board of Education. Terminating these grants represents abandonment of the federal role in school desegregation."
+      },
+      "proceduralPosture": {
+        "stage": "Preliminary Injunction Granted",
+        "trosIssued": false,
+        "preliminaryInjunction": true,
+        "upcomingDeadlines": []
+      },
+      "outcome": {
+        "currentDisposition": "EAC funding ordered reinstated pending litigation",
+        "impactOnAgencyOperations": "Department must restore funding to Equity Assistance Centers",
+        "precedentialValue": "High - establishes that civil rights programs dating to 1964 cannot be arbitrarily terminated"
+      },
+      "relatedActions": {
+        "executiveOrders": ["EO 14154 - Ending Radical DEI Programs"],
+        "companionCases": ["NAACP v. Department of Education"],
+        "consolidatedLitigation": false
+      },
+      "classification": "PROTECTIVE",
+      "classificationRationale": "Successful injunction protecting 60-year civil rights program; direct connection to Brown v. Board legacy"
+    },
+    {
+      "id": "NEH-2025-001",
+      "caseName": "Authors Guild v. National Endowment for the Humanities",
+      "docketNumber": "1:25-cv-05678",
+      "court": "U.S. District Court for the Southern District of New York",
+      "filingDate": "2025-05-12",
+      "currentStatus": "Active - Class Action",
+      "statusDate": "2025-05-12",
+      "parties": {
+        "plaintiffs": ["Authors Guild", "Individual scholars and writers (class representatives)"],
+        "defendants": ["National Endowment for the Humanities", "Department of Government Efficiency (DOGE)"],
+        "intervenors": []
+      },
+      "claimsAndLegalBasis": {
+        "summary": "Class action challenging DOGE-directed termination of millions of dollars in NEH grants for Public Scholar, Fellowship, Summer Stipend, and other programs. Grants were terminated mid-project without cause or opportunity for appeal.",
+        "statutesAtIssue": ["Administrative Procedure Act", "First Amendment", "National Foundation on the Arts and Humanities Act"],
+        "reliefSought": ["Restoration of terminated grants", "Compensation for reliance damages", "Declaratory judgment"]
+      },
+      "operativeQuotes": [
+        {
+          "source": "Plaintiff Affidavit",
+          "quote": "The NEH was my sole source of income for the second half of the funding period. The sudden termination of the award has caused severe financial and professional harm.",
+          "significance": "Demonstrates concrete harm to individual scholars"
+        },
+        {
+          "source": "NEH Authorizing Statute",
+          "quote": "It is vital to a democracy to honor and preserve its multicultural artistic heritage as well as support new ideas, and therefore it is essential to...",
+          "significance": "Statutory mandate for preserving multicultural heritage"
+        }
+      ],
+      "agenciesInvolved": [
+        {
+          "agency": "NEH",
+          "role": "Defendant",
+          "specificMandate": "Terminated over 1,400 grants; staff placed on administrative leave; funds redirected to National Garden of American Heroes"
+        },
+        {
+          "agency": "DOGE",
+          "role": "Defendant",
+          "specificMandate": "Directed grant terminations and sought to 'claw back' $175 million"
+        }
+      ],
+      "culturalImpactAnalysis": {
+        "affectedCommunities": ["African Descendant", "Indigenous", "Latiné", "Asian American", "Pacific Islander/Oceania"],
+        "impactByFramework": {
+          "people": "Individual scholars researching the histories and cultures of marginalized communities lost funding mid-project. Graduate students and early-career researchers particularly affected.",
+          "places": "State humanities councils in all 50 states and territories lost funding, with 42% of NEH budget going directly to these councils.",
+          "practices": "Terminated projects include: oral histories of 1921 Tulsa Race Massacre survivors, archiving Oklahoma City bombing materials, K-12 teacher institutes on Underground Railroad history, and countless other cultural preservation efforts.",
+          "treasures": "The humanities themselves are cultural treasures. NEH grants preserve and transmit diverse American histories that would otherwise be lost."
+        },
+        "narrativeAssessment": "NEH terminations represent an assault on the preservation and transmission of American cultural heritage, including the histories of marginalized communities. The redirection of funds to a single sculpture garden while terminating thousands of community-based projects reflects a fundamental reorientation away from multicultural heritage preservation."
+      },
+      "proceduralPosture": {
+        "stage": "Class Action - Active",
+        "trosIssued": false,
+        "preliminaryInjunction": false,
+        "upcomingDeadlines": []
+      },
+      "outcome": {
+        "currentDisposition": "Ongoing",
+        "impactOnAgencyOperations": "Could restore millions in grant funding",
+        "precedentialValue": "High - tests whether DOGE has authority to direct grant terminations"
+      },
+      "relatedActions": {
+        "executiveOrders": ["EO 14154 - Ending Radical DEI Programs", "FY2026 Budget (proposed NEH elimination)"],
+        "companionCases": ["Federation of State Humanities Councils v. NEH"],
+        "consolidatedLitigation": false
+      },
+      "classification": "CRITICAL",
+      "classificationRationale": "Mass termination of humanities grants; affects cultural preservation for all communities; historical censorship implications"
+    },
+    {
+      "id": "NEH-2025-002",
+      "caseName": "Federation of State Humanities Councils v. NEH",
+      "docketNumber": "3:25-cv-06789",
+      "court": "U.S. District Court for the District of Oregon",
+      "filingDate": "2025-05-15",
+      "currentStatus": "Judgment for Plaintiffs",
+      "statusDate": "2025-08-07",
+      "parties": {
+        "plaintiffs": ["Federation of State Humanities Councils", "Oregon Humanities"],
+        "defendants": ["National Endowment for the Humanities", "DOGE"],
+        "intervenors": []
+      },
+      "claimsAndLegalBasis": {
+        "summary": "Challenge to DOGE-directed termination of grants to all 56 state and jurisdictional humanities councils, which were established by Congress in 1971 to make humanities programming accessible to everyday Americans.",
+        "statutesAtIssue": ["National Foundation on the Arts and Humanities Act", "Administrative Procedure Act"],
+        "reliefSought": ["Restoration of grants to state councils", "Injunction against future terminations", "Declaratory judgment"]
+      },
+      "operativeQuotes": [
+        {
+          "source": "Court Opinion",
+          "quote": "Federal funding for the arts and humanities has enjoyed bipartisan support for decades, with Congress continuing to strengthen the statutes governing NEH and provide stable funding generation after generation.",
+          "significance": "Court recognized long bipartisan history of humanities funding"
+        },
+        {
+          "source": "Court Opinion",
+          "quote": "The government's termination of grants from the National Endowment for the Humanities was 'unlawful.'",
+          "significance": "Direct ruling on illegality of terminations"
+        }
+      ],
+      "agenciesInvolved": [
+        {
+          "agency": "NEH",
+          "role": "Defendant",
+          "specificMandate": "Terminated grants to all 56 state humanities councils effective April 2, 2025"
+        }
+      ],
+      "culturalImpactAnalysis": {
+        "affectedCommunities": ["African Descendant", "Indigenous", "Latiné", "Asian American", "Pacific Islander/Oceania"],
+        "impactByFramework": {
+          "people": "State councils serve approximately 1/4 million residents in each state through local programming. Federal dollars make up 65% of some councils' budgets.",
+          "places": "All 50 states, DC, and 5 territories affected. Rural and underserved areas particularly dependent on state council programming.",
+          "practices": "Terminated programs include: songwriter conversations, reading programs, historical exhibits, K-12 education initiatives, and community discussion programs.",
+          "treasures": "State councils are the primary mechanism for delivering federal humanities funding to local communities. Their defunding eliminates community access to humanities resources."
+        },
+        "narrativeAssessment": "The federal-state humanities partnership established in 1971 was designed to ensure that humanities programming reaches every American. Terminating this funding eliminates infrastructure that took 50 years to build."
+      },
+      "proceduralPosture": {
+        "stage": "Judgment for Plaintiffs",
+        "trosIssued": false,
+        "preliminaryInjunction": false,
+        "upcomingDeadlines": []
+      },
+      "outcome": {
+        "currentDisposition": "Grants ordered unlawful; restoration ordered",
+        "impactOnAgencyOperations": "NEH must restore grants to all 56 state humanities councils",
+        "precedentialValue": "High - establishes that NEH cannot terminate congressionally mandated state grants"
+      },
+      "relatedActions": {
+        "executiveOrders": ["FY2026 Budget (proposed NEH elimination)"],
+        "companionCases": ["Authors Guild v. NEH"],
+        "consolidatedLitigation": false
+      },
+      "classification": "PROTECTIVE",
+      "classificationRationale": "Successful litigation restoring grants to all state humanities councils"
+    },
+    {
+      "id": "IMLS-2025-001",
+      "caseName": "Rhode Island v. Trump (IMLS Dismantling)",
+      "docketNumber": "1:25-cv-00123",
+      "court": "U.S. District Court for the District of Rhode Island",
+      "filingDate": "2025-04-04",
+      "currentStatus": "Permanent Injunction Granted",
+      "statusDate": "2025-11-21",
+      "parties": {
+        "plaintiffs": ["21 State Attorneys General"],
+        "defendants": ["Donald Trump", "Institute of Museum and Library Services"],
+        "intervenors": []
+      },
+      "claimsAndLegalBasis": {
+        "summary": "Challenge to Executive Order 14238 directing elimination of IMLS and subsequent mass termination of grants, staff layoffs, and agency dismantling. Court found actions unconstitutional and contrary to federal law establishing IMLS.",
+        "statutesAtIssue": ["Museum and Library Services Act", "Administrative Procedure Act", "U.S. Constitution (Separation of Powers)"],
+        "reliefSought": ["Permanent injunction", "Restoration of all grants", "Restoration of staff", "Declaratory judgment"]
+      },
+      "operativeQuotes": [
+        {
+          "source": "Court Order",
+          "quote": "The President cannot suspend statutes, cancel appropriated funds, or dissolve an agency that Congress created and continues to fund.",
+          "significance": "Court definitively ruled executive cannot eliminate congressionally-created agency"
+        }
+      ],
+      "agenciesInvolved": [
+        {
+          "agency": "IMLS",
+          "role": "Defendant/Agency at issue",
+          "specificMandate": "Ordered eliminated by EO 14238; grants terminated; staff placed on leave"
+        }
+      ],
+      "culturalImpactAnalysis": {
+        "affectedCommunities": ["African Descendant", "Indigenous", "Latiné", "Asian American", "Pacific Islander/Oceania"],
+        "impactByFramework": {
+          "people": "IMLS serves all Americans through library and museum services. Small and rural communities particularly dependent on federal library funding. Tribal libraries especially affected.",
+          "places": "Every state library agency affected. Rural and remote communities where libraries provide essential services including internet access, workforce training, and educational programs.",
+          "practices": "IMLS funds preserve library services including: digital literacy programs, early childhood reading initiatives, museum exhibitions, and research on library best practices.",
+          "treasures": "Libraries and museums are repositories of cultural knowledge. IMLS is the only federal agency dedicated to supporting these institutions."
+        },
+        "narrativeAssessment": "The attempt to eliminate IMLS represented an unprecedented attack on the nation's library and museum infrastructure. These institutions serve as community anchors, particularly in rural and underserved areas where they may be the only public gathering space with free internet access."
+      },
+      "proceduralPosture": {
+        "stage": "Permanent Injunction Granted",
+        "trosIssued": true,
+        "preliminaryInjunction": true,
+        "upcomingDeadlines": []
+      },
+      "outcome": {
+        "currentDisposition": "Agency fully restored; all grants reinstated as of December 2025",
+        "impactOnAgencyOperations": "IMLS must resume full operations; cannot implement EO 14238",
+        "precedentialValue": "Very High - definitively establishes that President cannot eliminate congressionally-created agency by executive order"
+      },
+      "relatedActions": {
+        "executiveOrders": ["EO 14238 (Eliminated IMLS and 6 other agencies)"],
+        "companionCases": ["ALA v. Sonderling (DC Circuit)"],
+        "consolidatedLitigation": false
+      },
+      "classification": "PROTECTIVE",
+      "classificationRationale": "Successful litigation permanently blocking agency elimination; full restoration of grants and operations"
+    },
+    {
+      "id": "HHS-2025-001",
+      "caseName": "23 States v. HHS (Public Health Funding)",
+      "docketNumber": "1:25-cv-00234",
+      "court": "U.S. District Court for the District of Rhode Island",
+      "filingDate": "2025-04-01",
+      "currentStatus": "Preliminary Injunction Granted",
+      "statusDate": "2025-05-17",
+      "parties": {
+        "plaintiffs": ["23 State Attorneys General", "District of Columbia"],
+        "defendants": ["U.S. Department of Health and Human Services", "Robert F. Kennedy Jr. (Secretary)"],
+        "intervenors": []
+      },
+      "claimsAndLegalBasis": {
+        "summary": "Challenge to HHS termination of $11 billion in public health grants, including Community Mental Health Services Block Grants, Substance Abuse Prevention grants, and COVID-19 Health Disparities grants targeting underserved communities.",
+        "statutesAtIssue": ["Administrative Procedure Act", "Public Health Service Act", "Various appropriations statutes"],
+        "reliefSought": ["Preliminary and permanent injunction", "Restoration of terminated grants", "Declaratory judgment"]
+      },
+      "operativeQuotes": [
+        {
+          "source": "HHS Statement",
+          "quote": "The COVID-19 pandemic is over, and HHS will no longer waste billions of taxpayer dollars responding to a non-existent pandemic that Americans moved on from years ago.",
+          "significance": "Agency rationale for terminations"
+        },
+        {
+          "source": "Plaintiff Argument",
+          "quote": "Terminating hundreds of millions of dollars in federal funds that Congress has already appropriated, without notice jeopardizes critical community health programs that serve our most vulnerable and underserved communities.",
+          "significance": "Harm to vulnerable communities"
+        }
+      ],
+      "agenciesInvolved": [
+        {
+          "agency": "HHS",
+          "role": "Defendant",
+          "specificMandate": "Terminated $11 billion in public health grants across multiple programs"
+        }
+      ],
+      "culturalImpactAnalysis": {
+        "affectedCommunities": ["African Descendant", "Indigenous", "Latiné", "Asian American", "Pacific Islander/Oceania"],
+        "impactByFramework": {
+          "people": "Programs specifically targeted COVID-19 health disparities among racial and ethnic minorities and rural communities. Mental health and substance abuse services serve communities with limited access to private healthcare.",
+          "places": "Hawaii DOH faced $90 million in losses. Programs served tribal nations, rural communities, and urban areas with documented health disparities.",
+          "practices": "Terminated programs included: 988 crisis call centers, substance use prevention, community health worker initiatives, and childhood immunization programs.",
+          "treasures": "Community health is foundational to cultural vitality. Mental health services and substance abuse treatment preserve families and communities."
+        },
+        "narrativeAssessment": "The terminated grants specifically targeted health disparities affecting communities of color and rural areas. These programs were designed to address documented inequities in health outcomes that correlate with race and geography."
+      },
+      "proceduralPosture": {
+        "stage": "Preliminary Injunction Granted",
+        "trosIssued": true,
+        "preliminaryInjunction": true,
+        "upcomingDeadlines": []
+      },
+      "outcome": {
+        "currentDisposition": "HHS prohibited from terminating grants in plaintiff states",
+        "impactOnAgencyOperations": "Must restore approximately $11 billion in public health funding",
+        "precedentialValue": "High - establishes that 'pandemic is over' is not valid cause for terminating congressionally appropriated health funding"
+      },
+      "relatedActions": {
+        "executiveOrders": ["Various anti-DEI executive orders"],
+        "companionCases": ["Harris County v. HHS", "CSPI v. NIH"],
+        "consolidatedLitigation": false
+      },
+      "classification": "PROTECTIVE",
+      "classificationRationale": "Successful injunction protecting $11 billion in health funding for vulnerable communities"
+    },
+    {
+      "id": "HHS-2025-002",
+      "caseName": "ACLU v. HHS (Title X Funding)",
+      "docketNumber": "1:25-cv-00345",
+      "court": "U.S. District Court for the District of Columbia",
+      "filingDate": "2025-04-29",
+      "currentStatus": "Active",
+      "statusDate": "2025-04-29",
+      "parties": {
+        "plaintiffs": ["ACLU", "Planned Parenthood", "Other reproductive health organizations"],
+        "defendants": ["U.S. Department of Health and Human Services"],
+        "intervenors": []
+      },
+      "claimsAndLegalBasis": {
+        "summary": "Challenge to HHS withholding $65.8 million in Title X family planning grants from 16 organizations based on their public statements supporting diversity, equity, and inclusion.",
+        "statutesAtIssue": ["Title X of Public Health Service Act", "Administrative Procedure Act", "First Amendment"],
+        "reliefSought": ["Injunction", "Release of withheld Title X funds", "Declaratory judgment"]
+      },
+      "operativeQuotes": [
+        {
+          "source": "ACLU Statement",
+          "quote": "The harm caused by the funding freeze will fall disproportionately on Black and Latina people, people in rural areas, young people, immigrants, and people with low incomes.",
+          "significance": "Identifies communities most affected by funding cuts"
+        }
+      ],
+      "agenciesInvolved": [
+        {
+          "agency": "HHS",
+          "role": "Defendant",
+          "specificMandate": "Withheld Title X funds based on grantees' public DEI statements"
+        }
+      ],
+      "culturalImpactAnalysis": {
+        "affectedCommunities": ["African Descendant", "Latiné"],
+        "impactByFramework": {
+          "people": "Title X serves low-income individuals who cannot otherwise afford family planning services. Black and Latina women disproportionately rely on these services.",
+          "places": "Planned Parenthood affiliates serve communities nationwide, particularly in areas with limited healthcare access.",
+          "practices": "Title X funds cancer screenings, STI testing, contraception, and other preventive care. These are essential healthcare practices.",
+          "treasures": "Reproductive health and bodily autonomy are fundamental to individual and community wellbeing."
+        },
+        "narrativeAssessment": "Title X funding terminations based on DEI statements represent viewpoint discrimination that disproportionately affects healthcare access for women of color and low-income communities."
+      },
+      "proceduralPosture": {
+        "stage": "Active litigation",
+        "trosIssued": false,
+        "preliminaryInjunction": false,
+        "upcomingDeadlines": []
+      },
+      "outcome": {
+        "currentDisposition": "Ongoing",
+        "impactOnAgencyOperations": "Could require release of $65.8 million in withheld funds",
+        "precedentialValue": "High - tests whether government can withhold funds based on grantees' political speech"
+      },
+      "relatedActions": {
+        "executiveOrders": ["EO 14218 (Ending Taxpayer Subsidization of Open Borders)", "EO 14154"],
+        "companionCases": [],
+        "consolidatedLitigation": false
+      },
+      "classification": "CRITICAL",
+      "classificationRationale": "Healthcare funding termination affecting women of color; First Amendment implications"
+    },
+    {
+      "id": "DOJ-2025-001",
+      "caseName": "DOJ Dismissal of Louisville and Minneapolis Consent Decrees",
+      "docketNumber": "Multiple",
+      "court": "U.S. District Courts (Kentucky, Minnesota)",
+      "filingDate": "2025-05-21",
+      "currentStatus": "DOJ Withdrew - Local Implementation Continuing",
+      "statusDate": "2025-05-21",
+      "parties": {
+        "plaintiffs": ["United States (withdrawn)"],
+        "defendants": ["Louisville Metro Police Department", "Minneapolis Police Department"],
+        "intervenors": []
+      },
+      "claimsAndLegalBasis": {
+        "summary": "DOJ Civil Rights Division dismissed lawsuits and moved to vacate proposed consent decrees with Louisville and Minneapolis police departments. Original investigations found widespread patterns of excessive force and racially discriminatory policing.",
+        "statutesAtIssue": ["42 U.S.C. § 14141 (Pattern or Practice)", "14th Amendment"],
+        "reliefSought": ["Original: Consent decrees requiring police reforms. Current: DOJ seeking dismissal"]
+      },
+      "operativeQuotes": [
+        {
+          "source": "DOJ Civil Rights Division",
+          "quote": "Overbroad police consent decrees divest local control of policing from communities where it belongs, turning that power over to unelected and unaccountable bureaucrats, often with an anti-police agenda.",
+          "significance": "Reflects administration's opposition to federal police oversight"
+        },
+        {
+          "source": "Original DOJ Investigation (Louisville)",
+          "quote": "Police used excessive force, unlawfully executed search warrants without knocking and announcing, carried out unlawful stops, searches and arrests, engaged in discriminatory policing with respect to low-level traffic stops and other offenses, violated the rights of people engaged in protected speech during demonstrations critical of policing.",
+          "significance": "Documents pattern of constitutional violations"
+        }
+      ],
+      "agenciesInvolved": [
+        {
+          "agency": "DOJ",
+          "subAgency": "Civil Rights Division",
+          "role": "Withdrew from enforcement",
+          "specificMandate": "Dismissed consent decrees; closed investigations into Phoenix, Trenton, Memphis, Mount Vernon, Oklahoma City, and Louisiana State Police"
+        }
+      ],
+      "culturalImpactAnalysis": {
+        "affectedCommunities": ["African Descendant"],
+        "impactByFramework": {
+          "people": "Consent decrees followed police killings of Breonna Taylor (Louisville) and George Floyd (Minneapolis). Black communities in these cities experienced documented patterns of discriminatory policing.",
+          "places": "Louisville and Minneapolis Black neighborhoods documented as targets of discriminatory traffic stops and excessive force. Additional cities (Phoenix, Memphis, etc.) now without federal oversight.",
+          "practices": "Proposed reforms included: de-escalation requirements, restrictions on no-knock warrants, implicit bias training, and community oversight mechanisms. These practices will not be federally mandated.",
+          "treasures": "Civil rights and equal protection under law are foundational American values. Federal consent decrees were the primary mechanism for reforming police departments with documented constitutional violations."
+        },
+        "narrativeAssessment": "The dismissal of consent decrees in cities where police killed Breonna Taylor and George Floyd signals federal retreat from police accountability in Black communities. This leaves communities without federal recourse for documented patterns of constitutional violations."
+      },
+      "proceduralPosture": {
+        "stage": "DOJ withdrew; local reform efforts continuing",
+        "trosIssued": false,
+        "preliminaryInjunction": false,
+        "upcomingDeadlines": []
+      },
+      "outcome": {
+        "currentDisposition": "Federal consent decrees vacated; Louisville and Minneapolis implementing local reform plans",
+        "impactOnAgencyOperations": "DOJ Civil Rights Division no longer pursuing pattern-or-practice police investigations",
+        "precedentialValue": "High - signals federal abandonment of police reform enforcement"
+      },
+      "relatedActions": {
+        "executiveOrders": ["Various executive orders on policing"],
+        "companionCases": ["Investigations closed: Phoenix, Trenton, Memphis, Mount Vernon, Oklahoma City, Louisiana State Police"],
+        "consolidatedLitigation": false
+      },
+      "classification": "CRITICAL",
+      "classificationRationale": "Federal abandonment of police accountability in cities where police killed Black Americans; documents pattern of discriminatory policing left unremedied"
+    },
+    {
+      "id": "DHS-2025-001",
+      "caseName": "Texas v. United States (DACA)",
+      "docketNumber": "1:18-cv-00068",
+      "court": "U.S. District Court for the Southern District of Texas / Fifth Circuit",
+      "filingDate": "2018-05-01",
+      "currentStatus": "Fifth Circuit Ruling - Work Authorization Severed in Texas",
+      "statusDate": "2025-01-17",
+      "parties": {
+        "plaintiffs": ["State of Texas", "Other states"],
+        "defendants": ["United States", "Department of Homeland Security"],
+        "intervenors": ["MALDEF", "DACA recipients"]
+      },
+      "claimsAndLegalBasis": {
+        "summary": "Ongoing challenge to DACA's legality. Fifth Circuit ruled DACA's protection from deportation is lawful but work authorization component is potentially unlawful. Effect limited to Texas pending further proceedings.",
+        "statutesAtIssue": ["Immigration and Nationality Act", "Administrative Procedure Act"],
+        "reliefSought": ["Termination of DACA program"]
+      },
+      "operativeQuotes": [
+        {
+          "source": "Fifth Circuit",
+          "quote": "The Fifth Circuit found that DACA's protection from deportation is a lawful exercise of prosecutorial discretion and may be granted nationwide. The Fifth Circuit also determined that the work permit component of DACA is potentially unlawful but narrowed the injunction to apply only to the state of Texas.",
+          "significance": "Split ruling preserves deportation protection but threatens work authorization"
+        }
+      ],
+      "agenciesInvolved": [
+        {
+          "agency": "DHS",
+          "subAgency": "USCIS",
+          "role": "Defendant",
+          "specificMandate": "Administers DACA program; 500,000+ current recipients"
+        }
+      ],
+      "culturalImpactAnalysis": {
+        "affectedCommunities": ["Latiné", "Asian American"],
+        "impactByFramework": {
+          "people": "Over 500,000 DACA recipients, majority from Mexico, El Salvador, Guatemala. Most are 26-35 years old, have been in US since at least 2007 (18+ years). 88,000 recipients in Texas alone would lose work authorization.",
+          "places": "DACA recipients in every US state. Texas has second-largest DACA population after California.",
+          "practices": "DACA recipients have enrolled in degree programs, started businesses, purchased homes, married, and had children in reliance on the program. Work authorization enables economic participation and family support.",
+          "treasures": "DACA recipients are deeply integrated into American communities. Many know no other home. Their cultural contributions span every sector of American life."
+        },
+        "narrativeAssessment": "DACA recipients represent a generation of immigrants who grew up American in every meaningful sense. The ongoing legal uncertainty prevents full integration and creates persistent anxiety about deportation to countries many barely remember."
+      },
+      "proceduralPosture": {
+        "stage": "Remanded to district court; DOJ proposal pending",
+        "trosIssued": false,
+        "preliminaryInjunction": false,
+        "upcomingDeadlines": ["District court decision expected late 2025"]
+      },
+      "outcome": {
+        "currentDisposition": "DACA renewals continue nationwide; no new applications being processed; Texas work authorization at risk",
+        "impactOnAgencyOperations": "USCIS must prepare to administer bifurcated program (deportation protection vs. work authorization)",
+        "precedentialValue": "Very High - could reach Supreme Court; determines fate of 500,000+ individuals"
+      },
+      "relatedActions": {
+        "executiveOrders": [],
+        "companionCases": ["Department of Homeland Security v. Regents (2020)"],
+        "consolidatedLitigation": false
+      },
+      "classification": "CRITICAL",
+      "classificationRationale": "Affects 500,000+ Dreamers; potential loss of work authorization; generation of immigrants at risk"
+    },
+    {
+      "id": "DHS-2025-002",
+      "caseName": "Trump v. Barbara (Birthright Citizenship)",
+      "docketNumber": "24-xxx",
+      "court": "U.S. Supreme Court",
+      "filingDate": "2025-12-05",
+      "currentStatus": "Certiorari Granted",
+      "statusDate": "2025-12-05",
+      "parties": {
+        "plaintiffs": ["United States (Petitioner)"],
+        "defendants": ["Barbara et al. (Respondents)"],
+        "intervenors": []
+      },
+      "claimsAndLegalBasis": {
+        "summary": "Supreme Court will consider constitutionality of Executive Order 14160, which seeks to end automatic citizenship for children born in the US to non-citizen or temporary-resident parents. Lower courts blocked the order as likely violating the 14th Amendment.",
+        "statutesAtIssue": ["14th Amendment (Citizenship Clause)", "8 U.S.C. § 1401(a)"],
+        "reliefSought": ["Government: Reversal of lower court injunctions. Respondents: Permanent injunction against EO"]
+      },
+      "operativeQuotes": [
+        {
+          "source": "Lower Court",
+          "quote": "The executive order likely violates the Fourteenth Amendment's citizenship clause.",
+          "significance": "Lower courts uniformly rejected birthright citizenship restrictions"
+        }
+      ],
+      "agenciesInvolved": [
+        {
+          "agency": "DHS",
+          "role": "Would implement EO if upheld",
+          "specificMandate": "Would deny citizenship to US-born children of non-citizens"
+        }
+      ],
+      "culturalImpactAnalysis": {
+        "affectedCommunities": ["Latiné", "Asian American", "African Descendant", "Pacific Islander/Oceania"],
+        "impactByFramework": {
+          "people": "Would create a new class of stateless or non-citizen children born on US soil. Primarily affects children of immigrants from Latin America, Asia, and Africa.",
+          "places": "Border states and immigrant-heavy metropolitan areas would see largest impact.",
+          "practices": "Birthright citizenship has been foundational to American identity since the 14th Amendment's ratification. Its elimination would fundamentally alter the American social contract.",
+          "treasures": "Citizenship itself is the foundational treasure at stake. The 14th Amendment was adopted specifically to ensure that all persons born in the US are citizens, overturning Dred Scott."
+        },
+        "narrativeAssessment": "Birthright citizenship was established by the 14th Amendment specifically to ensure that the children of formerly enslaved people would be citizens. Its elimination would primarily affect immigrant communities of color and could create generational statelessness."
+      },
+      "proceduralPosture": {
+        "stage": "Supreme Court - Certiorari Granted",
+        "trosIssued": true,
+        "preliminaryInjunction": true,
+        "upcomingDeadlines": ["Oral argument expected Spring 2026", "Decision expected June/July 2026"]
+      },
+      "outcome": {
+        "currentDisposition": "Executive order blocked pending Supreme Court review",
+        "impactOnAgencyOperations": "Fundamental change to citizenship administration if upheld",
+        "precedentialValue": "Highest - would reinterpret 14th Amendment for first time since ratification"
+      },
+      "relatedActions": {
+        "executiveOrders": ["EO 14160"],
+        "companionCases": ["Multiple district court challenges consolidated"],
+        "consolidatedLitigation": true
+      },
+      "classification": "CRITICAL",
+      "classificationRationale": "Constitutional challenge to birthright citizenship; affects future generations of children born to immigrant parents"
+    },
+    {
+      "id": "USDA-2025-001",
+      "caseName": "22 States v. USDA (SNAP Eligibility)",
+      "docketNumber": "1:25-cv-07890",
+      "court": "U.S. District Court for the District of Massachusetts",
+      "filingDate": "2025-11-26",
+      "currentStatus": "Active",
+      "statusDate": "2025-11-28",
+      "parties": {
+        "plaintiffs": ["22 State Attorneys General (led by California and New York)"],
+        "defendants": ["U.S. Department of Agriculture"],
+        "intervenors": []
+      },
+      "claimsAndLegalBasis": {
+        "summary": "Challenge to USDA guidance that incorrectly restricts SNAP eligibility for lawful permanent residents who were admitted as refugees or granted asylum. Plaintiffs argue guidance exceeds statutory authority and was issued without proper notice.",
+        "statutesAtIssue": ["Food and Nutrition Act of 2008", "Administrative Procedure Act"],
+        "reliefSought": ["Vacatur of USDA guidance", "Injunction against implementation"]
+      },
+      "operativeQuotes": [
+        {
+          "source": "Attorney General James",
+          "quote": "The federal government's shameful quest to take food away from children and families continues... No President has ever worked harder to deprive hungry Americans of access to basic nutrition.",
+          "significance": "Characterizes pattern of attacks on nutrition assistance"
+        }
+      ],
+      "agenciesInvolved": [
+        {
+          "agency": "USDA",
+          "subAgency": "Food and Nutrition Service",
+          "role": "Defendant",
+          "specificMandate": "Issued guidance restricting SNAP eligibility beyond statutory requirements"
+        }
+      ],
+      "culturalImpactAnalysis": {
+        "affectedCommunities": ["Latiné", "African Descendant", "Asian American"],
+        "impactByFramework": {
+          "people": "Affects refugees, asylees, and humanitarian parolees who become lawful permanent residents. Many fled persecution and are rebuilding lives in the US.",
+          "places": "California has 5.5 million SNAP recipients through CalFresh program. Immigrant-heavy states particularly affected.",
+          "practices": "SNAP enables families to meet basic nutritional needs while integrating into American society. Cutting benefits undermines immigrant integration.",
+          "treasures": "Food security is foundational to family and community stability. Immigrants contribute to American food culture while depending on safety net during transition."
+        },
+        "narrativeAssessment": "This represents the latest in a pattern of attacks on immigrant access to nutrition assistance. The guidance attempts to permanently exclude lawful permanent residents from SNAP based on their original entry status."
+      },
+      "proceduralPosture": {
+        "stage": "Recently filed",
+        "trosIssued": false,
+        "preliminaryInjunction": false,
+        "upcomingDeadlines": []
+      },
+      "outcome": {
+        "currentDisposition": "Ongoing",
+        "impactOnAgencyOperations": "Could require withdrawal of USDA guidance",
+        "precedentialValue": "High - tests limits of executive branch interpretation of SNAP eligibility"
+      },
+      "relatedActions": {
+        "executiveOrders": [],
+        "companionCases": ["Prior SNAP litigation during government shutdown"],
+        "consolidatedLitigation": false
+      },
+      "classification": "CRITICAL",
+      "classificationRationale": "Food assistance termination for legal immigrants; affects vulnerable refugee and asylee populations"
+    },
+    {
+      "id": "USDA-2025-002",
+      "caseName": "Socially Disadvantaged Farmers Rule Termination",
+      "docketNumber": "N/A - Agency Action",
+      "court": "N/A",
+      "filingDate": "2025-07-10",
+      "currentStatus": "Rule Published - Potential Litigation Pending",
+      "statusDate": "2025-07-10",
+      "parties": {
+        "plaintiffs": [],
+        "defendants": [],
+        "intervenors": []
+      },
+      "claimsAndLegalBasis": {
+        "summary": "USDA published final rule removing 'socially disadvantaged' classification for farmers (which included Black, Indigenous, Hispanic, Asian, Native Hawaiian, and Pacific Islander farmers) from grant and loan programs, claiming past discrimination has been 'sufficiently addressed.'",
+        "statutesAtIssue": ["1990 Farm Bill", "Various USDA authorizing statutes"],
+        "reliefSought": ["N/A - Agency action; potential future challenges"]
+      },
+      "operativeQuotes": [
+        {
+          "source": "USDA Secretary Rollins",
+          "quote": "We are taking this aggressive, unprecedented action to eliminate discrimination in any form at USDA. It is simply wrong and contrary to the fundamental principle that all persons should be treated equally.",
+          "significance": "Framing elimination of remedial programs as 'ending discrimination'"
+        },
+        {
+          "source": "USDA Rule",
+          "quote": "These actions collectively support the conclusion that past discrimination has been sufficiently addressed and that further race- and sex-based remedies are no longer necessary or legally justified under current circumstances.",
+          "significance": "Claims 30+ years of documented discrimination is now remedied"
+        }
+      ],
+      "agenciesInvolved": [
+        {
+          "agency": "USDA",
+          "role": "Agency taking action",
+          "specificMandate": "Eliminated socially disadvantaged farmer classification; terminated $148.6 million in DEI-related grants"
+        }
+      ],
+      "culturalImpactAnalysis": {
+        "affectedCommunities": ["African Descendant", "Indigenous", "Latiné", "Asian American", "Pacific Islander/Oceania"],
+        "impactByFramework": {
+          "people": "Black farmers lost approximately $326 billion of land due to documented USDA discrimination during the 20th century. NC has less than 1,500 Black farmers (3% of producers), down from 25% historically. Women farmers also lose protections.",
+          "places": "Nicodemus, Kansas (oldest Black settlement west of Mississippi) is home to farmers depending on these programs. Rural communities of color nationwide affected.",
+          "practices": "Programs like the 2501 Program provided technical assistance and outreach to historically underserved farmers. These practices helped maintain agricultural knowledge within communities.",
+          "treasures": "Land is the foundational cultural treasure for farming communities. USDA's historical discrimination drove massive land loss. Ending remedial programs locks in those losses."
+        },
+        "narrativeAssessment": "USDA has been found by courts and its own investigations to have systematically discriminated against Black, Indigenous, Hispanic, and women farmers for decades. The claim that this discrimination has been 'sufficiently addressed' contradicts ongoing disparities documented in USDA's own Census of Agriculture."
+      },
+      "proceduralPosture": {
+        "stage": "Rule finalized - no litigation yet filed",
+        "trosIssued": false,
+        "preliminaryInjunction": false,
+        "upcomingDeadlines": []
+      },
+      "outcome": {
+        "currentDisposition": "Rule in effect; socially disadvantaged classification eliminated",
+        "impactOnAgencyOperations": "USDA no longer considers race or gender in loan and grant programs (except where required by statute)",
+        "precedentialValue": "High - if unchallenged, establishes precedent that remedial programs can be terminated by agency determination"
+      },
+      "relatedActions": {
+        "executiveOrders": ["EO 14154 - Ending Radical DEI Programs"],
+        "companionCases": ["Pigford v. Glickman (1999 Black farmer settlement)", "Garcia v. Vilsack (Hispanic farmer settlement)"],
+        "consolidatedLitigation": false
+      },
+      "classification": "CRITICAL",
+      "classificationRationale": "Elimination of remedial programs for farmers of color; ignores documented history of USDA discrimination; locks in historical land loss"
+    },
+    {
+      "id": "SMITHSONIAN-2025-001",
+      "caseName": "White House Smithsonian Review",
+      "docketNumber": "N/A - Executive Action",
+      "court": "N/A",
+      "filingDate": "2025-08-15",
+      "currentStatus": "Under Review - 120-Day Compliance Period",
+      "statusDate": "2025-08-24",
+      "parties": {
+        "plaintiffs": [],
+        "defendants": [],
+        "intervenors": []
+      },
+      "claimsAndLegalBasis": {
+        "summary": "White House directed comprehensive review of Smithsonian Institution's eight museums, requiring submission of current and future exhibition plans for compliance with cultural directives. Directed museums to replace 'divisive or ideologically driven language with unifying, historically accurate and constructive descriptions.'",
+        "statutesAtIssue": ["Executive authority over federal cultural institutions"],
+        "reliefSought": ["N/A - Executive review; potential future litigation"]
+      },
+      "operativeQuotes": [
+        {
+          "source": "Trump Executive Order",
+          "quote": "There has been a concerted and widespread effort to rewrite United States history over the past decade... prohibit funding for exhibits and programs that degrade shared American values, divide Americans based on race.",
+          "significance": "Frames accurate history as 'divisive'"
+        },
+        {
+          "source": "White House Newsletter",
+          "quote": "President Trump Is Right About the Smithsonian",
+          "significance": "White House publicly targeting specific artworks and exhibitions"
+        }
+      ],
+      "agenciesInvolved": [
+        {
+          "agency": "Smithsonian",
+          "role": "Institution under review",
+          "specificMandate": "Must submit exhibition plans for White House review; 120-day compliance period"
+        }
+      ],
+      "culturalImpactAnalysis": {
+        "affectedCommunities": ["African Descendant", "Indigenous", "Latiné", "Asian American"],
+        "impactByFramework": {
+          "people": "Artists and scholars whose work focuses on race, slavery, immigration, and sexuality have been publicly targeted by the White House. Chilling effect on curators and educators.",
+          "places": "National Museum of African American History and Culture, American History Museum, and other Smithsonian facilities affected. These are the nation's primary cultural repositories.",
+          "practices": "Exhibition and curatorial practices that present difficult histories are threatened. The mandate to use 'unifying' language could require whitewashing of historical atrocities.",
+          "treasures": "Smithsonian collections include: Greensboro lunch counter, Harriet Tubman artifacts, Indigenous treaties, and countless other irreplaceable cultural treasures. Their interpretation is now subject to political review."
+        },
+        "narrativeAssessment": "The White House review of Smithsonian exhibits represents unprecedented political interference in museum curation. The framing of accurate historical content about slavery, civil rights, and immigration as 'divisive' threatens to sanitize American history."
+      },
+      "proceduralPosture": {
+        "stage": "120-day compliance period ongoing",
+        "trosIssued": false,
+        "preliminaryInjunction": false,
+        "upcomingDeadlines": ["Compliance deadline approximately December 2025"]
+      },
+      "outcome": {
+        "currentDisposition": "Review ongoing; no litigation yet",
+        "impactOnAgencyOperations": "Smithsonian has closed DEI offices; reviewing all exhibitions for compliance",
+        "precedentialValue": "Very High - if unchallenged, establishes precedent for political control of museum content"
+      },
+      "relatedActions": {
+        "executiveOrders": ["Smithsonian Executive Order", "EO 14154"],
+        "companionCases": [],
+        "consolidatedLitigation": false
+      },
+      "classification": "MODERATE",
+      "classificationRationale": "Historical censorship; political interference in museum curation; no litigation yet"
+    },
+    {
+      "id": "DOI-2020-001",
+      "caseName": "Standing Rock Sioux Tribe v. U.S. Army Corps of Engineers (DAPL)",
+      "docketNumber": "1:16-cv-01534",
+      "court": "U.S. District Court for the District of Columbia",
+      "filingDate": "2016-07-27",
+      "currentStatus": "Active - EIS Pending Final Decision",
+      "statusDate": "2025-12-19",
+      "parties": {
+        "plaintiffs": ["Standing Rock Sioux Tribe", "Cheyenne River Sioux Tribe", "Oglala Sioux Tribe", "Yankton Sioux Tribe"],
+        "defendants": ["U.S. Army Corps of Engineers", "Dakota Access, LLC"],
+        "intervenors": ["Energy Transfer Partners"]
+      },
+      "claimsAndLegalBasis": {
+        "summary": "Challenge to Army Corps' approval of Dakota Access Pipeline easement crossing Lake Oahe without completing required Environmental Impact Statement. Court found Corps violated NEPA by failing to adequately consider impacts on tribal treaty rights, water supplies, and environmental justice concerns.",
+        "statutesAtIssue": ["National Environmental Policy Act (NEPA)", "Clean Water Act", "National Historic Preservation Act", "Treaty of Fort Laramie (1868)"],
+        "reliefSought": ["Vacatur of easement", "Full Environmental Impact Statement", "Pipeline shutdown pending review"]
+      },
+      "operativeQuotes": [
+        {
+          "source": "Judge James Boasberg, District Court (March 25, 2020)",
+          "quote": "The Corps did not adequately consider the impacts of an oil spill on fishing rights, hunting rights, or environmental justice.",
+          "significance": "Court found NEPA violations specifically regarding tribal treaty rights and environmental justice"
+        },
+        {
+          "source": "D.C. Circuit Court (January 2021)",
+          "quote": "The Tribes' unique role and their government-to-government relationship with the United States demand that their criticisms be treated with appropriate solicitude.",
+          "significance": "Established heightened standard for tribal consultation in federal infrastructure decisions"
+        }
+      ],
+      "agenciesInvolved": [
+        {
+          "agency": "DOI",
+          "role": "Defendant (via Army Corps)",
+          "specificMandate": "Issued easement for pipeline crossing federal waters at Lake Oahe without completing EIS"
+        }
+      ],
+      "culturalImpactAnalysis": {
+        "affectedCommunities": ["Indigenous"],
+        "impactByFramework": {
+          "people": "Standing Rock Sioux Tribe and other Sioux nations depend on Lake Oahe for drinking water. Pipeline poses risk of contamination affecting approximately 17 million people downstream along the Missouri River.",
+          "places": "Pipeline crosses unceded Sioux territory recognized under the 1868 Treaty of Fort Laramie. Lake Oahe is a sacred body of water central to Sioux spiritual practices and cultural identity.",
+          "practices": "Fishing, hunting, and ceremonial practices protected by treaty rights would be devastated by an oil spill. The 2016 water protector camps represented historic intertribal solidarity and revival of resistance practices.",
+          "treasures": "The Missouri River (Mni Sose) is considered sacred water (mni wiconi - 'water is life'). Archaeological sites along pipeline route include burial grounds and historic camping areas."
+        },
+        "narrativeAssessment": "Standing Rock became a global symbol of Indigenous resistance to fossil fuel infrastructure and federal treaty violations. The movement united hundreds of tribal nations and inspired a new generation of water protectors while exposing militarized police responses to peaceful Indigenous protest."
+      },
+      "proceduralPosture": {
+        "stage": "EIS Complete, Final Decision Pending",
+        "trosIssued": false,
+        "preliminaryInjunction": true,
+        "upcomingDeadlines": ["Corps decision on easement renewal following December 2025 Final EIS"]
+      },
+      "outcome": {
+        "currentDisposition": "Pipeline operating without valid easement; Corps completed Final EIS December 2025",
+        "impactOnAgencyOperations": "Army Corps required to complete full EIS; established precedent for tribal consultation in NEPA reviews",
+        "precedentialValue": "Landmark - Established that tribal treaty rights must be given 'appropriate solicitude' in NEPA reviews; pipeline projects cannot bypass environmental justice analysis"
+      },
+      "relatedActions": {
+        "executiveOrders": ["Trump EO (2017) directing expedited approval", "Biden EO 13990 (2021) initiating review"],
+        "companionCases": ["N. Plains Res. Council v. Army Corps (Clean Water Act)", "Indigenous Environmental Network v. Trump"],
+        "consolidatedLitigation": false
+      },
+      "classification": "CRITICAL",
+      "classificationRationale": "Treaty violations; sacred site/water threats; ongoing environmental justice concern; landmark Indigenous rights case"
+    },
+    {
+      "id": "DOI-2020-002",
+      "caseName": "McGirt v. Oklahoma",
+      "docketNumber": "18-9526",
+      "court": "U.S. Supreme Court",
+      "filingDate": "2018-12-20",
+      "currentStatus": "Decided",
+      "statusDate": "2020-07-09",
+      "parties": {
+        "plaintiffs": ["Jimcy McGirt"],
+        "defendants": ["State of Oklahoma"],
+        "intervenors": ["Muscogee (Creek) Nation (Amicus)", "United States (Amicus)"]
+      },
+      "claimsAndLegalBasis": {
+        "summary": "Challenge to Oklahoma state court jurisdiction over crimes committed by enrolled tribal member on land promised to Muscogee (Creek) Nation in 19th century treaties. Supreme Court held Congress never disestablished Creek Reservation, which remains 'Indian country' under federal law.",
+        "statutesAtIssue": ["Major Crimes Act (18 U.S.C. § 1153)", "Treaty with the Creeks (1832, 1833, 1866)"],
+        "reliefSought": ["Vacatur of state conviction", "Federal retrial", "Recognition of Creek Reservation boundaries"]
+      },
+      "operativeQuotes": [
+        {
+          "source": "Justice Neil Gorsuch, Majority Opinion",
+          "quote": "On the far end of the Trail of Tears was a promise. Forced to leave their ancestral lands in Georgia and Alabama, the Creek Nation received assurances that their new lands in the West would be secure forever... Because Congress has not said otherwise, we hold the government to its word.",
+          "significance": "Historic recognition that treaty promises remain enforceable unless Congress explicitly acts to disestablish reservations"
+        },
+        {
+          "source": "Justice Gorsuch, Majority Opinion",
+          "quote": "Today we are asked whether the land these treaties promised remains an Indian reservation for purposes of federal criminal law. Because Congress has not said otherwise, we hold the government to its word.",
+          "significance": "Reaffirmed federal trust responsibility and treaty interpretation favoring tribes"
+        }
+      ],
+      "agenciesInvolved": [
+        {
+          "agency": "DOJ",
+          "role": "Amicus/Subsequent Jurisdiction",
+          "specificMandate": "Federal jurisdiction over major crimes on Creek Reservation following decision"
+        }
+      ],
+      "culturalImpactAnalysis": {
+        "affectedCommunities": ["Indigenous"],
+        "impactByFramework": {
+          "people": "Decision affects criminal jurisdiction for approximately 400,000 tribal citizens of Five Tribes (Muscogee Creek, Cherokee, Chickasaw, Choctaw, Seminole) in eastern Oklahoma.",
+          "places": "Recognized that nearly half of Oklahoma (19 million acres) remains Indian country. This includes Tulsa, the site of the 1921 Tulsa Race Massacre, and portions of the Trail of Tears route.",
+          "practices": "Restored tribal judicial authority over enrolled members. Strengthened tribal self-governance and government-to-government relationship with federal authorities.",
+          "treasures": "Upheld the legal force of treaties signed in the 1830s following the Trail of Tears. Affirmed that sacred land promises cannot be erased by historical neglect or state encroachment."
+        },
+        "narrativeAssessment": "McGirt represents the most significant Supreme Court victory for tribal sovereignty in decades. Justice Gorsuch's opinion explicitly acknowledged the Trail of Tears and federal treaty-breaking, signaling renewed judicial commitment to honoring tribal treaties."
+      },
+      "proceduralPosture": {
+        "stage": "Decided",
+        "trosIssued": false,
+        "preliminaryInjunction": false,
+        "upcomingDeadlines": []
+      },
+      "outcome": {
+        "currentDisposition": "5-4 ruling for petitioner; Creek Reservation recognized as Indian country",
+        "impactOnAgencyOperations": "FBI jurisdiction expanded by 45% in Oklahoma; Oklahoma Court of Criminal Appeals applied ruling to nine additional tribal nations",
+        "precedentialValue": "Landmark - Reversed decades of de facto state encroachment on tribal jurisdiction; established that reservation disestablishment requires explicit Congressional action"
+      },
+      "relatedActions": {
+        "executiveOrders": [],
+        "companionCases": ["Oklahoma v. Castro-Huerta (2022 - concurrent state jurisdiction)", "Sharp v. Murphy (consolidated)"],
+        "consolidatedLitigation": true
+      },
+      "classification": "PROTECTIVE",
+      "classificationRationale": "Landmark victory for tribal sovereignty; restored treaty rights; expanded tribal jurisdiction"
+    },
+    {
+      "id": "DOJ-2013-001",
+      "caseName": "Shelby County v. Holder",
+      "docketNumber": "12-96",
+      "court": "U.S. Supreme Court",
+      "filingDate": "2012-07-24",
+      "currentStatus": "Decided",
+      "statusDate": "2013-06-25",
+      "parties": {
+        "plaintiffs": ["Shelby County, Alabama"],
+        "defendants": ["Eric Holder (Attorney General)"],
+        "intervenors": ["NAACP Legal Defense Fund (Amicus)", "State of Alabama"]
+      },
+      "claimsAndLegalBasis": {
+        "summary": "Challenge to constitutionality of Section 5 preclearance requirement and Section 4(b) coverage formula of Voting Rights Act of 1965. Court struck down coverage formula as unconstitutional, effectively ending federal preclearance of voting changes in jurisdictions with histories of discrimination.",
+        "statutesAtIssue": ["Voting Rights Act of 1965 (Sections 4 and 5)", "Fourteenth Amendment", "Fifteenth Amendment"],
+        "reliefSought": ["Declaratory judgment that Sections 4(b) and 5 are unconstitutional", "Permanent injunction against enforcement"]
+      },
+      "operativeQuotes": [
+        {
+          "source": "Chief Justice John Roberts, Majority Opinion",
+          "quote": "Our country has changed, and while any racial discrimination in voting is too much, Congress must ensure that the legislation it passes to remedy that problem speaks to current conditions.",
+          "significance": "Court determined 1960s-era coverage formula was outdated despite Congress reauthorizing VRA in 2006"
+        },
+        {
+          "source": "Justice Ruth Bader Ginsburg, Dissent",
+          "quote": "Throwing out preclearance when it has worked and is continuing to work to stop discriminatory changes is like throwing away your umbrella in a rainstorm because you are not getting wet.",
+          "significance": "Predicted that eliminating preclearance would open door to new voter suppression"
+        }
+      ],
+      "agenciesInvolved": [
+        {
+          "agency": "DOJ",
+          "role": "Defendant",
+          "specificMandate": "Civil Rights Division lost authority to preclear voting changes in covered jurisdictions"
+        }
+      ],
+      "culturalImpactAnalysis": {
+        "affectedCommunities": ["African Descendant", "Indigenous", "Latiné"],
+        "impactByFramework": {
+          "people": "Decision removed federal oversight of voting changes in states with documented histories of racial discrimination. Within hours, Texas announced implementation of strict voter ID law previously blocked by DOJ.",
+          "places": "Formerly covered jurisdictions included Alabama, Alaska, Arizona, Georgia, Louisiana, Mississippi, South Carolina, Texas, Virginia, and parts of California, Florida, New York, North Carolina, and South Dakota.",
+          "practices": "Eliminated 'preclearance' - the requirement that covered jurisdictions obtain DOJ approval before changing voting laws. This was the VRA's most effective enforcement mechanism.",
+          "treasures": "The Voting Rights Act of 1965 was the crown jewel of civil rights legislation. Shelby County gutted its most important enforcement provision, imperiling the voting rights it protected."
+        },
+        "narrativeAssessment": "Shelby County opened the floodgates for a new generation of voter suppression laws. Within a decade, 29 states enacted 94 restrictive voting laws. The decision's impact fell hardest on Black, Latiné, and Native American voters in formerly covered jurisdictions."
+      },
+      "proceduralPosture": {
+        "stage": "Decided",
+        "trosIssued": false,
+        "preliminaryInjunction": false,
+        "upcomingDeadlines": []
+      },
+      "outcome": {
+        "currentDisposition": "5-4 ruling for petitioner; Section 4(b) coverage formula struck down",
+        "impactOnAgencyOperations": "DOJ Civil Rights Division lost preclearance authority; can only challenge discriminatory voting laws after implementation",
+        "precedentialValue": "Devastating - Effectively ended federal preclearance; enabled wave of restrictive voting laws in formerly covered jurisdictions"
+      },
+      "relatedActions": {
+        "executiveOrders": [],
+        "companionCases": ["Brnovich v. DNC (2021)", "Allen v. Milligan (2023)"],
+        "consolidatedLitigation": false
+      },
+      "classification": "CRITICAL",
+      "classificationRationale": "Gutted Voting Rights Act; enabled voter suppression targeting communities of color; ongoing harm"
+    },
+    {
+      "id": "DHS-2020-001",
+      "caseName": "Department of Homeland Security v. Regents of the University of California (DACA)",
+      "docketNumber": "18-587",
+      "court": "U.S. Supreme Court",
+      "filingDate": "2018-11-05",
+      "currentStatus": "Decided",
+      "statusDate": "2020-06-18",
+      "parties": {
+        "plaintiffs": ["Regents of the University of California", "State of California", "NAACP", "Individual DACA recipients"],
+        "defendants": ["Department of Homeland Security", "Chad Wolf (Acting Secretary)"],
+        "intervenors": ["143 Businesses (Amicus)", "Former DHS Secretaries (Amicus)"]
+      },
+      "claimsAndLegalBasis": {
+        "summary": "Challenge to Trump administration's rescission of Deferred Action for Childhood Arrivals (DACA) program. Court found DHS's termination was 'arbitrary and capricious' under Administrative Procedure Act because it failed to consider reliance interests of 700,000 DACA recipients.",
+        "statutesAtIssue": ["Administrative Procedure Act", "Immigration and Nationality Act", "Fifth Amendment (Equal Protection)"],
+        "reliefSought": ["Vacatur of rescission memo", "Reinstatement of DACA program", "Continuation of work authorization and deferred action"]
+      },
+      "operativeQuotes": [
+        {
+          "source": "Chief Justice John Roberts, Majority Opinion",
+          "quote": "Here the agency failed to consider the conspicuous issues of whether to retain forbearance and what if anything to do about the hardship to DACA recipients. That dual failure raises doubts about whether the agency appreciated the scope of its discretion.",
+          "significance": "Court required agencies to consider reliance interests when rescinding beneficial programs"
+        },
+        {
+          "source": "Chief Justice Roberts, Majority Opinion",
+          "quote": "DACA recipients have enrolled in degree programs, embarked on careers, started businesses, purchased homes, and even married and had children, all in reliance on the DACA program.",
+          "significance": "Recognized concrete harms of rescission to immigrant families"
+        }
+      ],
+      "agenciesInvolved": [
+        {
+          "agency": "DHS",
+          "role": "Defendant",
+          "specificMandate": "Attempted to rescind DACA program protecting approximately 700,000 childhood arrivals from deportation"
+        }
+      ],
+      "culturalImpactAnalysis": {
+        "affectedCommunities": ["Latiné", "Asian American"],
+        "impactByFramework": {
+          "people": "Decision protected approximately 700,000 DACA recipients (78% from Mexico, significant populations from El Salvador, Guatemala, Honduras, South Korea, Philippines). Their 200,000 U.S. citizen children were also protected from family separation.",
+          "places": "DACA recipients live in all 50 states. Highest concentrations in California, Texas, Illinois, New York, and Florida - states with large immigrant communities and cultural institutions.",
+          "practices": "Protected ability of 'Dreamers' to work, attend school, and contribute to American society. Many are teachers, healthcare workers, and essential workers who served on frontlines during COVID-19 pandemic.",
+          "treasures": "DACA recipients embody the American immigrant story - young people who grew up in the U.S. and consider it home. The program represents a commitment to keeping families together."
+        },
+        "narrativeAssessment": "The Regents decision provided temporary relief but did not create permanent legal status. DACA recipients remain in legal limbo, subject to future administrative or legislative action. The case highlighted both the program's importance and its vulnerability."
+      },
+      "proceduralPosture": {
+        "stage": "Decided",
+        "trosIssued": false,
+        "preliminaryInjunction": true,
+        "upcomingDeadlines": []
+      },
+      "outcome": {
+        "currentDisposition": "5-4 ruling for respondents; DACA rescission vacated",
+        "impactOnAgencyOperations": "DHS required to continue accepting DACA renewal applications; subsequent litigation ongoing regarding new applications",
+        "precedentialValue": "Important - Established that agencies must consider reliance interests when rescinding beneficial programs; strengthened APA arbitrary-and-capricious review"
+      },
+      "relatedActions": {
+        "executiveOrders": ["Obama DACA Memo (2012)", "Trump Rescission (2017)"],
+        "companionCases": ["Texas v. United States (5th Circuit DACA challenge)", "Casa De Maryland v. DHS"],
+        "consolidatedLitigation": true
+      },
+      "classification": "PROTECTIVE",
+      "classificationRationale": "Preserved protection for 700,000 DACA recipients; blocked unlawful rescission; temporary victory"
+    },
+    {
+      "id": "ED-2023-001",
+      "caseName": "Students for Fair Admissions v. President and Fellows of Harvard College",
+      "docketNumber": "20-1199",
+      "court": "U.S. Supreme Court",
+      "filingDate": "2021-02-25",
+      "currentStatus": "Decided",
+      "statusDate": "2023-06-29",
+      "parties": {
+        "plaintiffs": ["Students for Fair Admissions"],
+        "defendants": ["President and Fellows of Harvard College", "University of North Carolina"],
+        "intervenors": ["Student Groups (Amicus)", "Fortune 500 Companies (Amicus)", "Military Leaders (Amicus)"]
+      },
+      "claimsAndLegalBasis": {
+        "summary": "Challenge to race-conscious admissions policies at Harvard and University of North Carolina. Court held that such programs violate Equal Protection Clause by using race as a factor in admissions decisions, effectively overruling 45 years of precedent allowing limited consideration of race.",
+        "statutesAtIssue": ["Fourteenth Amendment (Equal Protection Clause)", "Title VI of Civil Rights Act of 1964"],
+        "reliefSought": ["Declaratory judgment that race-conscious admissions violates Constitution", "Permanent injunction against use of race in admissions"]
+      },
+      "operativeQuotes": [
+        {
+          "source": "Chief Justice John Roberts, Majority Opinion",
+          "quote": "Eliminating racial discrimination means eliminating all of it.",
+          "significance": "Court adopted 'colorblind' interpretation of Equal Protection, rejecting distinction between remedial and harmful uses of race"
+        },
+        {
+          "source": "Justice Sonia Sotomayor, Dissent",
+          "quote": "The Court cements a superficial rule of colorblindness as a constitutional principle in an endemically segregated society where race has always mattered and continues to matter.",
+          "significance": "Dissent argued ruling ignores ongoing reality of racial inequality in education"
+        }
+      ],
+      "agenciesInvolved": [
+        {
+          "agency": "ED",
+          "role": "Subsequent Enforcement",
+          "specificMandate": "Department must update Title VI guidance and investigate complaints of race-conscious admissions"
+        }
+      ],
+      "culturalImpactAnalysis": {
+        "affectedCommunities": ["African Descendant", "Latiné", "Indigenous", "Asian American"],
+        "impactByFramework": {
+          "people": "Decision affects admissions at all colleges and universities receiving federal funding. Early data shows significant drops in Black and Latiné enrollment at selective institutions. Asian American enrollment has increased at some schools.",
+          "places": "Impacts elite universities nationwide, including historically white institutions that used affirmative action to increase diversity. HBCUs may see enrollment increases as students seek diverse environments.",
+          "practices": "Ends 45 years of race-conscious admissions following Bakke (1978) and Grutter (2003). Universities scrambling to develop race-neutral alternatives like socioeconomic preferences and test-optional policies.",
+          "treasures": "Affirmative action in higher education was designed to remedy centuries of exclusion and create diverse learning environments. The ruling eliminates a key tool for addressing educational inequality."
+        },
+        "narrativeAssessment": "SFFA v. Harvard represents the culmination of Edward Blum's decades-long campaign against race-conscious policies. The decision reverses progress toward integrated higher education and signals broader attacks on diversity initiatives across American institutions."
+      },
+      "proceduralPosture": {
+        "stage": "Decided",
+        "trosIssued": false,
+        "preliminaryInjunction": false,
+        "upcomingDeadlines": []
+      },
+      "outcome": {
+        "currentDisposition": "6-3 ruling for petitioner; race-conscious admissions held unconstitutional",
+        "impactOnAgencyOperations": "ED issuing guidance on compliant admissions; investigating schools for continued race-consciousness",
+        "precedentialValue": "Devastating - Overruled Grutter v. Bollinger; ended race-conscious admissions; emboldened challenges to DEI programs"
+      },
+      "relatedActions": {
+        "executiveOrders": ["Trump EO on Combating Race and Sex Stereotyping (2020)", "Biden EO 14035 on DEI (2021)"],
+        "companionCases": ["Employment DEI challenges", "Corporate board diversity lawsuits"],
+        "consolidatedLitigation": true
+      },
+      "classification": "CRITICAL",
+      "classificationRationale": "Ended race-conscious admissions nationwide; reversed 45 years of precedent; triggered attacks on diversity programs"
+    },
+    {
+      "id": "COMMERCE-2019-001",
+      "caseName": "Department of Commerce v. New York (Census Citizenship Question)",
+      "docketNumber": "18-966",
+      "court": "U.S. Supreme Court",
+      "filingDate": "2019-01-25",
+      "currentStatus": "Decided",
+      "statusDate": "2019-06-27",
+      "parties": {
+        "plaintiffs": ["State of New York", "18 States", "U.S. Conference of Mayors", "NYIC Coalition"],
+        "defendants": ["Department of Commerce", "Wilbur Ross (Secretary)"],
+        "intervenors": ["ACLU (Amicus)", "Census Bureau Scientists (Amicus)"]
+      },
+      "claimsAndLegalBasis": {
+        "summary": "Challenge to Commerce Department's decision to add citizenship question to 2020 Census. Court found Secretary Ross provided 'contrived' justification (Voting Rights Act enforcement) for decision that would cause undercount of immigrant communities. Question blocked.",
+        "statutesAtIssue": ["Administrative Procedure Act", "Census Act", "Enumeration Clause (Article I)"],
+        "reliefSought": ["Vacatur of decision to add citizenship question", "Injunction preventing question on 2020 Census"]
+      },
+      "operativeQuotes": [
+        {
+          "source": "Chief Justice John Roberts, Majority Opinion",
+          "quote": "The reasoned explanation requirement of administrative law is meant to ensure that agencies offer genuine justifications for important decisions, reasons that can be scrutinized by courts and the interested public. The explanation offered here was pretextual.",
+          "significance": "Rare finding that agency action was pretextual - government lied about reasons for decision"
+        },
+        {
+          "source": "District Court Finding",
+          "quote": "Secretary Ross's rationale appears to have been contrived... the VRA played almost no part in the discussions surrounding the decision.",
+          "significance": "Court found evidence that Voting Rights Act rationale was fabricated after the decision was already made"
+        }
+      ],
+      "agenciesInvolved": [
+        {
+          "agency": "DOC",
+          "role": "Defendant",
+          "specificMandate": "Attempted to add untested citizenship question that Census Bureau warned would cause massive undercount"
+        }
+      ],
+      "culturalImpactAnalysis": {
+        "affectedCommunities": ["Latiné", "Asian American", "African Descendant"],
+        "impactByFramework": {
+          "people": "Citizenship question would have caused significant undercount in immigrant-heavy communities, reducing political representation and federal funding for schools, hospitals, roads, and social services.",
+          "places": "Most affected areas: immigrant gateway cities (New York, Los Angeles, Houston, Chicago, Miami) and border states (California, Texas, Arizona, New Mexico) with large undocumented populations.",
+          "practices": "Census is constitutionally required 'actual enumeration' of all persons regardless of citizenship. Question threatened to transform census from count of all residents to count of citizens only.",
+          "treasures": "An accurate census is foundational to representative democracy. Undercount would have diminished political power of diverse communities for a decade of redistricting and federal resource allocation."
+        },
+        "narrativeAssessment": "The citizenship question case revealed how the Trump administration attempted to weaponize the census to suppress political power of immigrant communities. The Court's rare finding of pretext exposed the administration's deception."
+      },
+      "proceduralPosture": {
+        "stage": "Decided",
+        "trosIssued": false,
+        "preliminaryInjunction": true,
+        "upcomingDeadlines": []
+      },
+      "outcome": {
+        "currentDisposition": "5-4 ruling for respondents; citizenship question blocked",
+        "impactOnAgencyOperations": "2020 Census conducted without citizenship question; Commerce abandoned effort after decision",
+        "precedentialValue": "Important - Strengthened APA pretext review; showed courts will scrutinize pretextual agency justifications"
+      },
+      "relatedActions": {
+        "executiveOrders": ["Trump EO on collecting citizenship data (2019)"],
+        "companionCases": ["California v. Ross", "Maryland citizenship question case"],
+        "consolidatedLitigation": true
+      },
+      "classification": "PROTECTIVE",
+      "classificationRationale": "Blocked effort to suppress immigrant community census participation; preserved accurate count"
+    },
+    {
+      "id": "DOI-2017-001",
+      "caseName": "NRDC v. Trump (Bears Ears National Monument)",
+      "docketNumber": "1:17-cv-02606",
+      "court": "U.S. District Court for the District of Columbia",
+      "filingDate": "2017-12-06",
+      "currentStatus": "Stayed Pending Appeal",
+      "statusDate": "2025-06-17",
+      "parties": {
+        "plaintiffs": ["NRDC", "Earthjustice", "Southern Utah Wilderness Alliance", "Hopi Tribe", "Navajo Nation", "Ute Mountain Ute Tribe", "Pueblo of Zuni", "Ute Indian Tribe"],
+        "defendants": ["Donald Trump (President)", "Department of the Interior"],
+        "intervenors": ["State of Utah", "San Juan County"]
+      },
+      "claimsAndLegalBasis": {
+        "summary": "Challenge to Trump proclamation reducing Bears Ears National Monument by 85%. Tribes and environmental groups argued President lacks authority under Antiquities Act to shrink monuments. Biden restored monument in 2021; Utah then sued to challenge restoration. Cases stayed pending 10th Circuit decision.",
+        "statutesAtIssue": ["Antiquities Act of 1906", "Administrative Procedure Act"],
+        "reliefSought": ["Declaratory judgment that reduction was unlawful", "Restoration of original monument boundaries"]
+      },
+      "operativeQuotes": [
+        {
+          "source": "Bears Ears Inter-Tribal Coalition Statement",
+          "quote": "Bears Ears is our ancestral homeland—a living cultural landscape where our creation stories began, where our ancestors are buried, where we still gather sacred medicines and materials for ceremonies.",
+          "significance": "Articulates profound spiritual and cultural significance of the landscape to five tribal nations"
+        },
+        {
+          "source": "District Court Order (August 2023)",
+          "quote": "The Antiquities Act gives the president broad authority to designate national monuments and courts cannot second-guess that authority.",
+          "significance": "Court dismissed challenges to Biden's restoration, affirming presidential monument authority"
+        }
+      ],
+      "agenciesInvolved": [
+        {
+          "agency": "DOI",
+          "role": "Defendant",
+          "specificMandate": "Implemented Trump proclamation reducing monument; later implemented Biden restoration"
+        }
+      ],
+      "culturalImpactAnalysis": {
+        "affectedCommunities": ["Indigenous", "Latiné"],
+        "impactByFramework": {
+          "people": "Five tribal nations (Hopi, Navajo, Ute Mountain Ute, Pueblo of Zuni, Ute Indian) have deep ancestral connections to Bears Ears. The Inter-Tribal Coalition spent years advocating for monument designation to protect sacred sites.",
+          "places": "Bears Ears contains over 100,000 archaeological sites including ancient cliff dwellings, rock art, burial grounds, and ceremonial sites dating back 13,000 years. Named for twin buttes that are sacred to multiple tribes.",
+          "practices": "Tribes continue to gather sacred plants, conduct ceremonies, and maintain spiritual connections to the landscape. Monument protection enables continued traditional practices while preventing looting and desecration.",
+          "treasures": "The cultural resources at Bears Ears represent irreplaceable heritage of Indigenous peoples of the Colorado Plateau. Archaeologists call it one of the most significant cultural landscapes in the United States."
+        },
+        "narrativeAssessment": "Bears Ears was the first national monument designated at the request of tribal nations under the Antiquities Act. Trump's reduction was the largest rollback of monument protections in U.S. history. Biden's restoration honored tribal advocacy and federal trust responsibility."
+      },
+      "proceduralPosture": {
+        "stage": "Stayed Pending 10th Circuit Decision",
+        "trosIssued": false,
+        "preliminaryInjunction": false,
+        "upcomingDeadlines": ["10th Circuit decision in Garfield County v. Biden"]
+      },
+      "outcome": {
+        "currentDisposition": "Monument restored to original boundaries (plus 11,200 acres) by Biden in 2021; Utah challenge pending",
+        "impactOnAgencyOperations": "BLM managing restored monument under collaborative tribal co-management framework",
+        "precedentialValue": "Pending - Could establish whether presidents can shrink monuments; affirmed broad designation authority"
+      },
+      "relatedActions": {
+        "executiveOrders": ["Trump EO 13792 (Review of Monument Designations)", "Biden Proclamation 10285 (2021)"],
+        "companionCases": ["Garfield County v. Biden", "Dalton v. Biden", "Grand Staircase-Escalante litigation"],
+        "consolidatedLitigation": false
+      },
+      "classification": "PROTECTIVE",
+      "classificationRationale": "Monument restored; tribal co-management implemented; Utah challenge pending but facing unfavorable precedent"
+    },
+    {
+      "id": "DOI-2017-002",
+      "caseName": "Wilderness Society v. Trump (Grand Staircase-Escalante National Monument)",
+      "docketNumber": "1:17-cv-02587",
+      "court": "U.S. District Court for the District of Columbia",
+      "filingDate": "2017-12-04",
+      "currentStatus": "Stayed Pending Appeal",
+      "statusDate": "2025-06-17",
+      "parties": {
+        "plaintiffs": ["Wilderness Society", "NRDC", "Earthjustice", "Grand Canyon Trust", "Society of Vertebrate Paleontology"],
+        "defendants": ["Donald Trump (President)", "Department of the Interior"],
+        "intervenors": ["State of Utah", "Kane County", "Garfield County"]
+      },
+      "claimsAndLegalBasis": {
+        "summary": "Challenge to Trump proclamation reducing Grand Staircase-Escalante National Monument by nearly half (approximately 900,000 acres). Monument nicknamed 'Science Monument' for its unparalleled paleontological resources. Biden restored monument in 2021; Utah lawsuit challenging restoration pending.",
+        "statutesAtIssue": ["Antiquities Act of 1906", "Administrative Procedure Act"],
+        "reliefSought": ["Declaratory judgment that reduction was unlawful", "Restoration of original monument boundaries"]
+      },
+      "operativeQuotes": [
+        {
+          "source": "Society of Vertebrate Paleontology Statement",
+          "quote": "Grand Staircase-Escalante contains arguably the best and most continuous record of Late Cretaceous terrestrial life in the world... The monument has yielded fossils of previously unknown dinosaur species found nowhere else on Earth.",
+          "significance": "Establishes irreplaceable scientific value of monument's paleontological resources"
+        }
+      ],
+      "agenciesInvolved": [
+        {
+          "agency": "DOI",
+          "role": "Defendant",
+          "specificMandate": "Implemented Trump proclamation reducing monument; later implemented Biden restoration"
+        }
+      ],
+      "culturalImpactAnalysis": {
+        "affectedCommunities": ["Indigenous", "Latiné"],
+        "impactByFramework": {
+          "people": "Monument namesake honors Spanish Dominguez-Escalante expedition of 1776. Archaeological sites connect ancestral Mesoamericans to Ancestral Puebloans. Scientific community relies on monument for paleontological research.",
+          "places": "Grand Staircase is a dramatic geological formation spanning millions of years. Monument contains prehistoric artifacts, pioneer-era sites, and some of the most spectacular canyon country in the American Southwest.",
+          "practices": "Scientific research in the monument has flourished since 1996 designation, yielding discoveries of previously unknown dinosaur species. Reduction opened areas to potential coal mining that would destroy fossil sites.",
+          "treasures": "Paleontological resources at Grand Staircase include complete dinosaur skeletons found nowhere else on Earth. These fossils are irreplaceable scientific treasures that once destroyed cannot be recovered."
+        },
+        "narrativeAssessment": "Grand Staircase-Escalante was designated by President Clinton in 1996 and became a world-renowned site for paleontological research. Trump's reduction threatened to open pristine fossil beds to coal mining. Biden's restoration protected this scientific heritage."
+      },
+      "proceduralPosture": {
+        "stage": "Stayed Pending 10th Circuit Decision",
+        "trosIssued": false,
+        "preliminaryInjunction": false,
+        "upcomingDeadlines": ["10th Circuit decision in Garfield County v. Biden"]
+      },
+      "outcome": {
+        "currentDisposition": "Monument restored to original boundaries by Biden in 2021; Utah challenge pending",
+        "impactOnAgencyOperations": "BLM managing restored monument; coal mining claims staked during reduction still contested",
+        "precedentialValue": "Pending - Linked to Bears Ears litigation on presidential authority under Antiquities Act"
+      },
+      "relatedActions": {
+        "executiveOrders": ["Trump EO 13792", "Biden Proclamation 10286 (2021)"],
+        "companionCases": ["Garfield County v. Biden", "Bears Ears litigation"],
+        "consolidatedLitigation": false
+      },
+      "classification": "PROTECTIVE",
+      "classificationRationale": "Monument restored; scientific resources protected; Utah challenge pending"
+    },
+    {
+      "id": "DOI-2020-003",
+      "caseName": "Indigenous Environmental Network v. Trump (Keystone XL)",
+      "docketNumber": "4:19-cv-00028",
+      "court": "U.S. District Court for the District of Montana",
+      "filingDate": "2019-03-19",
+      "currentStatus": "Dismissed as Moot",
+      "statusDate": "2021-06-09",
+      "parties": {
+        "plaintiffs": ["Indigenous Environmental Network", "North Coast Rivers Alliance", "Bold Alliance", "Sierra Club"],
+        "defendants": ["Donald Trump (President)", "Army Corps of Engineers"],
+        "intervenors": ["TC Energy (formerly TransCanada)"]
+      },
+      "claimsAndLegalBasis": {
+        "summary": "Challenge to Trump presidential permit authorizing Keystone XL pipeline to cross U.S.-Canada border. Plaintiffs argued permit violated Constitution by circumventing Congress's commerce authority. Case became moot when Biden revoked permit on first day in office and TC Energy abandoned project.",
+        "statutesAtIssue": ["Commerce Clause (Article I)", "Administrative Procedure Act", "National Environmental Policy Act"],
+        "reliefSought": ["Declaratory judgment that permit was unconstitutional", "Injunction against construction"]
+      },
+      "operativeQuotes": [
+        {
+          "source": "Biden Executive Order 13990 (January 20, 2021)",
+          "quote": "Leaving the Keystone XL pipeline permit in place would not be consistent with my Administration's economic and climate imperatives.",
+          "significance": "Biden revoked permit citing climate concerns, ending decade-long fight over pipeline"
+        }
+      ],
+      "agenciesInvolved": [
+        {
+          "agency": "DOI",
+          "role": "Related Agency",
+          "specificMandate": "Bureau of Land Management had approved right-of-way across 44 miles of federal lands"
+        },
+        {
+          "agency": "State",
+          "role": "Defendant (Original Permit)",
+          "specificMandate": "State Department initially denied permit under Obama; Trump bypassed with presidential permit"
+        }
+      ],
+      "culturalImpactAnalysis": {
+        "affectedCommunities": ["Indigenous"],
+        "impactByFramework": {
+          "people": "Pipeline route crossed lands of multiple tribal nations including Fort Peck, Fort Belknap, and Rosebud Sioux. Indigenous communities would bear risks of spills while seeing none of the economic benefits.",
+          "places": "Proposed route crossed the Ogallala Aquifer, which provides drinking water for 2 million people and irrigation for agriculture across eight states. Also crossed Missouri River, sacred to Sioux nations.",
+          "practices": "Tribal opposition to Keystone XL helped catalyze the broader Indigenous-led resistance to fossil fuel infrastructure that culminated at Standing Rock. 'Keep It In The Ground' became rallying cry.",
+          "treasures": "Water (mni) is sacred in Lakota tradition. Pipeline threatened to contaminate aquifers and rivers that sustain life across the Great Plains."
+        },
+        "narrativeAssessment": "Keystone XL became a symbol of the conflict between fossil fuel development and Indigenous rights/climate action. The decade-long fight demonstrated that sustained grassroots resistance can defeat major infrastructure projects."
+      },
+      "proceduralPosture": {
+        "stage": "Dismissed as Moot",
+        "trosIssued": false,
+        "preliminaryInjunction": true,
+        "upcomingDeadlines": []
+      },
+      "outcome": {
+        "currentDisposition": "Case dismissed after TC Energy abandoned project following Biden permit revocation",
+        "impactOnAgencyOperations": "Precedent that courts can halt construction pending environmental review; Biden's revocation affirmed presidential permit authority",
+        "precedentialValue": "Moderate - Established that controversial pipelines can be stopped through sustained litigation and advocacy"
+      },
+      "relatedActions": {
+        "executiveOrders": ["Trump Presidential Permit (2019)", "Biden EO 13990 (2021)"],
+        "companionCases": ["N. Plains Res. Council v. Army Corps (Nationwide Permit 12)", "Texas v. Biden (permit revocation challenge)"],
+        "consolidatedLitigation": false
+      },
+      "classification": "PROTECTIVE",
+      "classificationRationale": "Pipeline ultimately abandoned; Indigenous-led resistance succeeded; climate victory"
+    },
+    {
+      "id": "ED-2020-001",
+      "caseName": "B.P.J. v. West Virginia State Board of Education (Transgender Athletes)",
+      "docketNumber": "2:21-cv-00316",
+      "court": "U.S. District Court for the Southern District of West Virginia",
+      "filingDate": "2021-01-27",
+      "currentStatus": "Before Supreme Court",
+      "statusDate": "2026-01-07",
+      "parties": {
+        "plaintiffs": ["B.P.J. (minor)", "Parents of B.P.J."],
+        "defendants": ["West Virginia State Board of Education", "West Virginia Secondary School Activities Commission"],
+        "intervenors": ["ACLU (Counsel)", "Alliance Defending Freedom (Amicus for State)"]
+      },
+      "claimsAndLegalBasis": {
+        "summary": "Challenge by transgender girl to West Virginia's 'Save Women's Sports Act' banning transgender students from competing on sports teams matching their gender identity. Fourth Circuit found law violates Title IX. Supreme Court granted certiorari in July 2025; oral arguments held January 2026.",
+        "statutesAtIssue": ["Title IX of Education Amendments of 1972", "Fourteenth Amendment (Equal Protection)"],
+        "reliefSought": ["Declaratory judgment that law violates Title IX and Constitution", "Permanent injunction allowing plaintiff to compete"]
+      },
+      "operativeQuotes": [
+        {
+          "source": "Fourth Circuit Majority (April 2024)",
+          "quote": "West Virginia's categorical ban on transgender girls participating in girls' sports discriminates against B.P.J. on the basis of sex in violation of Title IX.",
+          "significance": "Circuit court held that discrimination based on transgender status is sex discrimination under Title IX"
+        }
+      ],
+      "agenciesInvolved": [
+        {
+          "agency": "ED",
+          "role": "Policy Authority",
+          "specificMandate": "Department issued 2024 Title IX regulations defining sex discrimination to include gender identity; regulations blocked by courts"
+        }
+      ],
+      "culturalImpactAnalysis": {
+        "affectedCommunities": ["All communities (LGBTQ+ individuals exist across all racial/ethnic groups)"],
+        "impactByFramework": {
+          "people": "B.P.J. has identified as female since third grade and has been taking puberty blockers. She qualified for state track meet. Case will affect transgender students nationwide - fewer than 10 of 500,000 NCAA athletes are transgender.",
+          "places": "West Virginia was among first states to pass transgender athlete ban. 25 states now have similar laws. Supreme Court decision will determine nationwide standard.",
+          "practices": "Title IX was enacted to ensure equal educational opportunities for women and girls. Litigation debates whether transgender inclusion supports or undermines that goal.",
+          "treasures": "School athletics are formative experiences that build confidence, community, and physical health. Excluding transgender students denies them these developmental benefits."
+        },
+        "narrativeAssessment": "Transgender athlete litigation represents a flashpoint in ongoing cultural debates about gender identity, women's rights, and federal civil rights law. The Supreme Court's decision will have profound implications for transgender students' ability to fully participate in school life."
+      },
+      "proceduralPosture": {
+        "stage": "Before Supreme Court - Oral Arguments January 2026",
+        "trosIssued": true,
+        "preliminaryInjunction": true,
+        "upcomingDeadlines": ["Supreme Court decision expected by June 2026"]
+      },
+      "outcome": {
+        "currentDisposition": "Fourth Circuit ruled for plaintiff; Supreme Court review underway",
+        "impactOnAgencyOperations": "ED Title IX regulations blocked; awaiting Supreme Court guidance on gender identity discrimination",
+        "precedentialValue": "Potentially Landmark - Will determine whether Title IX protects transgender students in athletics context"
+      },
+      "relatedActions": {
+        "executiveOrders": ["Trump EO on Defining Sex (2025)", "Biden Title IX Regulations (2024 - blocked)"],
+        "companionCases": ["Hecox v. Little (Idaho)", "Adams v. School Board (Florida bathrooms)"],
+        "consolidatedLitigation": false
+      },
+      "classification": "CRITICAL",
+      "classificationRationale": "Supreme Court case will set nationwide precedent on transgender student rights; high-profile cultural flashpoint"
+    }
+  ],
+  "classificationCriteria": {
+    "CRITICAL": {
+      "description": "Highest severity - immediate threat to cultural resources, communities, or rights",
+      "triggers": [
+        "Mass layoffs/RIFs at cultural agencies",
+        "Land/mineral rights transfers affecting sacred sites or ancestral lands",
+        "Environmental accountability rollbacks affecting communities of color",
+        "Grant terminations exceeding $100 million",
+        "Treaty violations",
+        "Constitutional challenges to fundamental rights"
+      ]
+    },
+    "PROTECTIVE": {
+      "description": "Favorable outcomes - successful defense of cultural resources",
+      "triggers": [
+        "Successful injunctions reinstating grants, staff, or protections",
+        "Favorable rulings upholding agency mandates or community rights",
+        "Court orders blocking harmful agency actions"
+      ]
+    },
+    "MODERATE": {
+      "description": "Significant concern requiring monitoring",
+      "triggers": [
+        "Content censorship, exhibit removal, or historical erasure",
+        "Procedural violations (APA notice-and-comment)",
+        "Agency actions under review but not yet litigated"
+      ]
+    },
+    "WATCH": {
+      "description": "Newly filed or developing - trajectory unclear",
+      "triggers": [
+        "Newly filed cases with unclear outcome",
+        "Agency actions announced but not yet implemented"
+      ]
+    }
+  }
+}

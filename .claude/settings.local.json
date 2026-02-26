@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(pip3 install:*)",
+      "Bash(echo:*)",
+      "Bash(/tmp/gate_css.txt:*)",
+      "WebFetch(domain:docs.google.com)",
+      "Bash(cat:*)",
+      "Bash(du -sh /private/tmp/*)",
+      "WebFetch(domain:www.culturekeeperscircle.org)"
+    ]
+  }
+}

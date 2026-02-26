@@ -1,0 +1,23 @@
+{
+  "name": "tckc-litigation-tracker",
+  "version": "1.0.0",
+  "description": "TCKC Federal Litigation Threat Tracker - Monitoring Federal Actions Affecting Cultural Resources & Communities",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "litigation",
+    "tracker",
+    "federal",
+    "cultural",
+    "civil-rights",
+    "environmental-justice"
+  ],
+  "author": "TCKC",
+  "license": "ISC",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

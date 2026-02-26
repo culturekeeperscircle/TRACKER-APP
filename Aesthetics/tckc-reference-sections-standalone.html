@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TCKC Reference Sections - Standalone</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   CSS VARIABLES - Customize these for your site
+   ============================================================ */
+:root {
+  --cream: #FFF8E7;
+  --black: #1A1A1A;
+  --gold: #C4A052;
+  --critical: #991B1B;
+  --critical-bg: #FEF2F2;
+  --moderate: #CA8A04;
+  --moderate-bg: #FEFCE8;
+  --protective: #065F46;
+  --protective-bg: #F0FDF4;
+  --purple: #7C3AED;
+  --purple-bg: #EDE9FE;
+  --cyan: #0891B2;
+  --cyan-bg: #CFFAFE;
+}
+
+/* ============================================================
+   BASE STYLES
+   ============================================================ */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { 
+  font-family: 'Inter', sans-serif; 
+  background: white; 
+  color: var(--black); 
+  line-height: 1.6; 
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ============================================================
+   REFERENCE SECTIONS - Toggle Buttons
+   ============================================================ */
+.reference-sections { 
+  margin-top: 16px; 
+  padding-top: 16px; 
+  border-top: 1px solid #eee; 
+}
+
+.ref-toggle { 
+  display: flex; 
+  align-items: center; 
+  gap: 6px; 
+  font-size: 0.75rem; 
+  color: #666; 
+  cursor: pointer; 
+  margin-bottom: 8px; 
+  transition: color 0.2s; 
+}
+.ref-toggle:hover { color: var(--black); }
+.ref-toggle .icon { font-size: 0.85rem; }
+
+.ref-content { display: none; margin-bottom: 16px; }
+.ref-content.show { display: block; }
+
+/* ============================================================
+   THREAT LEVEL CRITERIA CARDS
+   ============================================================ */
+.criteria-grid { 
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 12px; 
+  margin-top: 12px; 
+}
+.criteria-card { 
+  padding: 12px; 
+  border-radius: 8px; 
+  border-left: 4px solid; 
+}
+.criteria-card.critical { background: var(--critical-bg); border-color: var(--critical); }
+.criteria-card.moderate { background: var(--moderate-bg); border-color: var(--moderate); }
+.criteria-card.protective { background: var(--protective-bg); border-color: var(--protective); }
+.criteria-card h4 { 
+  font-size: 0.85rem; 
+  margin-bottom: 6px; 
+  display: flex; 
+  align-items: center; 
+  gap: 6px; 
+}
+.criteria-card.critical h4 { color: var(--critical); }
+.criteria-card.moderate h4 { color: var(--moderate); }
+.criteria-card.protective h4 { color: var(--protective); }
+.criteria-card p { font-size: 0.7rem; color: #666; margin-bottom: 8px; }
+.criteria-card ul { list-style: none; }
+.criteria-card li { 
+  font-size: 0.7rem; 
+  color: #374151; 
+  padding: 2px 0; 
+  display: flex; 
+  align-items: flex-start; 
+  gap: 4px; 
+}
+.criteria-card li::before { content: "•"; color: #999; }
+
+/* ============================================================
+   HERITAGE CATEGORIES (Tangible/Intangible)
+   ============================================================ */
+.heritage-grid { 
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 12px; 
+  margin-top: 12px; 
+}
+.heritage-card { 
+  padding: 12px; 
+  border-radius: 8px; 
+  border-left: 4px solid; 
+}
+.heritage-card.tangible { background: var(--purple-bg); border-color: var(--purple); }
+.heritage-card.intangible { background: var(--cyan-bg); border-color: var(--cyan); }
+.heritage-card h4 { font-size: 0.85rem; margin-bottom: 4px; }
+.heritage-card.tangible h4 { color: var(--purple); }
+.heritage-card.intangible h4 { color: var(--cyan); }
+.heritage-card p { font-size: 0.7rem; color: #666; margin-bottom: 8px; }
+.heritage-card .resources { display: flex; gap: 6px; flex-wrap: wrap; }
+.heritage-card .resource-tag { 
+  background: white; 
+  padding: 3px 8px; 
+  border-radius: 12px; 
+  font-size: 0.7rem; 
+}
+
+/* ============================================================
+   FOUR P's FRAMEWORK CARDS
+   ============================================================ */
+.fourps-grid { 
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 12px; 
+  margin-top: 12px; 
+}
+.fourps-card { 
+  background: white; 
+  padding: 14px; 
+  border-radius: 8px; 
+  border: 2px solid #eee; 
+}
+.fourps-card h4 { 
+  font-size: 0.9rem; 
+  display: flex; 
+  align-items: center; 
+  gap: 8px; 
+  margin-bottom: 4px; 
+}
+.fourps-card h4 .icon { font-size: 1.3rem; }
+.fourps-card .category-tag { 
+  font-size: 0.65rem; 
+  padding: 2px 8px; 
+  border-radius: 10px; 
+}
+.fourps-card .category-tag.tangible { background: var(--purple-bg); color: var(--purple); }
+.fourps-card .category-tag.intangible { background: var(--cyan-bg); color: var(--cyan); }
+.fourps-card .description { font-size: 0.75rem; color: #666; margin: 8px 0; }
+.fourps-card h5 { font-size: 0.7rem; color: var(--black); margin: 8px 0 4px; }
+.fourps-card ul { list-style: none; }
+.fourps-card li { font-size: 0.7rem; color: #666; padding: 1px 0; }
+
+/* ============================================================
+   AGENCY ORGANIZATIONAL CHARTS
+   ============================================================ */
+.agency-grid { 
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 12px; 
+  margin-top: 12px; 
+}
+.agency-card { 
+  background: white; 
+  padding: 12px; 
+  border-radius: 8px; 
+  border: 1px solid #ddd; 
+}
+.agency-card h4 { font-size: 0.85rem; margin-bottom: 8px; color: var(--black); }
+.agency-card h4 .code { font-weight: 700; }
+.agency-card h4 .count { opacity: 0.5; font-weight: 400; }
+.agency-card ul { list-style: none; }
+.agency-card li { font-size: 0.7rem; color: #666; padding: 2px 0; }
+.agency-card li .sub-code { font-weight: 600; color: var(--black); }
+
+/* ============================================================
+   RESPONSIVE DESIGN
+   ============================================================ */
+@media (max-width: 1024px) {
+  .criteria-grid { grid-template-columns: 1fr; }
+  .agency-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .heritage-grid, .fourps-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .agency-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1 style="margin-bottom: 20px; font-size: 1.5rem;">TCKC Reference Sections</h1>
+  
+  <div class="reference-sections">
+
+    <!-- ============================================================
+         SECTION 1: Threat Level Classification Criteria 
+         ============================================================ -->
+    <div class="ref-toggle" onclick="toggleRef('criteria')">
+      <span class="icon">⚠️</span>
+      <span id="criteriaToggleText">View Threat Level Classification Criteria</span>
+      <span id="criteriaArrow">▼</span>
+    </div>
+    <div class="ref-content" id="criteriaContent">
+      <div class="criteria-grid">
+        <div class="criteria-card critical">
+          <h4>🔴 Critical Risk</h4>
+          <p>Severe threat to cultural resources and communities</p>
+          <ul>
+            <li>Significantly harms communities' access to and enjoyment of cultural places and treasures</li>
+            <li>Defunds or eliminates programs supporting cultural practices and heritage preservation</li>
+            <li>Actively discriminates against people, especially members of cultural communities</li>
+            <li>Threatens irreversible damage to cultural resources, sacred sites, or traditional practices</li>
+            <li>Eliminates federal protections for cultural heritage or Indigenous rights</li>
+          </ul>
+        </div>
+        <div class="criteria-card moderate">
+          <h4>🟡 Moderate Risk</h4>
+          <p>Notable concern for cultural resources and communities</p>
+          <ul>
+            <li>Reduces or limits communities' access to cultural places and treasures</li>
+            <li>Decreases funding or resources for cultural practices and heritage programs</li>
+            <li>Discourages participation in or support for cultural activities</li>
+            <li>Creates administrative barriers to cultural preservation efforts</li>
+            <li>Weakens existing protections without fully eliminating them</li>
+          </ul>
+        </div>
+        <div class="criteria-card protective">
+          <h4>🟢 Protective</h4>
+          <p>Supports and strengthens cultural resources and communities</p>
+          <ul>
+            <li>Augments or increases communities' access to cultural places and treasures</li>
+            <li>Provides funding or resources to support cultural practices and heritage preservation</li>
+            <li>Raises general public awareness and support for cultural communities</li>
+            <li>Strengthens legal protections for cultural resources, sacred sites, or traditional practices</li>
+            <li>Promotes inclusion and recognition of diverse cultural communities</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         SECTION 2: Definitions of Cultural Resources
+         ============================================================ -->
+    <div class="ref-toggle" onclick="toggleRef('resources')">
+      <span class="icon">📚</span>
+      <span id="resourcesToggleText">View Definitions of Cultural Resources</span>
+      <span id="resourcesArrow">▼</span>
+    </div>
+    <div class="ref-content" id="resourcesContent">
+      <!-- Heritage Categories Overview -->
+      <div class="heritage-grid">
+        <div class="heritage-card tangible">
+          <h4>Tangible Cultural Heritage</h4>
+          <p>Physical, material expressions of cultural heritage that can be touched, seen, and preserved</p>
+          <div class="resources">
+            <span class="resource-tag">📍 Places</span>
+            <span class="resource-tag">💎 Treasures</span>
+          </div>
+        </div>
+        <div class="heritage-card intangible">
+          <h4>Intangible Cultural Heritage</h4>
+          <p>Living expressions of cultural heritage passed through generations, including traditions, knowledge, and skills</p>
+          <div class="resources">
+            <span class="resource-tag">👥 People</span>
+            <span class="resource-tag">🎨 Practices</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Four P's Framework -->
+      <div class="fourps-grid">
+        <div class="fourps-card">
+          <h4><span class="icon">👥</span> People <span class="category-tag intangible">Intangible</span></h4>
+          <p class="description">Cultural community members and heritage bearers - the individuals and communities who create, maintain, and transmit cultural traditions.</p>
+          <h5>Includes:</h5>
+          <ul>
+            <li>• Cultural practitioners, artists, and tradition bearers</li>
+            <li>• Indigenous peoples and tribal community members</li>
+            <li>• Immigrant and diaspora communities</li>
+            <li>• Language speakers and teachers of indigenous languages</li>
+            <li>• Elders and knowledge keepers</li>
+          </ul>
+        </div>
+        <div class="fourps-card">
+          <h4><span class="icon">📍</span> Places <span class="category-tag tangible">Tangible</span></h4>
+          <p class="description">Historic sites and cultural landscapes - the physical spaces where cultural heritage exists and cultural practices occur.</p>
+          <h5>Includes:</h5>
+          <ul>
+            <li>• Historic sites and districts</li>
+            <li>• Sacred sites and ceremonial grounds</li>
+            <li>• National parks, monuments, and heritage areas</li>
+            <li>• Museums, libraries, and archives</li>
+            <li>• Burial grounds and memorial sites</li>
+          </ul>
+        </div>
+        <div class="fourps-card">
+          <h4><span class="icon">🎨</span> Practices <span class="category-tag intangible">Intangible</span></h4>
+          <p class="description">Living traditions and cultural expressions - the knowledge and skills transmitted through generations within communities.</p>
+          <h5>Includes:</h5>
+          <ul>
+            <li>• Traditional arts, crafts, and artistic expressions</li>
+            <li>• Oral traditions, storytelling, and folklore</li>
+            <li>• Music, dance, and performing arts</li>
+            <li>• Religious and spiritual ceremonies</li>
+            <li>• Traditional ecological knowledge</li>
+          </ul>
+        </div>
+        <div class="fourps-card">
+          <h4><span class="icon">💎</span> Treasures <span class="category-tag tangible">Tangible</span></h4>
+          <p class="description">Cultural objects and material heritage - the physical artifacts and materials that embody cultural significance.</p>
+          <h5>Includes:</h5>
+          <ul>
+            <li>• Museum collections and cultural artifacts</li>
+            <li>• Artworks, sculptures, and visual art</li>
+            <li>• Manuscripts, documents, and archives</li>
+            <li>• Sacred objects and ceremonial items</li>
+            <li>• Ancestral remains and funerary objects</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         SECTION 3: Agency Organizational Charts
+         ============================================================ -->
+    <div class="ref-toggle" onclick="toggleRef('agencies')">
+      <span class="icon">🏛️</span>
+      <span id="agenciesToggleText">View Agency Organizational Charts</span>
+      <span id="agenciesArrow">▼</span>
+    </div>
+    <div class="ref-content" id="agenciesContent">
+      <div class="agency-grid">
+        <!-- DOI -->
+        <div class="agency-card">
+          <h4><span class="code">DOI</span> - Department of the Interior <span class="count">(10)</span></h4>
+          <ul>
+            <li><span class="sub-code">NPS</span> - National Park Service</li>
+            <li><span class="sub-code">BLM</span> - Bureau of Land Management</li>
+            <li><span class="sub-code">BIA</span> - Bureau of Indian Affairs</li>
+            <li><span class="sub-code">BOR</span> - Bureau of Reclamation</li>
+            <li><span class="sub-code">FWS</span> - U.S. Fish and Wildlife Service</li>
+            <li><span class="sub-code">USGS</span> - U.S. Geological Survey</li>
+            <li><span class="sub-code">OSM</span> - Office of Surface Mining</li>
+            <li><span class="sub-code">BOEM</span> - Bureau of Ocean Energy Management</li>
+            <li><span class="sub-code">BSEE</span> - Bureau of Safety and Environmental Enforcement</li>
+            <li><span class="sub-code">ONRR</span> - Office of Natural Resources Revenue</li>
+          </ul>
+        </div>
+        <!-- EPA -->
+        <div class="agency-card">
+          <h4><span class="code">EPA</span> - Environmental Protection Agency <span class="count">(7)</span></h4>
+          <ul>
+            <li><span class="sub-code">OAR</span> - Office of Air and Radiation</li>
+            <li><span class="sub-code">OW</span> - Office of Water</li>
+            <li><span class="sub-code">OLEM</span> - Office of Land and Emergency Management</li>
+            <li><span class="sub-code">OCSPP</span> - Office of Chemical Safety and Pollution Prevention</li>
+            <li><span class="sub-code">OECA</span> - Office of Enforcement and Compliance Assurance</li>
+            <li><span class="sub-code">OEJ</span> - Office of Environmental Justice</li>
+            <li><span class="sub-code">REGIONS</span> - Regional Offices (1-10)</li>
+          </ul>
+        </div>
+        <!-- NOAA -->
+        <div class="agency-card">
+          <h4><span class="code">NOAA</span> - National Oceanic and Atmospheric Administration <span class="count">(6)</span></h4>
+          <ul>
+            <li><span class="sub-code">NMFS</span> - National Marine Fisheries Service</li>
+            <li><span class="sub-code">NOS</span> - National Ocean Service</li>
+            <li><span class="sub-code">NWS</span> - National Weather Service</li>
+            <li><span class="sub-code">OAR</span> - Office of Oceanic and Atmospheric Research</li>
+            <li><span class="sub-code">NESDIS</span> - National Environmental Satellite, Data, and Information Service</li>
+            <li><span class="sub-code">OMAO</span> - Office of Marine and Aviation Operations</li>
+          </ul>
+        </div>
+        <!-- NARA -->
+        <div class="agency-card">
+          <h4><span class="code">NARA</span> - National Archives and Records Administration <span class="count">(5)</span></h4>
+          <ul>
+            <li><span class="sub-code">OFR</span> - Office of the Federal Register</li>
+            <li><span class="sub-code">NHPRC</span> - National Historical Publications and Records Commission</li>
+            <li><span class="sub-code">PL</span> - Presidential Libraries</li>
+            <li><span class="sub-code">OGIS</span> - Office of Government Information Services</li>
+            <li><span class="sub-code">ISOO</span> - Information Security Oversight Office</li>
+          </ul>
+        </div>
+        <!-- LOC -->
+        <div class="agency-card">
+          <h4><span class="code">LOC</span> - Library of Congress <span class="count">(7)</span></h4>
+          <ul>
+            <li><span class="sub-code">CRS</span> - Congressional Research Service</li>
+            <li><span class="sub-code">USCO</span> - U.S. Copyright Office</li>
+            <li><span class="sub-code">AFC</span> - American Folklife Center</li>
+            <li><span class="sub-code">CFB</span> - Center for the Book</li>
+            <li><span class="sub-code">FEDLINK</span> - Federal Library and Information Network</li>
+            <li><span class="sub-code">NLS</span> - National Library Service for the Blind</li>
+            <li><span class="sub-code">VHP</span> - Veterans History Project</li>
+          </ul>
+        </div>
+        <!-- SMITHSONIAN -->
+        <div class="agency-card">
+          <h4><span class="code">SMITHSONIAN</span> - Smithsonian Institution <span class="count">(23)</span></h4>
+          <ul>
+            <li><span class="sub-code">NMAH</span> - National Museum of American History</li>
+            <li><span class="sub-code">NMNH</span> - National Museum of Natural History</li>
+            <li><span class="sub-code">NMAAHC</span> - National Museum of African American History and Culture</li>
+            <li><span class="sub-code">NMAI</span> - National Museum of the American Indian</li>
+            <li><span class="sub-code">NASM</span> - National Air and Space Museum</li>
+            <li><span class="sub-code">SAAM</span> - Smithsonian American Art Museum</li>
+            <li><span class="sub-code">NPG</span> - National Portrait Gallery</li>
+            <li><span class="sub-code">NMAL</span> - National Museum of the American Latino</li>
+            <li><span class="sub-code">SAWHM</span> - Smithsonian American Women's History Museum</li>
+            <li><span class="sub-code">ACM</span> - Anacostia Community Museum</li>
+            <li><span class="sub-code">SLA</span> - Smithsonian Libraries and Archives</li>
+            <li style="opacity: 0.6; font-style: italic;">+ 12 more museums and research centers...</li>
+          </ul>
+        </div>
+        <!-- IMLS -->
+        <div class="agency-card">
+          <h4><span class="code">IMLS</span> - Institute of Museum and Library Services <span class="count">(4)</span></h4>
+          <ul>
+            <li><span class="sub-code">OMS</span> - Office of Museum Services</li>
+            <li><span class="sub-code">OLS</span> - Office of Library Services</li>
+            <li><span class="sub-code">ODL</span> - Office of Digital and Library Innovation</li>
+            <li><span class="sub-code">OGPM</span> - Office of Grants Policy and Management</li>
+          </ul>
+        </div>
+        <!-- NEA -->
+        <div class="agency-card">
+          <h4><span class="code">NEA</span> - National Endowment for the Arts <span class="count">(5)</span></h4>
+          <ul>
+            <li><span class="sub-code">GAP</span> - Grants for Arts Projects</li>
+            <li><span class="sub-code">CA</span> - Challenge America</li>
+            <li><span class="sub-code">CWF</span> - Creative Writing Fellowships</li>
+            <li><span class="sub-code">RA</span> - Research & Analysis</li>
+            <li><span class="sub-code">AEP</span> - Arts Education Partnership</li>
+          </ul>
+        </div>
+        <!-- NEH -->
+        <div class="agency-card">
+          <h4><span class="code">NEH</span> - National Endowment for the Humanities <span class="count">(6)</span></h4>
+          <ul>
+            <li><span class="sub-code">DRP</span> - Division of Research Programs</li>
+            <li><span class="sub-code">DEP</span> - Division of Education Programs</li>
+            <li><span class="sub-code">DPP</span> - Division of Public Programs</li>
+            <li><span class="sub-code">DPA</span> - Division of Preservation and Access</li>
+            <li><span class="sub-code">OCG</span> - Office of Challenge Grants</li>
+            <li><span class="sub-code">FSP</span> - Federal/State Partnership</li>
+          </ul>
+        </div>
+        <!-- KENNEDY -->
+        <div class="agency-card">
+          <h4><span class="code">KENNEDY</span> - John F. Kennedy Center <span class="count">(4)</span></h4>
+          <ul>
+            <li><span class="sub-code">NSO</span> - National Symphony Orchestra</li>
+            <li><span class="sub-code">WNO</span> - Washington National Opera</li>
+            <li><span class="sub-code">VSA</span> - VSA and Accessibility</li>
+            <li><span class="sub-code">KCED</span> - Kennedy Center Education</li>
+          </ul>
+        </div>
+        <!-- CPB -->
+        <div class="agency-card">
+          <h4><span class="code">CPB</span> - Corporation for Public Broadcasting <span class="count">(4)</span></h4>
+          <ul>
+            <li><span class="sub-code">PBS</span> - Public Broadcasting Service</li>
+            <li><span class="sub-code">NPR</span> - National Public Radio</li>
+            <li><span class="sub-code">RTL</span> - Ready To Learn</li>
+            <li><span class="sub-code">CSG</span> - Community Service Grants</li>
+          </ul>
+        </div>
+        <!-- DHS -->
+        <div class="agency-card">
+          <h4><span class="code">DHS</span> - Department of Homeland Security <span class="count">(5)</span></h4>
+          <ul>
+            <li><span class="sub-code">ICE</span> - Immigration and Customs Enforcement</li>
+            <li><span class="sub-code">CBP</span> - Customs and Border Protection</li>
+            <li><span class="sub-code">USCIS</span> - U.S. Citizenship and Immigration Services</li>
+            <li><span class="sub-code">SEVP</span> - Student and Exchange Visitor Program</li>
+            <li><span class="sub-code">EOIR</span> - Executive Office for Immigration Review</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================================
+     JAVASCRIPT
+     ============================================================ -->
+<script>
+function toggleRef(section) {
+  const content = document.getElementById(section + 'Content');
+  const arrow = document.getElementById(section + 'Arrow');
+  const text = document.getElementById(section + 'ToggleText');
+  
+  content.classList.toggle('show');
+  arrow.textContent = content.classList.contains('show') ? '▲' : '▼';
+  
+  const labels = {
+    criteria: 'Threat Level Classification Criteria',
+    resources: 'Definitions of Cultural Resources',
+    agencies: 'Agency Organizational Charts'
+  };
+  
+  text.textContent = (content.classList.contains('show') ? 'Hide ' : 'View ') + labels[section];
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1071 @@
+
+================================================================================
+ENTRIES FROM OCTOBER 2025 ONWARD WITH COMMUNITY SECTIONS < 250 WORDS
+================================================================================
+
+Total entries flagged: 97
+
+1. ID: blm-anwr-leasing-reopened
+   Category: agency_actions
+   Date: 2025-10-01
+   Title: ANWR Coastal Plain Leasing Reopened
+   Flagged communities:
+      - indigenous: 200 words total
+        (people: 54, places: 51, practices: 47, treasures: 48)
+      - alaskaNative: 61 words total
+        (people: 26, places: 11, practices: 16, treasures: 8)
+
+2. ID: oglala-bia-police-lawsuit
+   Category: litigation
+   Date: 2025-10-15
+   Title: Oglala Sioux Tribe v. DOI (Third Lawsuit)
+   Flagged communities:
+      - indigenous: 123 words total
+        (people: 42, places: 29, practices: 24, treasures: 28)
+
+3. ID: v2025-doi-007
+   Category: litigation
+   Date: 2025-10-15
+   Title: Oglala Sioux Tribe Files Third Lawsuit Over Police Funding
+   Flagged communities:
+      - indigenous: 128 words total
+        (people: 41, places: 28, practices: 35, treasures: 24)
+
+4. ID: ct-v-usda-snap-shutdown-2025
+   Category: litigation
+   Date: 2025-10-20
+   Title: Connecticut v. USDA: SNAP Shutdown Challenge
+   Flagged communities:
+      - africanDescendant: 81 words total
+        (people: 19, places: 16, practices: 26, treasures: 20)
+      - indigenous: 49 words total
+        (people: 14, places: 11, practices: 13, treasures: 11)
+      - latine: 41 words total
+        (people: 11, places: 9, practices: 11, treasures: 10)
+      - children: 43 words total
+        (people: 12, places: 12, practices: 9, treasures: 10)
+
+5. ID: v2025-usda-002
+   Category: agency_actions
+   Date: 2025-10-28
+   Title: USDA Suspended SNAP Benefits During Government Shutdown
+   Flagged communities:
+      - africanDescendant: 121 words total
+        (people: 29, places: 29, practices: 33, treasures: 30)
+      - indigenous: 62 words total
+        (people: 20, places: 15, practices: 18, treasures: 9)
+      - latine: 62 words total
+        (people: 18, places: 16, practices: 18, treasures: 10)
+      - lowIncome: 53 words total
+        (people: 18, places: 15, practices: 11, treasures: 9)
+
+6. ID: v2025-imm-004
+   Category: agency_actions
+   Date: 2025-10-30
+   Title: Refugee Admissions Slashed to Record Low 7,500: Afrikaners Prioritized
+   Flagged communities:
+      - africanDescendant: 92 words total
+        (people: 26, places: 25, practices: 20, treasures: 21)
+
+7. ID: usda-snap-shutdown-2025
+   Category: agency_actions
+   Date: 2025-11-01
+   Title: USDA Froze SNAP Benefits During Government Shutdown
+   Flagged communities:
+      - lowIncome: 125 words total
+        (people: 40, places: 31, practices: 31, treasures: 23)
+      - children: 85 words total
+        (people: 30, places: 23, practices: 21, treasures: 11)
+      - immigrant: 94 words total
+        (people: 31, places: 16, practices: 13, treasures: 34)
+
+8. ID: v2025-imm-001
+   Category: agency_actions
+   Date: 2025-11-08
+   Title: TPS Terminated for 1.5+ Million Immigrants: Largest Mass Status Loss in U.S. History
+   Flagged communities:
+      - latine: 88 words total
+        (people: 23, places: 24, practices: 18, treasures: 23)
+
+9. ID: intl-ref-v2025-imm-001
+   Category: international
+   Date: 2025-11-08
+   Title: TPS Terminated for 1.5+ Million: Largest Mass Status Loss in History
+   Flagged communities:
+      - latine: 69 words total
+        (people: 24, places: 18, practices: 16, treasures: 11)
+      - caribbean: 38 words total
+        (people: 20, places: 9, practices: 0, treasures: 9)
+      - africanDescendant: 19 words total
+        (people: 10, places: 0, practices: 9, treasures: 0)
+      - asianAmerican: 15 words total
+        (people: 8, places: 0, practices: 7, treasures: 0)
+
+10. ID: leg-2025-007
+   Category: legislation
+   Date: 2025-11-12
+   Title: P.L. 119-137: Continuing Appropriations and Extensions Act, 2026 - Government Shutdown Ended
+   Flagged communities:
+      - indigenous: 106 words total
+        (people: 29, places: 31, practices: 21, treasures: 25)
+      - africanDescendant: 97 words total
+        (people: 28, places: 27, practices: 20, treasures: 22)
+      - latine: 82 words total
+        (people: 25, places: 23, practices: 20, treasures: 14)
+      - asianAmerican: 78 words total
+        (people: 23, places: 21, practices: 19, treasures: 15)
+      - pacificIslander: 68 words total
+        (people: 20, places: 20, practices: 17, treasures: 11)
+
+11. ID: ed-program-transfers-2025
+   Category: agency_actions
+   Date: 2025-11-15
+   Title: Education Department Programs Transferred to Other Agencies
+   Flagged communities:
+      - disabled: 121 words total
+        (people: 42, places: 31, practices: 26, treasures: 22)
+      - indigenous: 70 words total
+        (people: 26, places: 17, practices: 15, treasures: 12)
+      - lowIncome: 104 words total
+        (people: 41, places: 28, practices: 19, treasures: 16)
+
+12. ID: v2025-ed-002
+   Category: agency_actions
+   Date: 2025-11-15
+   Title: Education Department Programs Transferred to Inexperienced Agencies
+   Flagged communities:
+      - disabled: 76 words total
+        (people: 29, places: 15, practices: 18, treasures: 14)
+
+13. ID: afghan-visa-halt
+   Category: agency_actions
+   Date: 2025-12-01
+   Title: Indefinite Halt on All Afghan Visas and Asylum Decisions
+   Flagged communities:
+      - immigrant: 102 words total
+        (people: 34, places: 22, practices: 22, treasures: 24)
+      - ruralCommunities: 115 words total
+        (people: 34, places: 32, practices: 22, treasures: 27)
+      - women: 48 words total
+        (people: 16, places: 9, practices: 11, treasures: 12)
+
+14. ID: v2025-doi-006
+   Category: agency_actions
+   Date: 2025-12-01
+   Title: NPR: A Protections Rescinded; 82% Opened to Drilling
+   Flagged communities:
+      - indigenous: 104 words total
+        (people: 26, places: 25, practices: 25, treasures: 28)
+
+15. ID: intl-ref-v2025-imm-011
+   Category: international
+   Date: 2025-12-01
+   Title: Afghan Visas Halted Indefinitely: Treaty Interpreters Abandoned
+   Flagged communities:
+      - middleEastern: 56 words total
+        (people: 23, places: 10, practices: 12, treasures: 11)
+      - muslim: 19 words total
+        (people: 9, places: 0, practices: 10, treasures: 0)
+      - veterans: 25 words total
+        (people: 11, places: 0, practices: 6, treasures: 8)
+
+16. ID: v2025-imls-003
+   Category: litigation
+   Date: 2025-12-03
+   Title: IMLS Grants Reinstated After Federal Court Victory
+   Flagged communities:
+      - allCommunities: 95 words total
+        (people: 33, places: 18, practices: 24, treasures: 20)
+
+17. ID: v2025-imm-005
+   Category: litigation
+   Date: 2025-12-05
+   Title: Birthright Citizenship Order Challenged - Supreme Court to Rule
+   Flagged communities:
+      - latine: 110 words total
+        (people: 37, places: 22, practices: 28, treasures: 23)
+
+18. ID: DHS-2025-002
+   Category: litigation
+   Date: 2025-12-05
+   Title: Trump v. Barbara (Birthright Citizenship)
+   Flagged communities:
+      - latiné: 195 words total
+        (people: 63, places: 42, practices: 52, treasures: 38)
+      - asianAmerican: 173 words total
+        (people: 58, places: 40, practices: 36, treasures: 39)
+      - africanDescendant: 155 words total
+        (people: 48, places: 28, practices: 42, treasures: 37)
+      - pacificIslander: 128 words total
+        (people: 42, places: 29, practices: 26, treasures: 31)
+
+19. ID: boem-bbg1-lease-sale
+   Category: agency_actions
+   Date: 2025-12-10
+   Title: Big Beautiful Gulf 1 Offshore Lease Sale
+   Flagged communities:
+      - indigenous: 156 words total
+        (people: 47, places: 42, practices: 39, treasures: 28)
+      - africanDescendant: 145 words total
+        (people: 37, places: 34, practices: 33, treasures: 41)
+      - latine: 111 words total
+        (people: 31, places: 31, practices: 27, treasures: 22)
+      - asianAmerican: 135 words total
+        (people: 38, places: 35, practices: 35, treasures: 27)
+      - coastalCommunities: 108 words total
+        (people: 31, places: 31, practices: 25, treasures: 21)
+
+20. ID: v2025-doi-005
+   Category: agency_actions
+   Date: 2025-12-10
+   Title: First OBBBA Offshore Lease Sale Generates $300 Million
+   Flagged communities:
+      - vietnameseAmerican: 97 words total
+        (people: 27, places: 25, practices: 24, treasures: 21)
+
+21. ID: v2025-doi-004b
+   Category: agency_actions
+   Date: 2025-12-10
+   Title: BOEM Holds First Lease Sale Under One Big Beautiful Bill Act
+   Flagged communities:
+      - gulfCoast: 80 words total
+        (people: 21, places: 20, practices: 18, treasures: 21)
+
+22. ID: leg-2024-013
+   Category: legislation
+   Date: 2025-12-15
+   Title: S. 3490: (119th): National Historical Park and National Historic Landmark Establishment and Boundary...
+   Flagged communities:
+      - allCommunities: 199 words total
+        (people: 59, places: 50, practices: 45, treasures: 45)
+
+23. ID: proc-dec-2025-travel-ban
+   Category: executive_orders
+   Date: 2025-12-16
+   Title: Further Restricting the Entry of Foreign Nationals to Protect the Security of the United States
+   Flagged communities:
+      - africanDescendant: 240 words total
+        (people: 77, places: 56, practices: 53, treasures: 54)
+      - caribbean: 165 words total
+        (people: 49, places: 43, practices: 40, treasures: 33)
+      - middleEastern: 162 words total
+        (people: 43, places: 38, practices: 41, treasures: 40)
+      - muslim: 159 words total
+        (people: 50, places: 33, practices: 44, treasures: 32)
+      - immigrant: 150 words total
+        (people: 46, places: 34, practices: 37, treasures: 33)
+
+24. ID: v2025-imm-002
+   Category: executive_orders
+   Date: 2025-12-16
+   Title: Expanded Travel Ban Blocks 39 Countries - Africa Hardest Hit
+   Flagged communities:
+      - africanDescendant: 144 words total
+        (people: 39, places: 32, practices: 41, treasures: 32)
+      - middleEastern: 73 words total
+        (people: 21, places: 18, practices: 22, treasures: 12)
+
+25. ID: intl-ref-v2025-imm-002
+   Category: international
+   Date: 2025-12-16
+   Title: Expanded Travel Ban: Africa Hardest Hit (39 Countries Blocked)
+   Flagged communities:
+      - africanDescendant: 65 words total
+        (people: 26, places: 19, practices: 8, treasures: 12)
+      - muslim: 19 words total
+        (people: 11, places: 0, practices: 8, treasures: 0)
+      - middleEastern: 19 words total
+        (people: 14, places: 0, practices: 5, treasures: 0)
+      - latine: 17 words total
+        (people: 13, places: 0, practices: 4, treasures: 0)
+
+26. ID: ncar-dismantling
+   Category: agency_actions
+   Date: 2025-12-17
+   Title: OMB Orders NSF to Dismantle National Center for Atmospheric Research
+   Flagged communities:
+      - indigenous: 98 words total
+        (people: 30, places: 24, practices: 22, treasures: 22)
+      - pacificIslander: 60 words total
+        (people: 21, places: 19, practices: 10, treasures: 10)
+      - ruralCommunities: 51 words total
+        (people: 20, places: 12, practices: 8, treasures: 11)
+      - africanDescendant: 57 words total
+        (people: 21, places: 15, practices: 12, treasures: 9)
+
+27. ID: v2025-noaa-012
+   Category: agency_actions
+   Date: 2025-12-17
+   Title: OMB Orders NSF to Dismantle National Center for Atmospheric Research
+   Flagged communities:
+      - scientificCommunity: 89 words total
+        (people: 25, places: 23, practices: 22, treasures: 19)
+
+28. ID: v2025-001
+   Category: agency_actions
+   Date: 2025-12-18
+   Title: Kennedy Center Renamed to Include Trump's Name
+   Flagged communities:
+      - africanDescendant: 95 words total
+        (people: 28, places: 22, practices: 22, treasures: 23)
+
+29. ID: beatty-v-trump-2025
+   Category: litigation
+   Date: 2025-12-20
+   Title: Beatty v. Trump: Kennedy Center Renaming Challenge
+   Flagged communities:
+      - africanDescendant: 82 words total
+        (people: 29, places: 15, practices: 19, treasures: 19)
+      - lgbtq: 59 words total
+        (people: 18, places: 10, practices: 19, treasures: 12)
+      - artsCommunity: 70 words total
+        (people: 21, places: 15, practices: 18, treasures: 16)
+
+30. ID: v2025-kennedy-002
+   Category: agency_actions
+   Date: 2025-12-24
+   Title: Kennedy Center Artist Boycott Accelerates After Trump Renaming
+   Flagged communities:
+      - africanDescendant: 104 words total
+        (people: 31, places: 24, practices: 24, treasures: 25)
+
+31. ID: v2026-doi-001
+   Category: agency_actions
+   Date: 2025-12-31
+   Title: National Park Service Permanent Staff Reduced by 24%
+   Flagged communities:
+      - africanDescendant: 91 words total
+        (people: 30, places: 25, practices: 16, treasures: 20)
+      - indigenous: 65 words total
+        (people: 19, places: 22, practices: 12, treasures: 12)
+      - nativeHawaiian: 50 words total
+        (people: 17, places: 16, practices: 9, treasures: 8)
+      - pacificIslander: 47 words total
+        (people: 13, places: 16, practices: 8, treasures: 10)
+      - latine: 37 words total
+        (people: 7, places: 11, practices: 9, treasures: 10)
+
+32. ID: eo-2026-travelban-expansion
+   Category: executive_orders
+   Date: 2026-01-01
+   Title: Proclamation 10998: Expanded Travel Ban Effective January 1, 2026
+   Flagged communities:
+      - africanDescendant: 156 words total
+        (people: 53, places: 38, practices: 36, treasures: 29)
+      - caribbean: 130 words total
+        (people: 41, places: 30, practices: 30, treasures: 29)
+      - latine: 122 words total
+        (people: 33, places: 32, practices: 31, treasures: 26)
+
+33. ID: aa-2026-usda-20percent
+   Category: agency_actions
+   Date: 2026-01-04
+   Title: USDA Loses 20% of Workforce: 20,300 Employees Gone, More Cuts Planned
+   Flagged communities:
+      - africanDescendant: 236 words total
+        (people: 117, places: 42, practices: 42, treasures: 35)
+
+34. ID: leg-2026-001
+   Category: legislation
+   Date: 2026-01-05
+   Title: H.R.1216: / S.518: Defund Government-Sponsored Propaganda Act - CPB Dissolution
+   Flagged communities:
+      - indigenous: 163 words total
+        (people: 52, places: 41, practices: 37, treasures: 33)
+      - africanDescendant: 160 words total
+        (people: 48, places: 36, practices: 42, treasures: 34)
+      - latine: 145 words total
+        (people: 40, places: 39, practices: 33, treasures: 33)
+      - asianAmerican: 162 words total
+        (people: 47, places: 44, practices: 36, treasures: 35)
+
+35. ID: v2026-001
+   Category: agency_actions
+   Date: 2026-01-06
+   Title: Corporation for Public Broadcasting Board Votes to Dissolve
+   Flagged communities:
+      - indigenous: 99 words total
+        (people: 30, places: 25, practices: 21, treasures: 23)
+
+36. ID: intl-2026-south-sudan-tps
+   Category: international
+   Date: 2026-01-06
+   Title: Federal Judge Blocks South Sudan TPS Termination: 300 Nationals Protected
+   Flagged communities:
+      - immigrantCommunities: 106 words total
+        (people: 39, places: 21, practices: 23, treasures: 23)
+      - allCommunities: 62 words total
+        (people: 33, places: 0, practices: 17, treasures: 12)
+
+37. ID: pm-2026-66-org-withdrawal
+   Category: executive_orders
+   Date: 2026-01-07
+   Title: Presidential Memorandum: Withdrawing the United States from 66 International Organizations Contrary ...
+   Flagged communities:
+      - indigenous: 89 words total
+        (people: 25, places: 21, practices: 21, treasures: 22)
+      - pacificIslander: 78 words total
+        (people: 26, places: 23, practices: 15, treasures: 14)
+      - africanDescendant: 65 words total
+        (people: 22, places: 19, practices: 12, treasures: 12)
+      - latine: 54 words total
+        (people: 18, places: 14, practices: 10, treasures: 12)
+      - asianAmerican: 52 words total
+        (people: 17, places: 10, practices: 11, treasures: 14)
+
+38. ID: eo-2026-defense-contractor-buybacks
+   Category: executive_orders
+   Date: 2026-01-07
+   Title: Executive Order: Prioritizing the Warfighter in Defense Contracting
+   Flagged communities:
+      - indigenous: 110 words total
+        (people: 52, places: 25, practices: 17, treasures: 16)
+      - africanDescendant: 94 words total
+        (people: 41, places: 24, practices: 17, treasures: 12)
+      - allCommunities: 97 words total
+        (people: 42, places: 14, practices: 20, treasures: 21)
+
+39. ID: leg-2026-006
+   Category: legislation
+   Date: 2026-01-07
+   Title: H.R.414: Student Visa Security Improvement Act
+   Flagged communities:
+      - asianAmerican: 129 words total
+        (people: 37, places: 30, practices: 30, treasures: 32)
+      - latine: 118 words total
+        (people: 34, places: 28, practices: 26, treasures: 30)
+      - africanDescendant: 119 words total
+        (people: 36, places: 26, practices: 29, treasures: 28)
+
+40. ID: intl-pm-2026-66-orgs
+   Category: international
+   Date: 2026-01-07
+   Title: U.S. Withdrawal from 66 International Organizations: Comprehensive Exit
+   Flagged communities:
+      - indigenous: 67 words total
+        (people: 20, places: 18, practices: 14, treasures: 15)
+      - pacificIslander: 55 words total
+        (people: 18, places: 13, practices: 12, treasures: 12)
+      - africanDescendant: 55 words total
+        (people: 18, places: 15, practices: 11, treasures: 11)
+      - latine: 32 words total
+        (people: 10, places: 12, practices: 0, treasures: 10)
+      - asianAmerican: 26 words total
+        (people: 16, places: 0, practices: 0, treasures: 10)
+
+41. ID: intl-ref-leg-2026-006
+   Category: international
+   Date: 2026-01-07
+   Title: H.R.414: Student Visa Security Improvement Act - International Education Impact
+   Flagged communities:
+      - academicCommunity: 28 words total
+        (people: 12, places: 0, practices: 11, treasures: 5)
+      - asianAmerican: 18 words total
+        (people: 13, places: 0, practices: 5, treasures: 0)
+      - africanDescendant: 9 words total
+        (people: 5, places: 0, practices: 4, treasures: 0)
+      - latine: 10 words total
+        (people: 6, places: 0, practices: 4, treasures: 0)
+
+42. ID: intl-2026-ice-escalation
+   Category: international
+   Date: 2026-01-07
+   Title: ICE Detention Doubles to 70,000: Deportation Raids Expand Nationwide
+   Flagged communities:
+      - asianAmerican: 211 words total
+        (people: 102, places: 44, practices: 40, treasures: 25)
+      - africanDescendant: 180 words total
+        (people: 81, places: 52, practices: 26, treasures: 21)
+      - allCommunities: 144 words total
+        (people: 64, places: 24, practices: 32, treasures: 24)
+
+43. ID: aa-2026-epa-nepa-removal
+   Category: agency_actions
+   Date: 2026-01-08
+   Title: EPA Removal of NEPA Regulations: Environmental Review Exemptions
+   Flagged communities:
+      - indigenous: 102 words total
+        (people: 29, places: 22, practices: 26, treasures: 25)
+      - africanDescendant: 86 words total
+        (people: 27, places: 24, practices: 20, treasures: 15)
+      - latine: 63 words total
+        (people: 20, places: 12, practices: 15, treasures: 16)
+
+44. ID: leg-2026-005
+   Category: legislation
+   Date: 2026-01-08
+   Title: H.R.899: Department of Education Termination Act
+   Flagged communities:
+      - indigenous: 140 words total
+        (people: 41, places: 36, practices: 31, treasures: 32)
+      - africanDescendant: 138 words total
+        (people: 34, places: 36, practices: 37, treasures: 31)
+      - latine: 134 words total
+        (people: 33, places: 36, practices: 30, treasures: 35)
+
+45. ID: leg-2026-009
+   Category: legislation
+   Date: 2026-01-08
+   Title: H.R.6225: PAUSE Act of 2025 - Immigration Visa Limitations
+   Flagged communities:
+      - africanDescendant: 129 words total
+        (people: 39, places: 33, practices: 26, treasures: 31)
+      - asianAmerican: 116 words total
+        (people: 31, places: 31, practices: 27, treasures: 27)
+      - immigrant: 112 words total
+        (people: 29, places: 26, practices: 28, treasures: 29)
+
+46. ID: leg-2026-cjs-approp
+   Category: legislation
+   Date: 2026-01-08
+   Title: FY2026 Commerce, Justice, Science Appropriations Act: $78 Billion Including DOJ and NOAA
+   Flagged communities:
+      - allCommunities: 84 words total
+        (people: 40, places: 0, practices: 22, treasures: 22)
+
+47. ID: leg-2026-tribal-minibus
+   Category: legislation
+   Date: 2026-01-08
+   Title: Congress Rejects $1 Billion in Proposed Tribal Cuts: FY2026 Minibus Protects BIA, IHS
+   Flagged communities:
+      - allCommunities: 95 words total
+        (people: 39, places: 0, practices: 29, treasures: 27)
+
+48. ID: intl-ref-leg-2026-009
+   Category: international
+   Date: 2026-01-08
+   Title: H.R.6225: PAUSE Act - Immigration Visa Limitations
+   Flagged communities:
+      - immigrant: 24 words total
+        (people: 16, places: 0, practices: 8, treasures: 0)
+      - latine: 12 words total
+        (people: 8, places: 0, practices: 4, treasures: 0)
+      - africanDescendant: 8 words total
+        (people: 4, places: 0, practices: 4, treasures: 0)
+      - asianAmerican: 8 words total
+        (people: 4, places: 0, practices: 4, treasures: 0)
+      - muslim: 10 words total
+        (people: 5, places: 0, practices: 5, treasures: 0)
+
+49. ID: v2025-smithsonian-006
+   Category: agency_actions
+   Date: 2026-01-10
+   Title: Trump Portrait Impeachment Text Removed from America's Presidents Exhibition
+   Flagged communities:
+      - historians: 121 words total
+        (people: 38, places: 29, practices: 28, treasures: 26)
+
+50. ID: leg-2026-004
+   Category: legislation
+   Date: 2026-01-10
+   Title: H.R.800: DEI to DIE Act - Termination of Diversity, Equity, and Inclusion Programs
+   Flagged communities:
+      - indigenous: 139 words total
+        (people: 41, places: 33, practices: 32, treasures: 33)
+      - africanDescendant: 151 words total
+        (people: 41, places: 36, practices: 40, treasures: 34)
+      - latine: 128 words total
+        (people: 31, places: 36, practices: 33, treasures: 28)
+
+51. ID: leg-2026-010
+   Category: legislation
+   Date: 2026-01-10
+   Title: S.2256: / H.R.4121: Agriculture, Rural Development, FDA Appropriations Act, 2026 - Tribal Provisions
+   Flagged communities:
+      - indigenous: 114 words total
+        (people: 35, places: 25, practices: 28, treasures: 26)
+      - alaskaNative: 112 words total
+        (people: 30, places: 28, practices: 26, treasures: 28)
+
+52. ID: leg-2026-008
+   Category: legislation
+   Date: 2026-01-12
+   Title: S.2385: Restoring Truth and Sanity to American History Act
+   Flagged communities:
+      - africanDescendant: 131 words total
+        (people: 41, places: 34, practices: 27, treasures: 29)
+      - indigenous: 121 words total
+        (people: 37, places: 29, practices: 27, treasures: 28)
+      - latine: 103 words total
+        (people: 29, places: 25, practices: 25, treasures: 24)
+
+53. ID: v2026-smithsonian-001
+   Category: executive_orders
+   Date: 2026-01-13
+   Title: Smithsonian Faces January 13 Compliance Deadline
+   Flagged communities:
+      - africanDescendant: 72 words total
+        (people: 17, places: 14, practices: 23, treasures: 18)
+      - indigenous: 102 words total
+        (people: 15, places: 28, practices: 30, treasures: 29)
+      - asianAmerican: 104 words total
+        (people: 14, places: 30, practices: 27, treasures: 33)
+
+54. ID: lit-2026-scotus-trans-athletes
+   Category: litigation
+   Date: 2026-01-13
+   Title: Supreme Court Hears Transgender Athletes Cases: Title IX and Equal Protection at Stake
+   Flagged communities:
+      - allCommunities: 125 words total
+        (people: 59, places: 0, practices: 39, treasures: 27)
+
+55. ID: visa-freeze-75-countries
+   Category: agency_actions
+   Date: 2026-01-14
+   Title: Indefinite Freeze on Visa Processing for 75 Countries
+   Flagged communities:
+      - africanDescendant: 93 words total
+        (people: 36, places: 23, practices: 19, treasures: 15)
+      - latine: 59 words total
+        (people: 21, places: 17, practices: 13, treasures: 8)
+      - asianAmerican: 68 words total
+        (people: 16, places: 10, practices: 11, treasures: 31)
+      - immigrant: 99 words total
+        (people: 26, places: 21, practices: 26, treasures: 26)
+
+56. ID: v2025-imm-012
+   Category: agency_actions
+   Date: 2026-01-14
+   Title: Visa Processing Frozen for 75 Countries
+   Flagged communities:
+      - africanDescendant: 82 words total
+        (people: 25, places: 19, practices: 19, treasures: 19)
+
+57. ID: intl-ref-v2025-imm-012
+   Category: international
+   Date: 2026-01-14
+   Title: Visa Processing Frozen for 75 Countries
+   Flagged communities:
+      - africanDescendant: 25 words total
+        (people: 17, places: 0, practices: 8, treasures: 0)
+      - middleEastern: 13 words total
+        (people: 10, places: 0, practices: 3, treasures: 0)
+      - asianAmerican: 13 words total
+        (people: 8, places: 0, practices: 5, treasures: 0)
+      - latine: 12 words total
+        (people: 9, places: 0, practices: 3, treasures: 0)
+
+58. ID: aa-2026-esa-rollback
+   Category: agency_actions
+   Date: 2026-01-15
+   Title: Endangered Species Act Regulations Rollback: Critical Habitat and Consultation
+   Flagged communities:
+      - indigenous: 78 words total
+        (people: 23, places: 21, practices: 17, treasures: 17)
+      - alaskaNative: 67 words total
+        (people: 22, places: 17, practices: 17, treasures: 11)
+      - nativeHawaiian: 56 words total
+        (people: 22, places: 12, practices: 11, treasures: 11)
+
+59. ID: aa-2026-achp-hpf-record
+   Category: agency_actions
+   Date: 2026-01-15
+   Title: Historic Preservation Fund FY2026: Record $205 Million Allocation
+   Flagged communities:
+      - indigenous: 60 words total
+        (people: 21, places: 15, practices: 13, treasures: 11)
+      - africanDescendant: 59 words total
+        (people: 17, places: 14, practices: 15, treasures: 13)
+      - latine: 40 words total
+        (people: 12, places: 17, practices: 0, treasures: 11)
+
+60. ID: aa-2026-nea-neh-funding
+   Category: agency_actions
+   Date: 2026-01-15
+   Title: NEA and NEH Level Funding Preserved: Congress Rejects Elimination Proposal
+   Flagged communities:
+      - indigenous: 154 words total
+        (people: 64, places: 36, practices: 35, treasures: 19)
+
+61. ID: leg-2026-002
+   Category: legislation
+   Date: 2026-01-15
+   Title: H.R.6938: Commerce, Justice, Science; Energy and Water; Interior and Environment Appropriations Act,...
+   Flagged communities:
+      - indigenous: 146 words total
+        (people: 37, places: 43, practices: 33, treasures: 33)
+      - africanDescendant: 141 words total
+        (people: 39, places: 37, practices: 32, treasures: 33)
+      - pacificIslander: 144 words total
+        (people: 37, places: 38, practices: 35, treasures: 34)
+
+62. ID: leg-2026-007
+   Category: legislation
+   Date: 2026-01-15
+   Title: H.R.1330: Smithsonian National Museum of the American Latino Act
+   Flagged communities:
+      - latine: 150 words total
+        (people: 38, places: 43, practices: 33, treasures: 36)
+      - indigenous: 135 words total
+        (people: 42, places: 31, practices: 34, treasures: 28)
+
+63. ID: leg-2026-kennedy-renovation
+   Category: legislation
+   Date: 2026-01-15
+   Title: Kennedy Center Receives $257 Million for Renovation: Funding Precedes 2-Year Closure Announcement
+   Flagged communities:
+      - lgbtq: 67 words total
+        (people: 32, places: 0, practices: 22, treasures: 13)
+      - africanDescendant: 86 words total
+        (people: 35, places: 23, practices: 12, treasures: 16)
+      - children: 132 words total
+        (people: 48, places: 34, practices: 32, treasures: 18)
+      - allCommunities: 129 words total
+        (people: 35, places: 27, practices: 27, treasures: 40)
+
+64. ID: intl-2026-venezuela-cecot-update
+   Category: international
+   Date: 2026-01-15
+   Title: Venezuelan CECOT Detainees Released in Prisoner Swap: Torture Allegations Documented
+   Flagged communities:
+      - immigrantCommunities: 122 words total
+        (people: 38, places: 23, practices: 29, treasures: 32)
+      - allCommunities: 75 words total
+        (people: 29, places: 0, practices: 25, treasures: 21)
+
+65. ID: leg-2026-interior-approp
+   Category: legislation
+   Date: 2026-01-19
+   Title: FY2026 Interior, Environment Appropriations Act: Congress Protects NEA, NEH, and National Parks
+   Flagged communities:
+      - allCommunities: 138 words total
+        (people: 51, places: 29, practices: 33, treasures: 25)
+
+66. ID: eo-2026-doge-anniversary
+   Category: executive_orders
+   Date: 2026-01-20
+   Title: DOGE One-Year Report: 322,049 Federal Employees Exit Workforce
+   Flagged communities:
+      - indigenous: 165 words total
+        (people: 50, places: 43, practices: 38, treasures: 34)
+      - africanDescendant: 153 words total
+        (people: 50, places: 34, practices: 37, treasures: 32)
+      - latine: 137 words total
+        (people: 40, places: 36, practices: 31, treasures: 30)
+
+67. ID: aa-2026-dhs-fixed-admission
+   Category: agency_actions
+   Date: 2026-01-20
+   Title: DHS End of Duration of Status: Fixed Admission Periods for Students and Scholars
+   Flagged communities:
+      - asianAmerican: 206 words total
+        (people: 72, places: 51, practices: 48, treasures: 35)
+      - africanDescendant: 130 words total
+        (people: 51, places: 27, practices: 27, treasures: 25)
+      - latiné: 128 words total
+        (people: 43, places: 32, practices: 27, treasures: 26)
+      - middleEastern: 120 words total
+        (people: 44, places: 22, practices: 35, treasures: 19)
+
+68. ID: leg-2026-lhhs-approp
+   Category: legislation
+   Date: 2026-01-20
+   Title: FY2026 Labor, HHS, Education Appropriations Act: IMLS Preserved at $291.8 Million
+   Flagged communities:
+      - allCommunities: 144 words total
+        (people: 54, places: 28, practices: 36, treasures: 26)
+
+69. ID: leg-2026-epa-water
+   Category: legislation
+   Date: 2026-01-20
+   Title: EPA Water Programs Receive $2.8 Billion: Clean Water and Drinking Water Funds Protected
+   Flagged communities:
+      - africanDescendant: 152 words total
+        (people: 68, places: 33, practices: 27, treasures: 24)
+      - allCommunities: 146 words total
+        (people: 42, places: 28, practices: 42, treasures: 34)
+
+70. ID: eo-2026-immigrant-visa-pause
+   Category: executive_orders
+   Date: 2026-01-21
+   Title: State Department Immigrant Visa Pause for 75 Countries (January 21, 2026)
+   Flagged communities:
+      - africanDescendant: 162 words total
+        (people: 48, places: 47, practices: 37, treasures: 30)
+      - asianAmerican: 133 words total
+        (people: 45, places: 29, practices: 33, treasures: 26)
+      - latine: 124 words total
+        (people: 38, places: 29, practices: 29, treasures: 28)
+
+71. ID: leg-2026-003
+   Category: legislation
+   Date: 2026-01-21
+   Title: H.R.7148: Consolidated Appropriations Act, 2026 - NEA/NEH Level Funding
+   Flagged communities:
+      - indigenous: 147 words total
+        (people: 41, places: 36, practices: 35, treasures: 35)
+      - africanDescendant: 135 words total
+        (people: 34, places: 34, practices: 34, treasures: 33)
+      - latine: 134 words total
+        (people: 32, places: 37, practices: 34, treasures: 31)
+      - asianAmerican: 118 words total
+        (people: 30, places: 30, practices: 29, treasures: 29)
+
+72. ID: lit-2026-trans-military-ban
+   Category: litigation
+   Date: 2026-01-21
+   Title: Transgender Military Ban Challenge at Appeals Court
+   Flagged communities:
+      - allCommunities: 158 words total
+        (people: 67, places: 0, practices: 40, treasures: 51)
+      - veterans: 115 words total
+        (people: 56, places: 0, practices: 40, treasures: 19)
+
+73. ID: intl-2026-greenland-framework
+   Category: international
+   Date: 2026-01-21
+   Title: Trump Announces Greenland 'Framework' Deal: Backs Off Military Force Threats
+   Flagged communities:
+      - allCommunities: 116 words total
+        (people: 51, places: 21, practices: 23, treasures: 21)
+
+74. ID: intl-2026-cuba-visa-bonds
+   Category: international
+   Date: 2026-01-21
+   Title: Cuban Visa Applicants Must Pay $5,000-$15,000 Bonds: Legal Pathways Blocked
+   Flagged communities:
+      - latine: 219 words total
+        (people: 106, places: 31, practices: 53, treasures: 29)
+      - immigrantCommunities: 77 words total
+        (people: 37, places: 0, practices: 21, treasures: 19)
+      - allCommunities: 44 words total
+        (people: 27, places: 0, practices: 0, treasures: 17)
+
+75. ID: aa-2026-ed-title-vi
+   Category: agency_actions
+   Date: 2026-01-22
+   Title: ED Title VI Investigation: Native American Mascots as Discrimination
+   Flagged communities:
+      - indigenous: 87 words total
+        (people: 27, places: 17, practices: 24, treasures: 19)
+
+76. ID: aa-2026-hhs-samhsa-grants
+   Category: agency_actions
+   Date: 2026-01-22
+   Title: HHS Cancels $1.9 Billion in SAMHSA Grants: Mental Health and Substance Abuse Funding Clawed Back
+   Flagged communities:
+      - africanDescendant: 196 words total
+        (people: 74, places: 50, practices: 45, treasures: 27)
+      - veterans: 156 words total
+        (people: 63, places: 31, practices: 44, treasures: 18)
+
+77. ID: nps-presidents-house-exhibit-removal-2026
+   Category: legislation
+   Date: 2026-01-22
+   Title: NPS Presidents House Order: National Park Service Removal of President's House Slavery Exhibit
+   Flagged communities:
+      - africanDescendant: 76 words total
+        (people: 23, places: 19, practices: 14, treasures: 20)
+      - allCommunities: 58 words total
+        (people: 23, places: 12, practices: 12, treasures: 11)
+
+78. ID: philadelphia-v-doi-presidents-house-2026
+   Category: litigation
+   Date: 2026-01-23
+   Title: City of Philadelphia v. Department of Interior: President's House Slavery Exhibit
+   Flagged communities:
+      - africanDescendant: 64 words total
+        (people: 20, places: 13, practices: 14, treasures: 17)
+      - allCommunities: 49 words total
+        (people: 13, places: 12, practices: 12, treasures: 12)
+      - academicCommunity: 44 words total
+        (people: 13, places: 11, practices: 10, treasures: 10)
+
+79. ID: lit-2026-disability-504
+   Category: litigation
+   Date: 2026-01-23
+   Title: Nine States Challenge Disability Integration Rights
+   Flagged communities:
+      - allCommunities: 195 words total
+        (people: 77, places: 43, practices: 45, treasures: 30)
+      - indigenous: 105 words total
+        (people: 47, places: 20, practices: 20, treasures: 18)
+
+80. ID: intl-2026-canada-100-tariff
+   Category: international
+   Date: 2026-01-24
+   Title: Trump Threatens 100% Tariffs on Canada: Trade War Escalates Over China Deal
+   Flagged communities:
+      - allCommunities: 127 words total
+        (people: 41, places: 28, practices: 30, treasures: 28)
+
+81. ID: lit-2026-neh-acls-lawsuit
+   Category: litigation
+   Date: 2026-01-28
+   Title: Humanities Scholars Sue to Reverse NEH Dismantling
+   Flagged communities:
+      - ruralCommunities: 122 words total
+        (people: 33, places: 40, practices: 24, treasures: 25)
+
+82. ID: eo-2026-cuba-oil-tariffs
+   Category: executive_orders
+   Date: 2026-01-29
+   Title: Executive Order: Addressing Threats to the United States by the Government of Cuba
+   Flagged communities:
+      - latine: 233 words total
+        (people: 112, places: 54, practices: 44, treasures: 23)
+      - allCommunities: 78 words total
+        (people: 33, places: 0, practices: 25, treasures: 20)
+
+83. ID: eo-2026-recovery-initiative
+   Category: executive_orders
+   Date: 2026-01-29
+   Title: Executive Order: Great American Recovery Initiative to Address the Addiction Crisis
+   Flagged communities:
+      - africanDescendant: 139 words total
+        (people: 73, places: 28, practices: 23, treasures: 15)
+      - allCommunities: 115 words total
+        (people: 50, places: 31, practices: 18, treasures: 16)
+
+84. ID: eo-2026-guantanamo-migrants
+   Category: executive_orders
+   Date: 2026-01-29
+   Title: Executive Order: Expanding Migrant Operations Center at Naval Station Guantanamo Bay
+   Flagged communities:
+      - asianAmerican: 130 words total
+        (people: 61, places: 30, practices: 26, treasures: 13)
+      - allCommunities: 199 words total
+        (people: 78, places: 40, practices: 46, treasures: 35)
+
+85. ID: aa-2026-doi-rif-2000
+   Category: agency_actions
+   Date: 2026-01-30
+   Title: Interior Department Plans 2,000+ Layoffs: RIF Notices for BLM, NPS, FWS, USGS
+   Flagged communities:
+      - allCommunities: 208 words total
+        (people: 65, places: 54, practices: 45, treasures: 44)
+
+86. ID: intl-2026-panama-canal-ruling
+   Category: international
+   Date: 2026-01-30
+   Title: Panama Court Rules Against Chinese Port Operator: Trump Administration Claims Victory
+   Flagged communities:
+      - allCommunities: 88 words total
+        (people: 43, places: 0, practices: 23, treasures: 22)
+      - immigrantCommunities: 84 words total
+        (people: 30, places: 20, practices: 19, treasures: 15)
+
+87. ID: aa-2026-eoir-fees
+   Category: agency_actions
+   Date: 2026-02-01
+   Title: EOIR Immigration Court Fee Increases: Motion and Appeal Filing Fees
+   Flagged communities:
+      - immigrant: 77 words total
+        (people: 24, places: 15, practices: 26, treasures: 12)
+      - caribbean: 47 words total
+        (people: 32, places: 0, practices: 15, treasures: 0)
+      - latine: 40 words total
+        (people: 22, places: 0, practices: 18, treasures: 0)
+
+88. ID: aa-2026-kennedy-closure
+   Category: agency_actions
+   Date: 2026-02-01
+   Title: Kennedy Center Ordered Closed for 2 Years: Trump Announces 'Complete Rebuilding'
+   Flagged communities:
+      - africanDescendant: 214 words total
+        (people: 76, places: 47, practices: 50, treasures: 41)
+      - children: 186 words total
+        (people: 64, places: 39, practices: 47, treasures: 36)
+
+89. ID: intl-ref-aa-eoir-fees
+   Category: international
+   Date: 2026-02-01
+   Title: EOIR Immigration Court Fee Increases: Barriers to International Protection
+   Flagged communities:
+      - immigrant: 24 words total
+        (people: 17, places: 0, practices: 7, treasures: 0)
+      - caribbean: 16 words total
+        (people: 12, places: 0, practices: 4, treasures: 0)
+      - latine: 15 words total
+        (people: 10, places: 0, practices: 5, treasures: 0)
+      - africanDescendant: 12 words total
+        (people: 8, places: 0, practices: 4, treasures: 0)
+
+90. ID: aa-2026-doe-layoff-costs
+   Category: agency_actions
+   Date: 2026-02-02
+   Title: Department of Education Layoffs Cost $28 Million: GAO Documents Administrative Leave Expenses
+   Flagged communities:
+      - children: 147 words total
+        (people: 57, places: 28, practices: 32, treasures: 30)
+
+91. ID: lit-2026-haiti-tps-extension
+   Category: litigation
+   Date: 2026-02-02
+   Title: Federal Judge Indefinitely Extends Haiti TPS Protections
+   Flagged communities:
+      - africanDescendant: 237 words total
+        (people: 114, places: 38, practices: 52, treasures: 33)
+      - immigrantCommunities: 141 words total
+        (people: 63, places: 28, practices: 27, treasures: 23)
+
+92. ID: lit-2026-dei-class-action
+   Category: litigation
+   Date: 2026-02-03
+   Title: Federal Workers File Class Action Over DEI-Related Firings
+   Flagged communities:
+      - lgbtq: 238 words total
+        (people: 105, places: 45, practices: 55, treasures: 33)
+      - disabled: 199 words total
+        (people: 76, places: 31, practices: 68, treasures: 24)
+      - allCommunities: 118 words total
+        (people: 50, places: 0, practices: 38, treasures: 30)
+
+93. ID: intl-2026-guantanamo-migrants
+   Category: international
+   Date: 2026-02-04
+   Title: Guantanamo Bay Expanded for Immigrant Detention: 30,000 Capacity Planned
+   Flagged communities:
+      - asianAmerican: 86 words total
+        (people: 37, places: 18, practices: 18, treasures: 13)
+      - allCommunities: 119 words total
+        (people: 42, places: 25, practices: 23, treasures: 29)
+
+94. ID: lit-2026-voting-rights-maldef
+   Category: litigation
+   Date: 2026-02-05
+   Title: Latino Civil Rights Group Seeks Supreme Court Review of Voting Rights Decisions
+   Flagged communities:
+      - allCommunities: 170 words total
+        (people: 62, places: 39, practices: 36, treasures: 33)
+      - africanDescendant: 76 words total
+        (people: 32, places: 0, practices: 23, treasures: 21)
+      - indigenous: 81 words total
+        (people: 43, places: 0, practices: 19, treasures: 19)
+
+95. ID: eo-2026-iran-secondary-tariffs
+   Category: executive_orders
+   Date: 2026-02-06
+   Title: Executive Order: Addressing Threats to the United States by the Government of Iran
+   Flagged communities:
+      - allCommunities: 97 words total
+        (people: 46, places: 15, practices: 16, treasures: 20)
+      - immigrantCommunities: 80 words total
+        (people: 46, places: 0, practices: 20, treasures: 14)
+
+96. ID: lit-2026-dei-appeals-court
+   Category: litigation
+   Date: 2026-02-06
+   Title: Appeals Court Rejects Challenge to Trump DEI Ban
+   Flagged communities:
+      - asianAmerican: 241 words total
+        (people: 120, places: 32, practices: 59, treasures: 30)
+      - latine: 177 words total
+        (people: 78, places: 28, practices: 53, treasures: 18)
+      - lgbtq: 99 words total
+        (people: 48, places: 0, practices: 35, treasures: 16)
+      - allCommunities: 85 words total
+        (people: 40, places: 0, practices: 22, treasures: 23)
+
+97. ID: aa-2026-nara-leadership
+   Category: agency_actions
+   Date: 2026-02-07
+   Title: National Archives Leadership Change: Marco Rubio Out as Acting Archivist
+   Flagged communities:
+      - veterans: 201 words total
+        (people: 86, places: 35, practices: 40, treasures: 40)
+
+================================================================================
+ANALYSIS COMPLETE - 97 entries flagged
+================================================================================
+
