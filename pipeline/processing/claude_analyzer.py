@@ -30,12 +30,12 @@ def screen_relevance(item, rate_limiter=None):
 
     prompt = load_prompt('relevance_screening')
     item_text = json.dumps({
-        'title': item.get('title', ''),
-        'abstract': item.get('abstract', item.get('description', '')),
-        'source': item.get('source', ''),
-        'date': item.get('date', ''),
-        'agencies': item.get('agencies', []),
-        'action': item.get('action', item.get('latest_action', '')),
+        'title': item.get('title') or '',
+        'abstract': item.get('abstract') or item.get('description') or '',
+        'source': item.get('source') or '',
+        'date': item.get('date') or '',
+        'agencies': item.get('agencies') or [],
+        'action': item.get('action') or item.get('latest_action') or '',
     }, indent=2)
 
     try:

@@ -58,7 +58,7 @@ def fetch_since(since_date, rate_limiter=None):
                     'source_id': case_id,
                     'title': result.get('caseName', ''),
                     'court': result.get('court', ''),
-                    'date': result.get('dateFiled', '')[:10],
+                    'date': (result.get('dateFiled') or '')[:10],
                     'docket_number': result.get('docketNumber', ''),
                     'snippet': result.get('snippet', ''),
                     'citation': result.get('citation', []),

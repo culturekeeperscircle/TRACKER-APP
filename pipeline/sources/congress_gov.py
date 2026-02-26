@@ -68,9 +68,9 @@ def fetch_since(since_date, rate_limiter=None):
                 'bill_type': bill.get('type', ''),
                 'bill_number': bill.get('number', ''),
                 'congress': bill.get('congress', ''),
-                'date': bill.get('updateDate', '')[:10],
-                'latest_action': bill.get('latestAction', {}).get('text', ''),
-                'latest_action_date': bill.get('latestAction', {}).get('actionDate', ''),
+                'date': (bill.get('updateDate') or '')[:10],
+                'latest_action': (bill.get('latestAction') or {}).get('text') or '',
+                'latest_action_date': (bill.get('latestAction') or {}).get('actionDate') or '',
                 'url': bill.get('url', ''),
                 'origin_chamber': bill.get('originChamber', ''),
             })

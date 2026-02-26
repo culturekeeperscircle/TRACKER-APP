@@ -8,13 +8,13 @@ logger = logging.getLogger('tckc_pipeline')
 def is_potentially_relevant(item):
     """Check if an item contains any relevance keywords. Fast, cheap pre-filter."""
     searchable = ' '.join([
-        item.get('title', ''),
-        item.get('abstract', ''),
-        item.get('description', ''),
-        item.get('snippet', ''),
-        item.get('content', ''),
-        item.get('action', ''),
-        item.get('latest_action', ''),
+        item.get('title') or '',
+        item.get('abstract') or '',
+        item.get('description') or '',
+        item.get('snippet') or '',
+        item.get('content') or '',
+        item.get('action') or '',
+        item.get('latest_action') or '',
     ]).lower()
 
     for keyword in RELEVANCE_KEYWORDS:
