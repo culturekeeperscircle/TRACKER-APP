@@ -2,7 +2,12 @@ name: Daily Tracker Update
 
 on:
   schedule:
-    # 5:00 AM EST = 10:00 UTC (Mon-Fri)
+    # 5:00 AM Eastern Time year-round (GitHub cron is UTC only)
+    # EST (Nov-Mar): 5:00 AM = 10:00 UTC
+    # EDT (Mar-Nov): 5:00 AM = 09:00 UTC
+    # Both entries fire; the pipeline's dedup (since last_successful_run)
+    # ensures the second run finds nothing new and exits cleanly.
+    - cron: '0 9 * * 1-5'
     - cron: '0 10 * * 1-5'
   workflow_dispatch:
     inputs:
