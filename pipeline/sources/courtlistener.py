@@ -8,15 +8,19 @@ logger = logging.getLogger('tckc_pipeline')
 
 API_BASE = 'https://www.courtlistener.com/api/rest/v4'
 
-# Search queries for cultural resource litigation
+# Search queries — ethnic communities + cultural heritage/practice
 SEARCH_QUERIES = [
-    'cultural resources historic preservation',
-    'tribal sovereignty sacred sites NAGPRA',
-    'national monument executive order',
-    'environmental justice civil rights Title VI',
-    'immigration deportation asylum TPS DACA',
-    'NEA NEH arts funding Smithsonian',
-    'treaty rights indigenous',
+    'cultural resources historic preservation heritage',
+    'tribal sovereignty sacred sites NAGPRA indigenous',
+    'national monument Antiquities Act preservation',
+    'environmental justice civil rights Title VI discrimination',
+    'immigration deportation asylum TPS DACA refugee',
+    'NEA NEH arts funding Smithsonian IMLS',
+    'treaty rights Native American tribal consultation',
+    'African American civil rights racial equity HBCU',
+    'Latino Hispanic farmworker immigrant community',
+    'Asian American Pacific Islander AAPI hate crime',
+    'cultural practice traditional knowledge language preservation',
 ]
 
 

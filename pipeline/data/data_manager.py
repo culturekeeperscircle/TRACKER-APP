@@ -7,7 +7,7 @@ from ..config import DATA_JSON_PATH, INDEX_HTML_PATH
 
 logger = logging.getLogger('tckc_pipeline')
 
-CATEGORIES = ['executive_orders', 'agency_actions', 'legislation', 'litigation', 'other_domestic', 'international']
+CATEGORIES = ['executive_actions', 'agency_actions', 'legislation', 'litigation', 'other_domestic', 'international']
 
 
 def load_data():

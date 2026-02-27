@@ -8,13 +8,17 @@ logger = logging.getLogger('tckc_pipeline')
 
 API_BASE = 'https://newsapi.org/v2'
 
-# Search queries targeting cultural resource news
+# Search queries — ethnic communities + cultural heritage/practice
 SEARCH_QUERIES = [
-    '"cultural resources" OR "historic preservation" OR "national monument"',
-    'tribal sovereignty OR "sacred sites" OR NAGPRA',
-    '"environmental justice" OR "civil rights" executive order',
-    'NEA OR NEH OR Smithsonian funding cuts',
-    'immigration policy deportation "cultural impact"',
+    '"cultural resources" OR "historic preservation" OR "cultural heritage" OR "national monument"',
+    '"tribal sovereignty" OR "sacred sites" OR NAGPRA OR "indigenous rights" OR "Native American"',
+    '"environmental justice" OR "civil rights" OR "racial equity" OR "Title VI" OR discrimination',
+    'NEA OR NEH OR Smithsonian OR IMLS OR "arts funding" OR "cultural institution"',
+    'immigration OR deportation OR "refugee policy" OR DACA OR TPS OR asylum',
+    '"African American" OR "Black community" OR HBCU OR "racial justice" OR reparations',
+    '"Latino" OR "Hispanic" OR "farmworker" OR "immigrant community" OR Latinx',
+    '"Asian American" OR "Pacific Islander" OR AAPI OR "hate crime" OR "anti-Asian"',
+    '"cultural practice" OR "language preservation" OR "traditional knowledge" OR "folk art"',
 ]
 
 
@@ -46,7 +50,7 @@ def fetch_since(since_date, rate_limiter=None):
 
         try:
             data = search_articles(query, since_date)
-            for article in data.get('articles', [])[:10]:  # Limit per query
+            for article in data.get('articles', [])[:20]:  # Limit per query
                 url = article.get('url', '')
                 if url in seen_urls:
                     continue

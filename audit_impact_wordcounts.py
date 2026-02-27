@@ -156,7 +156,7 @@ def main():
     print("Extracting DATA object...")
     data = extract_data_object(html_content)
 
-    categories = ['executive_orders', 'agency_actions', 'legislation', 'litigation', 'international']
+    categories = ['executive_actions', 'agency_actions', 'legislation', 'litigation', 'international']
     found_categories = [c for c in categories if c in data]
     print(f"  Found categories: {', '.join(found_categories)}")
 

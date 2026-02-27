@@ -62,7 +62,20 @@ def run():
 
     rate_limiter = RateLimiter()
     state = load_state()
-    since_date = (date.today() - timedelta(days=LOOKBACK_DAYS)).isoformat()
+
+    # Determine since_date: use last successful run if available, else fall back
+    if LOOKBACK_DAYS > 0:
+        # Manual override via env var
+        since_date = (date.today() - timedelta(days=LOOKBACK_DAYS)).isoformat()
+        logger.info(f'Using manual lookback: {LOOKBACK_DAYS} days → since {since_date}')
+    elif state.get('last_successful_run'):
+        # Exhaustive: search only since last successful run
+        since_date = state['last_successful_run']
+        logger.info(f'Searching since last successful run: {since_date}')
+    else:
+        # First run ever — look back 7 days
+        since_date = (date.today() - timedelta(days=7)).isoformat()
+        logger.info(f'First run, defaulting to 7-day lookback: {since_date}')
     logger.info(f'Fetching items since {since_date}')
 
     # Load existing data for dedup

@@ -45,7 +45,7 @@ def fetch_bill_detail(congress, bill_type, bill_number):
     return resp.json().get('bill', {})
 
 
-MAX_RESULTS = 300  # Cap to avoid pipeline timeouts
+MAX_RESULTS = 500  # Exhaustive daily search
 
 
 def fetch_since(since_date, rate_limiter=None):

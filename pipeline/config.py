@@ -15,10 +15,9 @@ INDEX_HTML_PATH = os.path.join(os.path.dirname(__file__), '..', 'index.html')
 PROMPTS_DIR = os.path.join(os.path.dirname(__file__), 'prompts')
 
 # Pipeline settings
-# Monday (weekday 0) looks back 4 days to cover Fri+Sat+Sun+Mon
-# All other days look back 2 days for overlap safety
-_default_lookback = 4 if date.today().weekday() == 0 else 2
-LOOKBACK_DAYS = int(os.environ.get('LOOKBACK_DAYS', str(_default_lookback)))
+# Default lookback is only used when no last_successful_run exists in state.json.
+# The pipeline will dynamically calculate since_date from state.json instead.
+LOOKBACK_DAYS = int(os.environ.get('LOOKBACK_DAYS', '0'))  # 0 = use state.json
 DRY_RUN = os.environ.get('DRY_RUN', 'false').lower() == 'true'
 SOURCE_FILTER = os.environ.get('SOURCE_FILTER', 'all')
 
@@ -27,32 +26,48 @@ CLAUDE_SCREENING_MODEL = 'claude-haiku-4-5-20251001'
 CLAUDE_GENERATION_MODEL = 'claude-sonnet-4-6'
 CLAUDE_VALIDATION_MODEL = 'claude-haiku-4-5-20251001'
 
-# Relevance keywords for pre-filtering
+# Relevance keywords for pre-filtering — ethnic communities + cultural heritage/practice
 RELEVANCE_KEYWORDS = [
-    'cultural resource', 'historic preservation', 'heritage', 'monument', 'museum',
-    'archaeological', 'sacred site', 'burial ground', 'NAGPRA', 'NHPA', 'Section 106',
-    'National Register', 'historic district', 'tribal', 'indigenous', 'Native American',
-    'Alaska Native', 'treaty', 'sovereignty', 'reservation', 'BIA',
-    'civil rights', 'DEI', 'environmental justice', 'Title VI', 'discrimination', 'equity',
+    # Cultural heritage & preservation
+    'cultural resource', 'cultural heritage', 'cultural practice', 'cultural property',
+    'cultural tradition', 'cultural identity', 'intangible heritage',
+    'historic preservation', 'heritage', 'monument', 'museum', 'memorial',
+    'archaeological', 'sacred site', 'burial ground', 'cemetery', 'historic site',
+    'NAGPRA', 'NHPA', 'Section 106', 'National Register', 'historic district',
+    'Antiquities Act', 'historic landmark', 'World Heritage',
+    # Indigenous / Tribal
+    'tribal', 'indigenous', 'Native American', 'Alaska Native', 'Native Hawaiian',
+    'treaty', 'sovereignty', 'reservation', 'BIA', 'Indian Affairs',
+    'tribal consultation', 'tribal land', 'First Nations', 'aboriginal',
+    # African-descendant
+    'African American', 'Black community', 'Black history', 'civil rights',
+    'racial justice', 'racial equity', 'reparations', 'Juneteenth',
+    'historically Black', 'HBCU', 'African diaspora', 'Afro-',
+    # Latiné / Hispanic
+    'Latino', 'Latina', 'Latiné', 'Latinx', 'Hispanic', 'Chicano', 'Chicana',
+    'farmworker', 'bracero', 'Spanish-speaking', 'Latin American',
+    # Asian American / Pacific Islander
+    'Asian American', 'Pacific Islander', 'AAPI', 'AANHPI',
+    'Chinese American', 'Japanese American', 'Korean American',
+    'Filipino', 'Vietnamese', 'South Asian', 'Southeast Asian', 'Polynesian',
+    # Other ethnic / identity communities
+    'LGBTQ', 'disability', 'women', 'Muslim', 'Jewish', 'Sikh', 'Hindu',
+    'Arab American', 'Middle Eastern', 'immigrant community', 'refugee community',
+    # Civil rights & equity
+    'DEI', 'environmental justice', 'Title VI', 'discrimination', 'equity',
+    'hate crime', 'civil liberties', 'equal protection', 'voting rights',
+    # Immigration
     'immigration', 'refugee', 'asylum', 'deportation', 'TPS', 'visa', 'ICE', 'DACA',
+    'naturalization', 'USCIS', 'border', 'migrant',
+    # Environment & land
     'climate change', 'EPA', 'NEPA', 'environmental review', 'conservation',
-    'endangered species', 'public lands', 'national park',
+    'endangered species', 'public lands', 'national park', 'wilderness',
+    'clean water', 'clean air', 'environmental protection',
+    # Arts, education, cultural institutions
     'education', 'NEA', 'NEH', 'Smithsonian', 'library', 'arts funding',
     'public broadcasting', 'CPB', 'PBS', 'NPR', 'IMLS',
-    'African American', 'Latino', 'Latiné', 'Asian American', 'Pacific Islander',
-    'Native Hawaiian', 'LGBTQ', 'disability', 'women', 'Muslim',
-]
-
-# Federal Register agencies of interest
-FED_REG_AGENCIES = [
-    'interior-department', 'environmental-protection-agency', 'agriculture-department',
-    'justice-department', 'homeland-security-department', 'state-department',
-    'education-department', 'health-and-human-services-department',
-    'housing-and-urban-development-department', 'defense-department',
-    'council-on-environmental-quality', 'advisory-council-on-historic-preservation',
-    'national-endowment-for-the-arts', 'national-endowment-for-the-humanities',
-    'institute-of-museum-and-library-services', 'smithsonian-institution',
-    'corporation-for-public-broadcasting', 'executive-office-of-the-president',
+    'arts community', 'cultural institution', 'humanities', 'folk art',
+    'language preservation', 'oral history', 'traditional knowledge',
 ]
 
 # Administration mapping

@@ -240,7 +240,7 @@ Total entries flagged: 97
         (people: 59, places: 50, practices: 45, treasures: 45)
 
 23. ID: proc-dec-2025-travel-ban
-   Category: executive_orders
+   Category: executive_actions
    Date: 2025-12-16
    Title: Further Restricting the Entry of Foreign Nationals to Protect the Security of the United States
    Flagged communities:
@@ -256,7 +256,7 @@ Total entries flagged: 97
         (people: 46, places: 34, practices: 37, treasures: 33)
 
 24. ID: v2025-imm-002
-   Category: executive_orders
+   Category: executive_actions
    Date: 2025-12-16
    Title: Expanded Travel Ban Blocks 39 Countries - Africa Hardest Hit
    Flagged communities:
@@ -346,7 +346,7 @@ Total entries flagged: 97
         (people: 7, places: 11, practices: 9, treasures: 10)
 
 32. ID: eo-2026-travelban-expansion
-   Category: executive_orders
+   Category: executive_actions
    Date: 2026-01-01
    Title: Proclamation 10998: Expanded Travel Ban Effective January 1, 2026
    Flagged communities:
@@ -398,7 +398,7 @@ Total entries flagged: 97
         (people: 33, places: 0, practices: 17, treasures: 12)
 
 37. ID: pm-2026-66-org-withdrawal
-   Category: executive_orders
+   Category: executive_actions
    Date: 2026-01-07
    Title: Presidential Memorandum: Withdrawing the United States from 66 International Organizations Contrary ...
    Flagged communities:
@@ -414,7 +414,7 @@ Total entries flagged: 97
         (people: 17, places: 10, practices: 11, treasures: 14)
 
 38. ID: eo-2026-defense-contractor-buybacks
-   Category: executive_orders
+   Category: executive_actions
    Date: 2026-01-07
    Title: Executive Order: Prioritizing the Warfighter in Defense Contracting
    Flagged communities:
@@ -590,7 +590,7 @@ Total entries flagged: 97
         (people: 29, places: 25, practices: 25, treasures: 24)
 
 53. ID: v2026-smithsonian-001
-   Category: executive_orders
+   Category: executive_actions
    Date: 2026-01-13
    Title: Smithsonian Faces January 13 Compliance Deadline
    Flagged communities:
@@ -732,7 +732,7 @@ Total entries flagged: 97
         (people: 51, places: 29, practices: 33, treasures: 25)
 
 66. ID: eo-2026-doge-anniversary
-   Category: executive_orders
+   Category: executive_actions
    Date: 2026-01-20
    Title: DOGE One-Year Report: 322,049 Federal Employees Exit Workforce
    Flagged communities:
@@ -776,7 +776,7 @@ Total entries flagged: 97
         (people: 42, places: 28, practices: 42, treasures: 34)
 
 70. ID: eo-2026-immigrant-visa-pause
-   Category: executive_orders
+   Category: executive_actions
    Date: 2026-01-21
    Title: State Department Immigrant Visa Pause for 75 Countries (January 21, 2026)
    Flagged communities:
@@ -898,7 +898,7 @@ Total entries flagged: 97
         (people: 33, places: 40, practices: 24, treasures: 25)
 
 82. ID: eo-2026-cuba-oil-tariffs
-   Category: executive_orders
+   Category: executive_actions
    Date: 2026-01-29
    Title: Executive Order: Addressing Threats to the United States by the Government of Cuba
    Flagged communities:
@@ -908,7 +908,7 @@ Total entries flagged: 97
         (people: 33, places: 0, practices: 25, treasures: 20)
 
 83. ID: eo-2026-recovery-initiative
-   Category: executive_orders
+   Category: executive_actions
    Date: 2026-01-29
    Title: Executive Order: Great American Recovery Initiative to Address the Addiction Crisis
    Flagged communities:
@@ -918,7 +918,7 @@ Total entries flagged: 97
         (people: 50, places: 31, practices: 18, treasures: 16)
 
 84. ID: eo-2026-guantanamo-migrants
-   Category: executive_orders
+   Category: executive_actions
    Date: 2026-01-29
    Title: Executive Order: Expanding Migrant Operations Center at Naval Station Guantanamo Bay
    Flagged communities:
@@ -1034,7 +1034,7 @@ Total entries flagged: 97
         (people: 43, places: 0, practices: 19, treasures: 19)
 
 95. ID: eo-2026-iran-secondary-tariffs
-   Category: executive_orders
+   Category: executive_actions
    Date: 2026-02-06
    Title: Executive Order: Addressing Threats to the United States by the Government of Iran
    Flagged communities:

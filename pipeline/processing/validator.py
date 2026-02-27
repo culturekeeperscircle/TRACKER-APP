@@ -5,7 +5,7 @@ import logging
 logger = logging.getLogger('tckc_pipeline')
 
 VALID_THREAT_LEVELS = ['SEVERE', 'HARMFUL', 'PROTECTIVE']
-VALID_CATEGORIES = ['executive_orders', 'agency_actions', 'legislation', 'litigation', 'other_domestic', 'international']
+VALID_CATEGORIES = ['executive_actions', 'agency_actions', 'legislation', 'litigation', 'other_domestic', 'international']
 VALID_ADMINISTRATIONS = ['Trump I', 'Trump II', 'Biden', 'Obama']
 
 

@@ -99,7 +99,7 @@ def main():
     # Analyze all categories
     all_flagged = []
 
-    categories = ['executive_orders', 'agency_actions', 'legislation', 'litigation', 'international']
+    categories = ['executive_actions', 'agency_actions', 'legislation', 'litigation', 'international']
 
     for category in categories:
         if category not in db:

@@ -1,4 +1,8 @@
-"""Federal Register API client — executive orders, agency rules, notices."""
+"""Federal Register API client — executive actions, agency rules, notices.
+
+Fetches ALL agencies (no agency filter) to ensure exhaustive coverage of
+actions affecting ethnic communities and cultural heritage/practice.
+"""
 import requests
 import logging
 from datetime import date, timedelta
@@ -8,19 +12,8 @@ logger = logging.getLogger('tckc_pipeline')
 
 API_BASE = 'https://www.federalregister.gov/api/v1'
 
-# Document types we care about
+# Document types we care about — all actionable federal documents
 DOC_TYPES = ['PRESDOCU', 'RULE', 'PRORULE', 'NOTICE']
-
-# Agencies of interest (slug format)
-AGENCIES = [
-    'interior-department', 'environmental-protection-agency', 'agriculture-department',
-    'justice-department', 'homeland-security-department', 'state-department',
-    'education-department', 'health-and-human-services-department',
-    'housing-and-urban-development-department', 'defense-department',
-    'council-on-environmental-quality', 'advisory-council-on-historic-preservation',
-    'national-endowment-for-the-arts', 'national-endowment-for-the-humanities',
-    'institute-of-museum-and-library-services', 'executive-office-of-the-president',
-]
 
 
 @retry_with_backoff(max_retries=3, exceptions=(requests.RequestException,))
@@ -43,11 +36,11 @@ def fetch_documents(since_date, page=1, per_page=100):
     return resp.json()
 
 
-MAX_PAGES = 3  # Cap at 300 documents to avoid pipeline timeouts
+MAX_PAGES = 10  # Cap at 1000 documents — exhaustive daily search
 
 
 def fetch_since(since_date, rate_limiter=None):
-    """Fetch relevant documents since the given date (capped at MAX_PAGES pages)."""
+    """Fetch ALL documents since the given date (exhaustive, all agencies)."""
     results = []
     page = 1
 
@@ -92,5 +85,5 @@ def fetch_since(since_date, rate_limiter=None):
 def get_category(doc):
     """Map a Federal Register document to a tracker category."""
     if doc.get('doc_type') == 'PRESDOCU':
-        return 'executive_orders'
+        return 'executive_actions'
     return 'agency_actions'

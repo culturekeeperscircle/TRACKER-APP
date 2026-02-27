@@ -221,7 +221,7 @@ def main():
     data = extract_data_json(html_text)
 
     # Categories to scan
-    categories = ["executive_orders", "agency_actions", "legislation", "litigation",
+    categories = ["executive_actions", "agency_actions", "legislation", "litigation",
                    "other_domestic", "international"]
 
     # Collect all entries from April-June 2025
