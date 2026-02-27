@@ -6,6 +6,7 @@ Updates data/data.json and commits changes for GitHub Pages deployment.
 """
 import json
 import sys
+import time
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -131,7 +132,15 @@ def run():
 
     # ── Phase 3: Claude relevance screening (Tier 1) ──
     relevant_items = []
-    for item in filtered_items:
+    screening_start = time.time()
+    SCREENING_TIME_BUDGET = 20 * 60  # 20 minutes max for screening
+
+    for i, item in enumerate(filtered_items):
+        elapsed = time.time() - screening_start
+        if elapsed > SCREENING_TIME_BUDGET:
+            logger.warning(f'Screening time budget exhausted ({int(elapsed)}s). Screened {i}/{len(filtered_items)} items.')
+            break
+
         result = screen_relevance(item, rate_limiter=rate_limiter)
         if result.get('relevant') and result.get('confidence', 0) >= 0.6:
             item['_ai_category'] = result.get('category', '')
@@ -142,7 +151,7 @@ def run():
         else:
             logger.info(f'  Filtered: {item.get("title", "")[:80]}...')
 
-    logger.info(f'AI-relevant items: {len(relevant_items)}')
+    logger.info(f'AI-relevant items: {len(relevant_items)} (screened in {int(time.time() - screening_start)}s)')
 
     # Cap to prevent timeout — process highest-confidence items first
     MAX_ENTRIES_PER_RUN = 25
