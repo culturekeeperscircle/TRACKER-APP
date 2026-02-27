@@ -9,6 +9,8 @@ The tracker monitors ALL U.S. government actions from ANY agency that affect:
 - Environmental justice, environmental protection, public lands, conservation
 - Arts/education/humanities funding (NEA, NEH, Smithsonian, IMLS, CPB, libraries)
 - Language preservation, traditional knowledge, oral history, folk arts, intangible heritage
+- Foodways, landways, cultural arts, parades, celebrations, festivals, ceremonies
+- Schools, universities, museums, libraries, archives, cultural centers, cultural programming
 
 Mark as relevant if the action could directly or indirectly impact ANY ethnic community or cultural heritage/practice in the United States.
 

@@ -68,6 +68,14 @@ RELEVANCE_KEYWORDS = [
     'public broadcasting', 'CPB', 'PBS', 'NPR', 'IMLS',
     'arts community', 'cultural institution', 'humanities', 'folk art',
     'language preservation', 'oral history', 'traditional knowledge',
+    # Cultural life — foodways, landways, arts, celebrations, programming
+    'foodways', 'landways', 'folk arts', 'cultural arts', 'performing arts',
+    'parade', 'celebration', 'festival', 'ceremony', 'cultural event',
+    'cultural programming', 'cultural center', 'community center',
+    # Education & knowledge institutions
+    'school', 'university', 'college', 'museum', 'library', 'archive',
+    'curriculum', 'Title I', 'Title IX', 'student', 'scholarship',
+    'tribal college', 'community college', 'head start',
 ]
 
 # Administration mapping

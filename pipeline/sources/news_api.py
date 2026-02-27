@@ -19,6 +19,8 @@ SEARCH_QUERIES = [
     '"Latino" OR "Hispanic" OR "farmworker" OR "immigrant community" OR Latinx',
     '"Asian American" OR "Pacific Islander" OR AAPI OR "hate crime" OR "anti-Asian"',
     '"cultural practice" OR "language preservation" OR "traditional knowledge" OR "folk art"',
+    'foodways OR "folk arts" OR "cultural arts" OR parade OR "cultural festival" OR celebration',
+    'museum OR library OR university OR school OR "cultural programming" OR "cultural center"',
 ]
 
 

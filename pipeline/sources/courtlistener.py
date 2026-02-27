@@ -21,6 +21,8 @@ SEARCH_QUERIES = [
     'Latino Hispanic farmworker immigrant community',
     'Asian American Pacific Islander AAPI hate crime',
     'cultural practice traditional knowledge language preservation',
+    'museum library school university cultural programming education',
+    'foodways folk arts cultural arts celebration parade festival',
 ]
 
 
