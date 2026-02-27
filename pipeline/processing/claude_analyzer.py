@@ -61,6 +61,11 @@ def generate_entry(item, category, existing_examples, rate_limiter=None):
         rate_limiter.wait_if_needed('anthropic')
 
     prompt = load_prompt('entry_generation')
+
+    # Ensure source URL is prominently available for the U field
+    if item.get('url') and not item.get('_official_url'):
+        item['_official_url'] = item['url']
+
     item_text = json.dumps(item, indent=2, default=str)
 
     # Include 2 existing examples for few-shot learning
@@ -84,6 +89,11 @@ def generate_entry(item, category, existing_examples, rate_limiter=None):
         if '{' in text:
             json_str = text[text.index('{'):text.rindex('}') + 1]
             entry = json.loads(json_str)
+
+            # Ensure U field has the official source URL from API data
+            if not entry.get('U') and item.get('url'):
+                entry['U'] = item['url']
+
             logger.info(f'Generated entry: {entry.get("i", entry.get("id", "unknown"))}')
             return entry
     except Exception as e:

@@ -64,12 +64,18 @@ def validate_entry(entry, category):
     if word_count < 100:
         errors.append(f'Description too short: {word_count} words (min 100)')
 
-    # Title should have HTML color span for SEVERE/PROTECTIVE
+    # Title should have HTML color span for all threat levels
     title = entry.get('T', '')
     if entry.get('L') == 'SEVERE' and '#991B1B' not in title:
         errors.append('SEVERE entries should have red (#991B1B) color span in title')
+    if entry.get('L') == 'HARMFUL' and '#CA8A04' not in title:
+        errors.append('HARMFUL entries should have amber (#CA8A04) color span in title')
     if entry.get('L') == 'PROTECTIVE' and '#065F46' not in title:
         errors.append('PROTECTIVE entries should have green (#065F46) color span in title')
+
+    # Source URL should be present
+    if not entry.get('U'):
+        errors.append('Missing source URL field: U')
 
     if errors:
         entry_id = entry.get('i') or entry.get('id', 'unknown')

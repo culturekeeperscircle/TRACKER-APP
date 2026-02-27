@@ -6,10 +6,11 @@ Check:
 3. Legal mechanisms are correctly cited (correct EO numbers, public law numbers, court case names)
 4. Date format is YYYY-MM-DD
 5. Administration matches the date
-6. All required fields are present: i/id, t, n, T, s, d, a, A, S, L, D, I, c
-7. Title has correct HTML color span for threat level
+6. All required fields are present: i/id, t, n, T, s, d, a, A, S, L, D, I, c, U
+7. Title has correct HTML color span for threat level (SEVERE=#991B1B red, HARMFUL=#CA8A04 amber, PROTECTIVE=#065F46 green)
 8. Description is substantive (500+ words)
 9. Impact 4P fields are each 150+ words
+10. U field contains a valid official source URL (Federal Register, Congress.gov, CourtListener, etc.)
 
 ENTRY:
 {ENTRY_DATA}

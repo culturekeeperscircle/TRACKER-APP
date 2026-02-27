@@ -6,27 +6,46 @@ CATEGORY: {CATEGORY}
 
 ENTRY SCHEMA:
 - "i": unique string ID (use "id" instead of "i" ONLY if category is "legislation")
-  Formats: executive_orders → "eo-{number}", agency_actions → "{agency}-{type}-{year}-{seq}",
-  legislation → "pl-{congress}-{number}" or "hr-{number}-{congress}", litigation → "{plaintiff}-v-{defendant}-{year}"
-- "t": document type string (e.g., "Executive Order", "Public Law", "Final Rule", "Court Opinion")
+  Formats by CATEGORY:
+  executive_orders → "eo-{number}" (e.g., "eo-14189") or "proc-{number}" for Proclamations
+  agency_actions → "{agency}-{type}-{year}-{seq}" (e.g., "doi-rule-2025-001", "epa-notice-2026-003")
+  legislation → "pl-{congress}-{number}" or "hr-{number}-{congress}" or "s-{number}-{congress}"
+  litigation → "{plaintiff}-v-{defendant}-{year}" (e.g., "standing-rock-v-acoe-2025")
+  other_domestic → "{topic}-{year}-{seq}" (e.g., "dei-policy-2025-001", "census-2026-001")
+  international → "intl-{topic}-{year}-{seq}" (e.g., "intl-heritage-convention-2025-001", "intl-un-indigenous-2026-001")
+- "t": document type string. Must match the CATEGORY:
+  executive_orders → "Executive Order", "Presidential Proclamation", "Presidential Memorandum", "Secretary Order"
+  agency_actions → "Final Rule", "Proposed Rule", "Agency Notice", "Agency Memorandum", "Agency Guidance"
+  legislation → "Public Law", "Bill", "Joint Resolution", "Continuing Resolution"
+  litigation → "Court Opinion", "Court Order", "Consent Decree", "Settlement", "Amicus Brief"
+  other_domestic → "Policy Directive", "Advisory Report", "IG Report", "GAO Report", "Census Report"
+  international → "Treaty", "UN Resolution", "International Agreement", "UNESCO Decision", "Convention Action"
 - "n": official number/designation (e.g., "EO 14156", "P.L. 119-28", "85 FR 12345")
 - "T": full title with HTML color span based on threat level:
   SEVERE: "<span style=\"color: #991B1B;\">Number:</span> Rest of Title"
+  HARMFUL: "<span style=\"color: #CA8A04;\">Number:</span> Rest of Title"
   PROTECTIVE: "<span style=\"color: #065F46;\">Number:</span> Rest of Title"
-  HARMFUL: no color span, plain title
 - "s": short summary slug (2-5 words)
 - "d": date in YYYY-MM-DD format
 - "a": administration — "Trump II" (2025-01-20+), "Biden" (2021-01-20 to 2025-01-19), "Trump I" (2017-01-20 to 2021-01-19), "Obama" (before 2017-01-20)
 - "A": array of agency abbreviations (e.g., ["DOI", "EPA", "ACHP"])
 - "S": status description (e.g., "Active", "Enacted", "Pending", "Revoked by Biden...")
 - "L": threat level — "SEVERE", "HARMFUL", or "PROTECTIVE"
-- "D": detailed description (500-1500 words). Start with "ACTION:", "PUBLIC LAW", "LITIGATION:", or "INTERNATIONAL:" as appropriate. Include specific legal mechanisms, timelines, funding amounts, and concrete impacts.
+- "D": detailed description (500-1500 words). Start with the appropriate prefix for the CATEGORY:
+  executive_orders → "ACTION:"
+  agency_actions → "ACTION:"
+  legislation → "PUBLIC LAW:" (if enacted) or "BILL:" (if pending)
+  litigation → "LITIGATION:"
+  other_domestic → "DOMESTIC POLICY:"
+  international → "INTERNATIONAL:"
+  Include specific legal mechanisms, timelines, funding amounts, and concrete impacts.
 - "I": impact analysis object. Include 2-4 most affected communities as keys (e.g., "indigenous", "africanDescendant", "latine", "asianAmerican", "immigrant", "allCommunities"). Each community has 4 fields:
   - "people": who is affected and how (150-300 words)
   - "places": what locations/institutions are impacted (150-300 words)
   - "practices": what cultural/professional practices are disrupted (150-300 words)
   - "treasures": what cultural objects, archives, or resources are at risk (150-300 words)
 - "c": array of affected community names (e.g., ["Indigenous/Tribal", "African-descendant", "Latiné"])
+- "U": official source URL — use the EXACT url from the source data (Federal Register html_url, Congress.gov bill URL, CourtListener URL, etc.). This MUST link to the official government/court source, NOT a news article or third-party site.
 - "_source": source tag string (e.g., "federal_register_2026", "congress_2026", "courtlistener_2026", "news_2026")
 
 CRITICAL RULES:

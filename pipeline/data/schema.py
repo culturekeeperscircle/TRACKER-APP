@@ -14,6 +14,7 @@ ENTRY_SCHEMA = {
     'D': 'Detailed description (string, 500-1500 words)',
     'I': 'Impact analysis (object) — community keys → 4P fields',
     'c': 'Communities affected (array of strings)',
+    'U': 'Official source URL (string) — Federal Register, Congress.gov, CourtListener, etc.',
 }
 
 OPTIONAL_FIELDS = {
