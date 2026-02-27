@@ -153,8 +153,8 @@ def run():
 
     logger.info(f'AI-relevant items: {len(relevant_items)} (screened in {int(time.time() - screening_start)}s)')
 
-    # Cap to prevent timeout — process highest-confidence items first
-    MAX_ENTRIES_PER_RUN = 25
+    # Cap to prevent timeout — Sonnet generation ~60s/entry, budget ~15 min
+    MAX_ENTRIES_PER_RUN = 15
     if len(relevant_items) > MAX_ENTRIES_PER_RUN:
         relevant_items.sort(key=lambda x: x.get('_ai_threat', ''), reverse=True)
         logger.warning(f'Capping entry generation at {MAX_ENTRIES_PER_RUN} items (had {len(relevant_items)})')
