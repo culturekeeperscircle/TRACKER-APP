@@ -18,7 +18,7 @@ on:
       dry_run:
         description: 'Dry run (no commit)'
         required: false
-        default: 'false'
+        default: false
         type: boolean
 
 permissions:
@@ -53,7 +53,12 @@ jobs:
         run: python -m pipeline
 
       - name: Validate data.json
-        run: python -c "import json; d=json.load(open('data/data.json')); print(f'Valid JSON: {d[\"meta\"][\"total\"]} entries')"
+        run: |
+          python -c "
+          import json
+          d = json.load(open('data/data.json'))
+          print(f'Valid JSON: {d[\"meta\"][\"total\"]} entries')
+          "
 
       - name: Check for changes
         id: changes
