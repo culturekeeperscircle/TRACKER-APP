@@ -53,6 +53,24 @@ RELEVANCE_KEYWORDS = [
     # Other ethnic / identity communities
     'LGBTQ', 'disability', 'women', 'Muslim', 'Jewish', 'Sikh', 'Hindu',
     'Arab American', 'Middle Eastern', 'immigrant community', 'refugee community',
+    'Garifuna', 'Tamil', 'Tamil American',
+    # Heritage months & recognition resolutions
+    'heritage month', 'history month', 'recognition month', 'awareness month',
+    'National Day of', 'commemorat', 'designat',
+    'Black History', 'African American History', 'Filipino American History',
+    'Native Hawaiian', 'Asian Pacific American Heritage', 'AANHPI Heritage',
+    'Hispanic Heritage', 'Arab American Heritage', 'Indigenous Peoples Day',
+    'Juneteenth National Independence Day',
+    # Specific bill topics to track
+    'official language', 'English language', 'English-only', 'national language',
+    'language access', 'multilingual', 'bilingual', 'interpreter', 'translation',
+    'reproductive rights', 'reproductive health', 'contraception', 'abortion',
+    'maternal health', 'birth equity',
+    'worker rights', 'labor rights',  'wage theft', 'workplace safety',
+    'fair scheduling', 'domestic workers', 'gig workers',
+    'Kennedy Center', 'National Museum', 'Smithsonian museum',
+    'African American Museum', 'Latino Museum', 'Women\'s History Museum',
+    'Asian Pacific American', 'American Indian Museum',
     # Civil rights & equity
     'DEI', 'environmental justice', 'Title VI', 'discrimination', 'equity',
     'hate crime', 'civil liberties', 'equal protection', 'voting rights',
@@ -68,6 +86,8 @@ RELEVANCE_KEYWORDS = [
     'public broadcasting', 'CPB', 'PBS', 'NPR', 'IMLS',
     'arts community', 'cultural institution', 'humanities', 'folk art',
     'language preservation', 'oral history', 'traditional knowledge',
+    'arts education', 'creative workforce', 'cultural funding', 'arts grant',
+    'National Endowment', 'Corporation for Public Broadcasting',
     # Cultural life — foodways, landways, arts, celebrations, programming
     'foodways', 'landways', 'folk arts', 'cultural arts', 'performing arts',
     'parade', 'celebration', 'festival', 'ceremony', 'cultural event',
@@ -76,6 +96,49 @@ RELEVANCE_KEYWORDS = [
     'school', 'university', 'college', 'museum', 'library', 'archive',
     'curriculum', 'Title I', 'Title IX', 'student', 'scholarship',
     'tribal college', 'community college', 'head start',
+]
+
+# Tracked bill numbers — these specific bills should always pass keyword filter
+# when they appear in Congress.gov results (matched by source_id)
+TRACKED_BILLS = [
+    # Black History & African American Heritage
+    'HR1359-119', 'HR844-119', 'HR7549-118', 'SRES99-119', 'HR1817-119',
+    'HRES766-118', 'HRES1080-118', 'HRES1088-118', 'S3953-118',
+    # Filipino American
+    'SRES423-118', 'HRES774-118',
+    # Native Hawaiian
+    'HRES787-118', 'SRES419-118', 'SRES83-119', 'HRES136-119', 'SRES625-118',
+    # Indigenous Peoples
+    'HRES809-118', 'SRES450-118', 'HRES911-118', 'SRES501-118',
+    # AANHPI
+    'SRES214-119', 'HRES400-119', 'S1844-119', 'HR3551-119',
+    # Latiné Heritage
+    'HRES261-119', 'SRES144-119', 'SRES428-118',
+    # Arab American / Garifuna / Tamil
+    'HRES351-119', 'HRES288-119', 'HRES41-119',
+    # Smithsonian Museums
+    'S1303-119',
+    # Immigration
+    'HR6149-118', 'HR2851-119', 'HRES909-118', 'S3702-118',
+    'HR6397-118', 'HR3101-119', 'HR1680-119', 'HR4393-119', 'S391-119',
+    # Reproductive Rights
+    'S422-119', 'HR999-119', 'HCONRES65-118',
+    # Workers' Rights
+    'HR3971-119', 'S3396-118',
+    # Voting Rights
+    'S2589-119', 'HR4917-119',
+    # Language Rights
+    'HR1572-119', 'HR1772-119', 'HR1862-119', 'S542-119',
+    'HR1660-119', 'HR3728-119', 'HRES804-118', 'HRES149-119', 'HR3238-119',
+    # Equality
+    'HR4373-119',
+    # International
+    'HR2416-119', 'S2224-119',
+    # Arts/Education/Cultural Funding
+    'HR82-119', 'HR2485-119', 'HR5399-118', 'HR3852-119',
+    'HR5009-119', 'HR4754-119', 'S2431-119', 'HR6165-118',
+    # Kennedy Center
+    'HR6925-118', 'HRES973-118',
 ]
 
 # Administration mapping

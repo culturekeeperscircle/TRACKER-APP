@@ -12,6 +12,18 @@ The tracker monitors ALL U.S. government actions from ANY agency that affect:
 - Foodways, landways, cultural arts, parades, celebrations, festivals, ceremonies
 - Schools, universities, museums, libraries, archives, cultural centers, cultural programming
 
+ALWAYS mark as RELEVANT (high confidence) if the item involves ANY of:
+- Heritage month resolutions or cultural recognition (Black History Month, Filipino American History Month, Native Hawaiian recognition, AANHPI Heritage, Hispanic Heritage, Arab American Heritage, Indigenous Peoples Day, Garifuna, Tamil, etc.)
+- Official language / English-only legislation (mark as HARMFUL)
+- Language access, multilingual services, interpreter/translation rights
+- Reproductive rights and health legislation
+- Worker rights, labor protections, domestic worker/gig worker bills
+- Cultural institution legislation (Smithsonian museums, Kennedy Center, NEA, NEH, IMLS, CPB)
+- Immigration reform, immigrant protections, DACA, TPS, asylum, deportation
+- Voting rights, election access, democracy protection
+- Arts education, creative workforce, cultural funding
+- Any bill or resolution naming a specific ethnic, racial, or cultural community
+
 Mark as relevant if the action could directly or indirectly impact ANY ethnic community or cultural heritage/practice in the United States.
 
 Analyze this item and determine relevance:

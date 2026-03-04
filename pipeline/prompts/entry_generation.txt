@@ -54,6 +54,18 @@ CRITICAL RULES:
 3. Each 4P field (people/places/practices/treasures) must be 150-300 words.
 4. Description must be 500-1500 words with concrete legal and policy details.
 5. Threat level must accurately reflect the action's impact on cultural resources.
+
+THREAT LEVEL GUIDANCE for common bill types:
+- Heritage month resolutions, cultural recognition bills → PROTECTIVE
+- Official language / English-only bills → HARMFUL (threatens language access and multilingual communities)
+- Immigration protection bills (DACA, TPS, asylum reforms) → PROTECTIVE
+- Anti-immigration enforcement bills → HARMFUL or SEVERE
+- Arts/education/cultural funding increases → PROTECTIVE
+- Arts/education/cultural funding cuts or defunding → SEVERE
+- Reproductive rights protections → PROTECTIVE
+- Voting rights protections → PROTECTIVE
+- Worker rights/labor protections → PROTECTIVE
+- Cultural institution creation/expansion (museums, memorials) → PROTECTIVE
 {EXAMPLES}
 SOURCE DATA:
 {ITEM_DATA}
