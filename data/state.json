@@ -1,6 +1,6 @@
 {
   "last_successful_run": "2026-03-04",
-  "last_run_new_entries": 0,
+  "last_run_new_entries": 2,
   "sources": {
     "federal_register": {
       "last_fetched_date": "2026-03-02",
@@ -19,7 +19,7 @@
     },
     "news": {
       "last_fetched_date": "2026-03-02",
-      "items_fetched": 186,
+      "items_fetched": 191,
       "status": "success"
     }
   },
@@ -545,11 +545,6 @@
       "2026-04207"
     ],
     "congress_gov": [
-      "HR4733-119",
-      "HR4716-119",
-      "HR4624-119",
-      "HR4638-119",
-      "HR4669-119",
       "S2390-119",
       "S2414-119",
       "S2427-119",
@@ -1544,7 +1539,12 @@
       "S3514-119",
       "SRES569-119",
       "S3596-119",
-      "HR4620-119"
+      "HR4620-119",
+      "HR1400-119",
+      "HR1397-119",
+      "S649-119",
+      "HR1446-119",
+      "HR3162-119"
     ],
     "courtlistener": [],
     "news_api": [
@@ -2458,11 +2458,58 @@
       "https://nypost.com/2026/03/03/us-news/georgia-father-who-gifted-gun-to-alleged-school-shooter-colt-gray-convicted-of-murder/",
       "https://www.dazeddigital.com/music/article/69795/1/a-starter-pack-guide-to-2hollis-spring-2026-issue-hair?utm_source=Link&utm_medium=Link&utm_campaign=RSSFeed&utm_term=a-starter-pack-guide-to-the-lore-of-2hollis",
       "https://www.foxnews.com/media/nashville-teacher-gets-record-cleared-after-refusing-read-same-sex-marriage-book-first-graders",
-      "https://wornandwound.com/czapek-introduces-two-new-exotic-mother-of-pearl-dials-in-the-promenade-and-antarctique-collections/"
+      "https://wornandwound.com/czapek-introduces-two-new-exotic-mother-of-pearl-dials-in-the-promenade-and-antarctique-collections/",
+      "https://indianexpress.com/article/world/golestan-palace-damaged-iran-israel-strike-unesco-10563533/",
+      "https://theundercoverrecruiter.com/navigating-2026-salary-transparency-laws-a-compliance-checklist-for-multi-state-employers/",
+      "https://www.bostonherald.com/2026/03/03/figure-skating-paralympics/",
+      "https://www.cosmopolitan.com/entertainment/tv/a70589891/love-is-blind-vic-christine-plants-theory/",
+      "https://norml.org/blog/2026/03/03/norml-defends-cannabis-consumers-constitutional-rights/",
+      "https://reason.com/2026/03/03/doj-briefly-abandons-trumps-unconstitutional-orders-targeting-law-firms/",
+      "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2026.1768542/full",
+      "https://apnews.com/article/noem-testifies-congress-homeland-security-immigration-enforcement-ebb715699e3f4f6dd6fdd22157b4e1a7",
+      "https://www.cbsnews.com/video/watch-sen-durbin-presses-noem-to-retract-claims-about-renee-good-and-alex-pretti/",
+      "https://dailycaller.com/2026/03/03/prosecutors-reveal-why-illegal-immigrant-30-arrests-free-virginia-bus-stop-murder/",
+      "https://www.metalsucks.net/2026/03/03/blackbraid-to-release-new-ep-nocturnal-womb-this-friday-celestial-bloodlust-streaming-now/",
+      "https://www.portlandmercury.com/food-and-drink/2026/03/03/48350551/introducing-the-portland-mercurys-new-managing-editor-katherine-chew-hamilton",
+      "https://www.techdirt.com/2026/03/03/ron-wyden-is-begging-his-colleagues-to-stop-trying-to-hand-trump-a-censorship-weapon/",
+      "https://theconversation.com/late-deciders-higher-turnout-what-the-gorton-and-denton-byelection-taught-us-about-voters-277268",
+      "https://slashdot.org/firehose.pl?op=view&amp;id=180899952",
+      "https://en.antaranews.com/news/406843/govt-grants-emergency-stay-to-foreigners-due-to-middle-east-conflict",
+      "https://nationalpost.com/news/politics/poilievre-keynote-speech-integration-with-u-k-and-allies",
+      "https://dailycaller.com/2026/03/03/john-kennedy-noem-stephen-miller-alex-pretti/",
+      "https://pagesix.com/2026/03/03/style/brooks-nader-trades-her-bikini-top-for-a-seashell/",
+      "https://www.globenewswire.com/news-release/2026/03/03/3248735/0/en/Gray-s-Reef-Celebrates-Grand-Reopening-Of-Ocean-Discovery-Center-With-A-Sustainability-Block-Party.html",
+      "https://truthout.org/articles/trump-has-made-the-us-war-machine-a-spectacle-and-its-spectacularly-unpopular/",
+      "https://www.marca.com/en/ncaa/2026/03/03/69a7198e46163ff6638b45d7.html",
+      "https://timesofindia.indiatimes.com/tv/news/hindi/the-50s-mr-faisu-aka-faisal-shaikh-all-set-to-get-married-adnaan-shaikh-confirms-the-news/articleshow/128983497.cms",
+      "https://economictimes.indiatimes.com/news/international/us/happy-holi-2026-100-wishes-messages-and-greetings-date-and-celebration-timings-in-the-usa/articleshow/128983431.cms",
+      "https://www.redflagdeals.com/deal/beauty-wellness/lovehoney-best-of-the-best-awards-this-girl-came-campaign-celebrate-pleasure-and-empowerment/",
+      "https://bedroomproducersblog.com/2026/03/03/roland-tbt-303-49/",
+      "https://www.lawyersgunsmoneyblog.com/2026/03/happy-birthday-darlin",
+      "https://pypi.org/project/ml4t-engineer/0.1.0b1/",
+      "https://pypi.org/project/bdfinance/",
+      "https://pypi.org/project/bdfinance/0.1.0/",
+      "https://news.yale.edu/2026/03/03/using-ai-improve-cardiovascular-health",
+      "https://observer.com/2026/03/art-facial-recognition-museums-predict-visitor-intention-study/",
+      "https://www.highsnobiety.com/p/reebok-london-thing/",
+      "https://www.uxpin.com/studio/?p=58369",
+      "https://www.deseret.com/sports/2026/03/03/lucas-langarita-return-from-injury-utah-basketball/",
+      "https://pypi.org/project/petpal/0.6.3/",
+      "https://www.nextbigfuture.com/2026/03/how-us-navy-jams-and-spoofs-irans-hypersonic-missiles.html",
+      "https://www.editorandpublisher.com/stories/life-after-broadcast-what-mission-driven-media-must-become-as-audiences-and-funding-move-on,260345",
+      "https://abcnews.com/US/wireStory/high-tech-snowplows-ai-cities-clean-big-storms-130721308",
+      "https://www.edf.org/media/us-judge-rules-new-yorks-congestion-pricing-program-can-continue",
+      "https://pypi.org/project/napari-nanopyx/0.2.10/",
+      "https://pypi.org/project/zombie-squirrel/0.12.0/",
+      "https://www.loc.gov/item/global-legal-monitor/2026-03-03/germany-court-rules-bank-bears-risk-of-unauthorized-apple-pay-transactions/",
+      "https://pypi.org/project/file-watchman/",
+      "https://post.rlsbb.to/the-prom-2020-720p-nf-web-h264-norbit/",
+      "https://dergipark.org.tr/en/pub/gujs/article/1794891",
+      "https://fortune.com/2026/03/03/billionaire-howard-marks-on-ai-bubble-adoption-buffett-munger-investing-anthropic-claude/"
     ]
   },
   "cumulative_stats": {
-    "total_runs": 10,
-    "total_entries_added": 42
+    "total_runs": 11,
+    "total_entries_added": 44
   }
 }
