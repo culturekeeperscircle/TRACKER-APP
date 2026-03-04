@@ -19,7 +19,7 @@
     },
     "news": {
       "last_fetched_date": "2026-03-02",
-      "items_fetched": 179,
+      "items_fetched": 186,
       "status": "success"
     }
   },
@@ -2418,11 +2418,51 @@
       "https://pypi.org/project/ai-helpers-ashbi/",
       "https://www.aljazeera.com/video/quotable/2026/3/3/ships-now-fear-crossing-the-strait-of-hormuz",
       "https://smartbitchestrashybooks.com/2026/03/hockey-non-fiction-more/",
-      "https://www.athleticsnation.com/cpl/102810/athletics-community-prospect-list-kade-morris-round-out-top-20"
+      "https://www.athleticsnation.com/cpl/102810/athletics-community-prospect-list-kade-morris-round-out-top-20",
+      "https://www.dezeen.com/2026/03/03/white-house-east-wing-review-comments/",
+      "https://www.nextgov.com/digital-government/2026/03/lgbtq-data-disappearing-under-trump-reports-find/411831/",
+      "https://legalinsurrection.com/2026/03/iowa-house-bill-targets-private-universities-with-dei-offices/",
+      "https://www.theabsolutesound.com/articles/mark-turner-reflections-on-the-autobiography-of-an-ex-colored-man/",
+      "http://www.hollywoodreporter.com/movies/movie-news/alabama-solution-andrew-jarecki-charlotte-kaufman-1236500605/",
+      "https://indianexpress.com/article/sports/badminton/pv-sindhu-dubai-explosions-all-england-absence-middle-east-war-10563583/",
+      "https://www.punknews.org/article/87705/listen-to-mega-infinitys-new-album-and-read-a-track-by-track-breakdown",
+      "https://www.mediaite.com/politics/democrat-confronts-noem-about-luxury-jet-she-reportedly-wants-dhs-to-buy-for-deportations-with-a-bedroom-in-it/",
+      "https://www.portlandmercury.com/good-morning-news/2026/03/03/48357372/good-morning-news-state-transpo-bill-passes-tear-gas-lawsuit-continues-portlanders-protest-war-bovinos-comeuppance-and-word-of-the-day",
+      "https://www.foxnews.com/politics/steve-scalise-rips-democrats-playing-political-games-dhs-shutdown-amid-iran-threat",
+      "https://slashdot.org/firehose.pl?op=view&amp;id=180899834",
+      "https://theweek.com/politics/minneapolis-investigates-bovino-ice-immigration-agents",
+      "https://www.mediaite.com/media/tv/terribly-awkward-gop-senator-scolds-kristi-noem-for-dropping-220m-on-dhs-ads-that-feature-her-prominently/",
+      "https://www.foxnews.com/politics/you-should-ashamed-protester-dragged-from-kristi-noems-senate-hearing",
+      "https://newrepublic.com/post/207267/kristi-noem-defense-alex-pretti-domestic-terrorist",
+      "https://news.sky.com/story/drill-rapper-who-twice-escaped-police-custody-is-caught-in-france-13514739",
+      "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs002908.v2.p1",
+      "https://dodgersnation.com/the-five-greatest-dodgers-of-mexican-descent/2026/03/03/",
+      "https://www.pbs.org/newshour/politics/gop-rep-gonzales-enters-texas-primary-fighting-to-keep-his-job-after-allegations-of-an-affair",
+      "https://www.businessinsider.com/took-trip-with-mom-for-bachelorette-party-worth-it-2026-3",
+      "https://freerepublic.com/focus/f-bloggers/4369115/posts",
+      "https://pypi.org/project/colorbrew/0.6.3/",
+      "https://post.rlsbb.to/mediamonkey-gold-2024-2-1-3211-rc4/",
+      "https://kottke.org/26/03/new-rembrandt-painting-discove",
+      "https://financialpost.com/pmn/business-wire-news-releases-pmn/leonid-capital-partners-launches-the-leonid-sentinel-foundation-to-support-veterans-and-military-families",
+      "https://www.ingame.com/jontay-porter-usbl/",
+      "https://brobible.com/sports/article/chad-baker-mazara-kicked-off-usc-basketball-team-why-reason-explanation/",
+      "https://post.rlsbb.to/phraseexpress-18-0-63/",
+      "http://comicbook.com/tv-shows/list/these-7-animated-shows-from-the-90s-have-actually-aged-better-than-you-think/",
+      "https://www.buzzfeed.com/daves4/50-absolutely-extraordinary-and-rare-historical-pictures",
+      "https://www.defenseone.com/threats/2026/03/the-d-brief-march-03-2026/411832/",
+      "https://www.nbcnews.com/health/health-news/chatgpt-health-under-triaged-half-medical-emergencies-rcna261409",
+      "https://www.ladbible.com/news/us-iran-war-no-boundaries-expert-warns-265421-20260303",
+      "https://www.thurrott.com/games/333304/cyberpunk-2077-and-planet-of-lana-ii-are-coming-to-game-pass",
+      "https://road.cc/news/cycling-does-not-have-doping-problem-says-pogacar-agent",
+      "https://www.cnet.com/tech/services-and-software/new-movies-streaming-netflix-march-2026/",
+      "https://nypost.com/2026/03/03/us-news/georgia-father-who-gifted-gun-to-alleged-school-shooter-colt-gray-convicted-of-murder/",
+      "https://www.dazeddigital.com/music/article/69795/1/a-starter-pack-guide-to-2hollis-spring-2026-issue-hair?utm_source=Link&utm_medium=Link&utm_campaign=RSSFeed&utm_term=a-starter-pack-guide-to-the-lore-of-2hollis",
+      "https://www.foxnews.com/media/nashville-teacher-gets-record-cleared-after-refusing-read-same-sex-marriage-book-first-graders",
+      "https://wornandwound.com/czapek-introduces-two-new-exotic-mother-of-pearl-dials-in-the-promenade-and-antarctique-collections/"
     ]
   },
   "cumulative_stats": {
-    "total_runs": 9,
+    "total_runs": 10,
     "total_entries_added": 42
   }
 }
