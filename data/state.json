@@ -19,7 +19,7 @@
     },
     "news": {
       "last_fetched_date": "2026-03-02",
-      "items_fetched": 185,
+      "items_fetched": 179,
       "status": "success"
     }
   },
@@ -545,7 +545,6 @@
       "2026-04207"
     ],
     "congress_gov": [
-      "HJRES110-119",
       "HR4733-119",
       "HR4716-119",
       "HR4624-119",
@@ -1544,7 +1543,8 @@
       "S3365-119",
       "S3514-119",
       "SRES569-119",
-      "S3596-119"
+      "S3596-119",
+      "HR4620-119"
     ],
     "courtlistener": [],
     "news_api": [
@@ -2371,11 +2371,58 @@
       "https://apnews.com/article/rembrandt-amsterdam-rijksmuseum-discovery-9766e3a9d475f26b6c4b4dfbc7a0f169",
       "https://freerepublic.com/focus/f-news/4369111/posts",
       "https://pypi.org/project/nkunyim-iam/1.5.1/",
-      "https://indianexpress.com/article/pune/buses-cabs-autos-goods-vehicles-transport-unions-strike-march-5-pune-mumbai-10563535/"
+      "https://indianexpress.com/article/pune/buses-cabs-autos-goods-vehicles-transport-unions-strike-march-5-pune-mumbai-10563535/",
+      "https://www.lrb.co.uk/blog/2026/march/the-dry-and-the-wet-burn-together",
+      "https://www.thegatewaypundit.com/2026/03/smoothie-king-takes-swift-action-after-employees-refuse/",
+      "https://newrepublic.com/post/207266/kash-patel-halted-investigation-renee-good-killing-victim",
+      "https://www.hitc.com/luke-kornet-goes-off-on-atlanta-hawks-for-conducting-a-magic-city-night/",
+      "https://en.protothema.gr/2026/03/03/shooting-between-turks-on-marathonos-avenue-armed-attack-on-a-car-driver/",
+      "https://www.cbsnews.com/video/top-senate-judiciary-committee-democrat-says-dhs-is-devoid-of-any-moral-compass-under-noem/",
+      "https://economictimes.indiatimes.com/news/india/i-hope-its-the-first-and-last-experience-pv-sindhu-on-dubai-ordeal/articleshow/128981719.cms",
+      "https://gothamist.com/news/these-nyc-neighborhoods-will-get-free-child-care-for-2-year-olds-first-mamdani-says",
+      "https://reason.com/2026/03/03/formula-1-is-about-to-get-a-lot-more-american/",
+      "https://sports.yahoo.com/articles/formula-1-lot-more-american-163027446.html",
+      "https://nypost.com/2026/03/03/sports/world-cup-ticket-chaos-ensues-amid-international-tensions/",
+      "https://www.cbsnews.com/video/top-senate-judiciary-committee-republican-admits-mistakes-have-been-made-during-ice-raids/",
+      "https://www.businessinsider.com/college-best-friends-travel-vacation-together-every-year-2026-3",
+      "https://www.rediff.com/sports/report/3sindhus-dubai-ordeal-stranded-after-bombing/20260303.htm",
+      "https://www.cnbc.com/2026/03/03/emirates-flight-dubai-iran-missile-strikes.html",
+      "https://www.dailysignal.com/2026/03/03/exclusive-new-gop-bill-looks-to-deliver-justice-for-five-year-old-struck-by-illegal-alien-truck-driver/",
+      "https://www.vanityfair.com/style/story/kate-middleton-fulfills-an-important-duty-as-princess-of-wales-for-the-first-time",
+      "https://economictimes.indiatimes.com/news/new-updates/happy-holi-2026-wishes-images-quotes-whatsapp-instagram-status-messages-to-share/articleshow/128981640.cms",
+      "https://www.mmafighting.com/ufc/474686/conor-mcgregor-teases-negotiations-still-ongoing-with-ufc-about-his-next-fight-sometime-in-the-summer",
+      "https://www.globenewswire.com/news-release/2026/03/03/3248673/28124/en/Brazil-Gift-Card-Business-Databook-Report-2026-Market-to-Grow-by-Over-5-5-Billion-by-2030-with-Distribution-Concentrating-Around-Large-Retail-Chains-Marketplaces-and-Digital-Platfo.html",
+      "https://www.globenewswire.com/news-release/2026/03/03/3248674/28124/en/Belgium-Gift-Card-Business-and-Investment-Opportunities-Databook-2026-90-KPIs-on-Gift-Card-Market-Size-Retail-Corporate-Spend-Competitive-Landscape-and-Consumer-Demographics-2021-2.html",
+      "https://www.globenewswire.com/news-release/2026/03/03/3248672/28124/en/Canada-Gift-Card-Business-Report-2026-An-11-18-Billion-Market-by-2030-as-Retail-Giants-and-Incentive-Platforms-Intensify-Competition.html",
+      "https://www.bostonherald.com/2026/03/03/what-is-holi/",
+      "https://dailycaller.com/2026/03/03/founding-documents-freedom-plane-tour-national-archives/",
+      "https://sf.funcheap.com/womenowned-business-bingo-kickoff-event-sf/",
+      "https://sf.funcheap.com/international-womens-day-free-panel-networking-moraga-library/",
+      "https://www.cbc.ca/news/world/two-sessions-npc-china-communist-party-xi-jinping-9.7112533",
+      "https://insidethemagic.net/2026/03/new-pricing-structure-raises-harry-potter-land-costs-by-50-in-orlando-ad1/",
+      "https://www.globenewswire.com/news-release/2026/03/03/3248662/28124/en/China-Gift-Card-Business-and-Investment-Report-2026-Market-to-Reach-268-Billion-by-2030-Alibaba-and-Tencent-Lead-as-Platform-Integrated-Ecosystems-Drive-Prepaid-Value-Adoption.html",
+      "https://brobible.com/sports/article/nebraska-high-school-basketball-court-storm-millard-north-lincoln-southeast/",
+      "https://insidethemagic.net/2026/03/this-disney-cruise-ship-abandoned-los-angeles-for-this-foreign-city-el1/",
+      "https://nypost.com/2026/03/03/us-news/austin-bar-shooting-victim-savitha-shans-parents-remember-star-ut-student/",
+      "https://pypi.org/project/spotipy/2.26.0/",
+      "https://www.ozbargain.com.au/node/950316",
+      "https://www.independent.ie/world-news/middle-east/uk-sending-warship-and-helicopters-to-cyprus-after-drone-attack-un-calls-for-investigation-into-deadly-strike-on-school-in-iran/a627608921.html",
+      "http://www.rollingstone.com/music/music-news/bob-power-dead-obituary-1235524199/",
+      "https://www.usatodayhss.com/story/sports/high-school/football/2026/03/03/kaden-henderson-headlines-top-2027-linebackers-entering-the-spring/88727598007/",
+      "https://sniphi.com/",
+      "https://thinkingdbx.com/thinkinglanguage.html",
+      "https://www.thestar.com.my/news/world/2026/03/04/father-of-accused-atlanta-area-school-shooter-convicted-of-second-degree-murder-trial",
+      "https://www.independent.ie/irish-news/crime/man-who-presented-himself-to-hospital-with-gun-wounds-left-before-gardai-arrived/a1525418785.html",
+      "https://www.sciencedaily.com/releases/2026/03/260303050624.htm",
+      "https://pypi.org/project/pyerualjetwork/5.66a31/",
+      "https://pypi.org/project/ai-helpers-ashbi/",
+      "https://www.aljazeera.com/video/quotable/2026/3/3/ships-now-fear-crossing-the-strait-of-hormuz",
+      "https://smartbitchestrashybooks.com/2026/03/hockey-non-fiction-more/",
+      "https://www.athleticsnation.com/cpl/102810/athletics-community-prospect-list-kade-morris-round-out-top-20"
     ]
   },
   "cumulative_stats": {
-    "total_runs": 8,
+    "total_runs": 9,
     "total_entries_added": 42
   }
 }
