@@ -3,23 +3,23 @@
   "last_run_new_entries": 0,
   "sources": {
     "federal_register": {
-      "last_fetched_date": "2026-03-16",
-      "items_fetched": 227,
+      "last_fetched_date": "2026-03-17",
+      "items_fetched": 104,
       "status": "success"
     },
     "congress": {
-      "last_fetched_date": "2026-03-16",
-      "items_fetched": 322,
+      "last_fetched_date": "2026-03-17",
+      "items_fetched": 235,
       "status": "success"
     },
     "courtlistener": {
-      "last_fetched_date": "2026-03-16",
+      "last_fetched_date": "2026-03-17",
       "items_fetched": 0,
       "status": "success"
     },
     "news": {
-      "last_fetched_date": "2026-03-16",
-      "items_fetched": 122,
+      "last_fetched_date": "2026-03-17",
+      "items_fetched": 0,
       "status": "success"
     }
   },
@@ -1027,17 +1027,6 @@
       "2026-05114"
     ],
     "congress_gov": [
-      "HR1464-119",
-      "HR1521-119",
-      "HR1529-119",
-      "HR1548-119",
-      "HR1572-119",
-      "HR1722-119",
-      "HR1648-119",
-      "SRES108-119",
-      "HR1909-119",
-      "S875-119",
-      "HR1986-119",
       "HR1968-119",
       "SRES124-119",
       "S1016-119",
@@ -2026,7 +2015,18 @@
       "S4098-119",
       "S4097-119",
       "S4103-119",
-      "S4102-119"
+      "S4102-119",
+      "HR116-119",
+      "HR831-119",
+      "HR1189-119",
+      "HR1464-119",
+      "HR1707-119",
+      "HR1845-119",
+      "HR2086-119",
+      "HR2196-119",
+      "HR4284-119",
+      "HR4467-119",
+      "HR7679-119"
     ],
     "courtlistener": [],
     "news_api": [
@@ -3033,7 +3033,7 @@
     ]
   },
   "cumulative_stats": {
-    "total_runs": 28,
+    "total_runs": 29,
     "total_entries_added": 78
   }
 }
