@@ -3,23 +3,23 @@
   "last_run_new_entries": 0,
   "sources": {
     "federal_register": {
-      "last_fetched_date": "2026-03-20",
-      "items_fetched": 194,
+      "last_fetched_date": "2026-03-23",
+      "items_fetched": 104,
       "status": "success"
     },
     "congress": {
-      "last_fetched_date": "2026-03-20",
-      "items_fetched": 500,
+      "last_fetched_date": "2026-03-23",
+      "items_fetched": 15,
       "status": "success"
     },
     "courtlistener": {
-      "last_fetched_date": "2026-03-20",
+      "last_fetched_date": "2026-03-23",
       "items_fetched": 0,
       "status": "success"
     },
     "news": {
-      "last_fetched_date": "2026-03-20",
-      "items_fetched": 195,
+      "last_fetched_date": "2026-03-23",
+      "items_fetched": 0,
       "status": "success"
     }
   },
@@ -1027,9 +1027,6 @@
       "2026-05548"
     ],
     "congress_gov": [
-      "HR3184-119",
-      "S1602-119",
-      "S1609-119",
       "HR3226-119",
       "HR3277-119",
       "S1746-119",
@@ -2026,7 +2023,10 @@
       "HR8030-119",
       "HRES1128-119",
       "HR8031-119",
-      "HRES1130-119"
+      "HRES1130-119",
+      "S1383-119",
+      "SRES656-119",
+      "SRES655-119"
     ],
     "courtlistener": [],
     "news_api": [
@@ -3033,7 +3033,7 @@
     ]
   },
   "cumulative_stats": {
-    "total_runs": 36,
+    "total_runs": 37,
     "total_entries_added": 78
   }
 }
