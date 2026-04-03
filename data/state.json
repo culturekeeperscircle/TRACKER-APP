@@ -3,23 +3,23 @@
   "last_run_new_entries": 0,
   "sources": {
     "federal_register": {
-      "last_fetched_date": "2026-04-02",
-      "items_fetched": 231,
+      "last_fetched_date": "2026-04-03",
+      "items_fetched": 102,
       "status": "success"
     },
     "congress": {
-      "last_fetched_date": "2026-04-02",
-      "items_fetched": 471,
+      "last_fetched_date": "2026-04-03",
+      "items_fetched": 191,
       "status": "success"
     },
     "courtlistener": {
-      "last_fetched_date": "2026-04-02",
+      "last_fetched_date": "2026-04-03",
       "items_fetched": 0,
       "status": "success"
     },
     "news": {
-      "last_fetched_date": "2026-04-02",
-      "items_fetched": 110,
+      "last_fetched_date": "2026-04-03",
+      "items_fetched": 0,
       "status": "success"
     }
   },
@@ -1027,30 +1027,6 @@
       "2026-06328"
     ],
     "congress_gov": [
-      "S4102-119",
-      "HR7964-119",
-      "HR7961-119",
-      "HR7959-119",
-      "HR7954-119",
-      "HR7955-119",
-      "S4121-119",
-      "S4108-119",
-      "S4116-119",
-      "S4107-119",
-      "S4117-119",
-      "S4122-119",
-      "S4113-119",
-      "S4106-119",
-      "S4120-119",
-      "S4112-119",
-      "S4111-119",
-      "S4105-119",
-      "S4115-119",
-      "S4123-119",
-      "S4119-119",
-      "S4114-119",
-      "S4110-119",
-      "HR7984-119",
       "HR7974-119",
       "HR7983-119",
       "HR7973-119",
@@ -2026,7 +2002,31 @@
       "HR8171-119",
       "HRES1153-119",
       "HR8191-119",
-      "HRES1150-119"
+      "HRES1150-119",
+      "HR210-119",
+      "HR7-119",
+      "HR485-119",
+      "HR492-119",
+      "HR1004-119",
+      "HR1065-119",
+      "HR1542-119",
+      "HR2028-119",
+      "HR2095-119",
+      "HR2257-119",
+      "HR2678-119",
+      "HR3151-119",
+      "HR3144-119",
+      "HR3856-119",
+      "HR4206-119",
+      "HR4282-119",
+      "HR4348-119",
+      "HR5891-119",
+      "HR6617-119",
+      "HR7265-119",
+      "HR7322-119",
+      "HR7877-119",
+      "HR7931-119",
+      "HR7961-119"
     ],
     "courtlistener": [],
     "news_api": [
@@ -3033,7 +3033,7 @@
     ]
   },
   "cumulative_stats": {
-    "total_runs": 46,
+    "total_runs": 47,
     "total_entries_added": 78
   }
 }
