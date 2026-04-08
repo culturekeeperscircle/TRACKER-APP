@@ -3,23 +3,23 @@
   "last_run_new_entries": 0,
   "sources": {
     "federal_register": {
-      "last_fetched_date": "2026-04-07",
-      "items_fetched": 122,
+      "last_fetched_date": "2026-04-08",
+      "items_fetched": 60,
       "status": "success"
     },
     "congress": {
-      "last_fetched_date": "2026-04-07",
+      "last_fetched_date": "2026-04-08",
       "items_fetched": 0,
-      "status": "error: Expecting value: line 1 column 1 (char 0)"
+      "status": "error: 503 Server Error: Service Unavailable for url: https://api.congress.gov/v3/bill?fromDateTime=2026-04-08T00%3A00%3A00Z&sort=updateDate%2Bdesc&limit=100&offset=0&api_key=hpnKJVdbhVR8GMmdluso6FqlYffhxjn6gpbdMekP"
     },
     "courtlistener": {
-      "last_fetched_date": "2026-04-07",
+      "last_fetched_date": "2026-04-08",
       "items_fetched": 0,
       "status": "success"
     },
     "news": {
-      "last_fetched_date": "2026-04-07",
-      "items_fetched": 110,
+      "last_fetched_date": "2026-04-08",
+      "items_fetched": 0,
       "status": "success"
     }
   },
@@ -3033,7 +3033,7 @@
     ]
   },
   "cumulative_stats": {
-    "total_runs": 52,
+    "total_runs": 53,
     "total_entries_added": 78
   }
 }
