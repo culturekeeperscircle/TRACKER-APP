@@ -19,7 +19,7 @@
     },
     "news": {
       "last_fetched_date": "2026-04-02",
-      "items_fetched": 207,
+      "items_fetched": 208,
       "status": "success"
     }
   },
@@ -2030,24 +2030,6 @@
     ],
     "courtlistener": [],
     "news_api": [
-      "https://www.packersnews.com/story/sports/nfl/packers/2026/04/08/packers-pre-draft-visit-tracker-all-the-players-green-bay-will-host/89454158007/",
-      "https://sports.yahoo.com/articles/women-basketball-portal-rankings-more-101607281.html",
-      "https://sports.yahoo.com/articles/big-ten-secret-hoarding-trophies-101607308.html",
-      "https://www.jeffbullas.com/death-vs-creativity/",
-      "https://www.androidauthority.com/skoda-duobell-anc-bicycle-bell-3655767/",
-      "https://www.spl.com.sa/en/news/1019224/benzema-back-up-meite-wonder-goal-shows-much-to-come-from-teen-talent",
-      "https://pypi.org/project/datazone-sdk/1.0.1/",
-      "https://www.techradar.com/pro/website-building/how-to-pick-a-website-template-that-complements-your-brand-identity",
-      "https://www.thepinknews.com/2026/04/08/its-always-the-mothers-fault-how-americas-anti-trans-influencers-are-weaponising-motherhood/",
-      "https://pypi.org/project/manifestoo-core/1.15.1/",
-      "https://pypi.org/project/topologicpy/0.9.15/",
-      "https://pypi.org/project/llm-wiki-mcp/",
-      "https://economictimes.indiatimes.com/news/new-updates/quote-of-the-day-by-hollywood-veteran-robert-de-niro-when-you-are-working-hard-you-dont-have-time-for-anything-other-than-what-you-are-doing/articleshow/130109537.cms",
-      "https://www.tennessean.com/story/opinion/contributors/2026/04/08/transfer-rule-recruitment-nil-financial-aid-tssaa/89502851007/",
-      "https://fsuwire.usatoday.com/story/sports/college/fsu/mens-basketball/2026/04/08/fsu-basketball-transfer-portal-anthony-richardson-meeting/89510951007/",
-      "https://chiefswire.usatoday.com/story/sports/nfl/chiefs/2026/04/08/kc-chiefs-host-37-prospects-for-their-annual-local-pro-day/89511174007/",
-      "https://aggieswire.usatoday.com/story/sports/college/aggies/mens-basketball/2026/04/08/texas-aggies-basketball-is-in-the-mix-for-georgetown-transfer-g-kj-lewis/89505802007/",
-      "https://www.tennessean.com/story/sports/high-school/2026/04/08/jackson-herrington-masters-tournament-2026-low-amateur/89453219007/",
       "https://www.dispatch.com/story/sports/college/football/2026/04/08/ohio-state-athletic-department-pandemic-loan-repayments/89487236007/",
       "https://www.ibtimes.com.au/italys-10-best-ai-companies-leading-innovation-2026-enterprise-platforms-physical-ai-1865880",
       "https://en.protothema.gr/2026/04/09/maundy-thursday-traditions-in-western-thessaly-from-dyeing-eggs-with-madder-root-to-graveside-rituals-and-the-overnight-vigil-at-the-epitaph/",
@@ -3029,11 +3011,29 @@
       "https://www.irishtimes.com/politics/2026/04/18/micheal-martin-acutely-aware-of-real-pain-and-fear-caused-by-rising-fuel-prices/",
       "https://news.ycombinator.com/item?id=47819553",
       "https://pypi.org/project/idm-downloader/0.1.3/",
-      "https://www.usmagazine.com/celebrity-news/news/charlize-theron-recalls-her-fathers-verbal-abuse/"
+      "https://www.usmagazine.com/celebrity-news/news/charlize-theron-recalls-her-fathers-verbal-abuse/",
+      "https://nypost.com/2026/04/18/opinion/time-for-california-candidates-to-focus-on-issues-in-swalwells-wake/",
+      "https://www.wnd.com/2026/04/polling-shows-democrats-danger-losing-huge-state-prize/",
+      "https://www.bbc.com/news/articles/cpqx33y5lljo",
+      "https://www.abc.net.au/news/2026-04-19/calls-for-more-public-earthquake-monitors-after-tremor-in-orange/106574802",
+      "https://pypi.org/project/rfexcel/0.9.0/",
+      "https://pypi.org/project/rfexcel/",
+      "https://pypi.org/project/suneord/1.0.2/",
+      "https://pypi.org/project/py-nabla/",
+      "https://vikingsterritory.com/2026/news/top_news/vikings-first-round-pick-predictions",
+      "https://pypi.org/project/ulogger-cloud/1.2.0/",
+      "https://www.foxnews.com/world/moscow-born-gunman-dead-kyiv-shooting-rampage-leaves-least-6-dead-14-wounded-zelenskyy",
+      "https://post.rlsbb.to/hitmanpro-alert-3-21-1-build-2047/",
+      "https://post.rlsbb.to/any-video-downloader-pro-10-3-3/",
+      "https://post.rlsbb.to/tubemate-downloader-6-3-5/",
+      "https://post.rlsbb.to/robin-youtube-video-downloader-pro-7-3-2/",
+      "https://post.rlsbb.to/ashampoo-photo-optimizer-pro-26-0-3/",
+      "https://post.rlsbb.to/yt-downloader-10-3-6/",
+      "https://post.rlsbb.to/ashampoo-photo-commander-19-0-5/"
     ]
   },
   "cumulative_stats": {
-    "total_runs": 69,
+    "total_runs": 70,
     "total_entries_added": 78
   }
 }
