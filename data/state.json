@@ -19,7 +19,7 @@
     },
     "news": {
       "last_fetched_date": "2026-04-02",
-      "items_fetched": 208,
+      "items_fetched": 207,
       "status": "success"
     }
   },
@@ -1027,15 +1027,6 @@
       "2026-06658"
     ],
     "congress_gov": [
-      "HR8253-119",
-      "HR5309-119",
-      "HR5589-119",
-      "HR7298-119",
-      "HR1631-119",
-      "HR7974-119",
-      "HR7779-119",
-      "HJRES144-119",
-      "HR7781-119",
       "HR7296-119",
       "HR3276-119",
       "HRES1093-119",
@@ -2026,25 +2017,19 @@
       "HR7981-119",
       "HR7887-119",
       "HR7965-119",
-      "HR7161-119"
+      "HR7161-119",
+      "S4089-119",
+      "HRES1149-119",
+      "HRES1142-119",
+      "SRES652-119",
+      "HR7963-119",
+      "HR7994-119",
+      "HR7989-119",
+      "HR6617-119",
+      "HR2678-119"
     ],
     "courtlistener": [],
     "news_api": [
-      "https://slate.com/advice/2026/04/parent-advice-neighbor-daughter-brother-revenge.html",
-      "https://www.behindthesteelcurtain.com/pittsburgh-steelers-discussion/169104/wednesday-links-who-are-the-steelers-ideal-draft-picks-vega-ioane-chris-johnson-links-news-2026",
-      "https://www.rockmnation.com/mizzou-links/143952/commute-mizzou-baseball-earns-mid-week-victory",
-      "https://www.gamesradar.com/entertainment/marvel-movies/tom-holland-is-not-the-marvel-spoiler-this-time-as-shang-chi-star-seemingly-confirms-that-spider-man-will-appear-in-avengers-doomsday/",
-      "https://thenextweb.com/news/trent-ai-13m-agentic-security-multi-agent/",
-      "https://nypost.com/2026/04/08/us-news/times-square-ball-drop-to-celebrate-uss-250th-still-going-forward-but-there-will-be-no-public-event/",
-      "https://www.rediff.com/sports/report/commonwealth-sport-reviews-gujarat-2030-games-prep/20260408.htm",
-      "https://www.onefc.com/news/all-japanese-bouts-set-as-wada-vs-ito-nagai-vs-kambe-join-stacked-one-samurai-1-lineup/",
-      "https://en.protothema.gr/2026/04/08/easter-in-pyrgos-santorini-the-custom-with-thousands-of-lanterns-that-makes-the-world-go-round-see-video/",
-      "https://www.ibtimes.com.au/elon-musks-viral-lol-mocks-8-year-sell-tesla-call-stock-soars-1100-2026-1865783",
-      "https://www.animenewsnetwork.com/site-news/2026-04-08/yoshiki-returns-to-l.a-for-two-live-concerts-july-16-17-at-disney-concert-hall/.236219",
-      "https://blog.pope.tech/2026/04/01/making-emojis-and-icons-screen-reader-accessible/",
-      "https://www.comingsoon.net/tv/news/2117517-the-voice-all-star-showdown-kelly-clarkson-win-singer",
-      "https://www.silverscreenandroll.com/lakers-analysis/113392/lakers-recap-luka-doncic-austin-reaves-lebron-james-jj-redick-thunder",
-      "https://abcnews.com/Business/wireStory/asian-markets-jump-oil-prices-decline-iran-ceasefire-131825277",
       "https://www.packersnews.com/story/sports/nfl/packers/2026/04/08/packers-pre-draft-visit-tracker-all-the-players-green-bay-will-host/89454158007/",
       "https://sports.yahoo.com/articles/women-basketball-portal-rankings-more-101607281.html",
       "https://sports.yahoo.com/articles/big-ten-secret-hoarding-trophies-101607308.html",
@@ -3029,11 +3014,26 @@
       "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_a94a17a3-66ca-4134-bb12-5c95cd3e0514",
       "https://saintswire.usatoday.com/story/sports/nfl/saints/2026/04/18/2026-nfl-draft-top-100-rankings-team-needs-saints-big-board/89679218007/",
       "https://www.newser.com/story/387223/small-talk-may-not-be-as-bad-as-you-think.html",
-      "https://pypi.org/project/cnsplots/0.3.0/"
+      "https://pypi.org/project/cnsplots/0.3.0/",
+      "https://www.jpost.com/israel-news/culture/article-893424",
+      "https://freerepublic.com/focus/f-news/4375493/posts",
+      "https://aggieswire.usatoday.com/story/sports/college/aggies/football/2026/04/18/mike-elko-isaiah-horton-jamarion-morrow-noah-mikail-texas-aggies-football-maroon-white-game/89680065007/",
+      "http://www.hollywoodreporter.com/news/general-news/nicole-kidman-death-doula-mothers-passing-1236568584/",
+      "https://www.independent.ie/sport/united-rugby-championship/that-sets-a-little-bit-of-a-benchmark-for-us-munster-coach-clayton-mcmillan-reacts-to-seven-try-victory-against-benetton/a1340703013.html",
+      "https://www.independent.ie/sport/united-rugby-championship/munster-power-to-victory-against-benetton-with-a-seven-try-triumph-in-treviso/a1340703013.html",
+      "https://pypi.org/project/idm-downloader/0.1.4/",
+      "https://www.on3.com/high-school/news/2029-qb-khayel-sam-fong-talia-transfers-to-south-forsyth-ga/",
+      "https://dailycaller.com/2026/04/18/bill-maher-real-time-ai-ceo-on-the-spectrum-sociopaths/",
+      "https://pypi.org/project/waldur-api-client/8.0.8.dev197/",
+      "https://pypi.org/project/discord-clyde/0.6.0/",
+      "https://www.irishtimes.com/politics/2026/04/18/micheal-martin-acutely-aware-of-real-pain-and-fear-caused-by-rising-fuel-prices/",
+      "https://news.ycombinator.com/item?id=47819553",
+      "https://pypi.org/project/idm-downloader/0.1.3/",
+      "https://www.usmagazine.com/celebrity-news/news/charlize-theron-recalls-her-fathers-verbal-abuse/"
     ]
   },
   "cumulative_stats": {
-    "total_runs": 68,
+    "total_runs": 69,
     "total_entries_added": 78
   }
 }
