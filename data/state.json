@@ -1,6 +1,6 @@
 {
   "last_successful_run": "2026-04-19",
-  "last_run_new_entries": 13,
+  "last_run_new_entries": 0,
   "sources": {
     "federal_register": {
       "last_fetched_date": "2026-04-02",
@@ -3033,7 +3033,7 @@
     ]
   },
   "cumulative_stats": {
-    "total_runs": 46,
+    "total_runs": 47,
     "total_entries_added": 91
   }
 }
