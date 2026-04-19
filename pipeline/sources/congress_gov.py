@@ -3,6 +3,7 @@ import requests
 import logging
 from ..config import CONGRESS_API_KEY
 from ..utils.retry import retry_with_backoff
+from .base import BaseSourceConnector
 
 logger = logging.getLogger('tckc_pipeline')
 
@@ -16,6 +17,8 @@ RELEVANT_SUBJECTS = [
     'Public Lands and Natural Resources', 'Education', 'Social Welfare',
     'Native Americans', 'Historic Preservation',
 ]
+
+MAX_RESULTS = 500  # Exhaustive daily search
 
 
 @retry_with_backoff(max_retries=3, exceptions=(requests.RequestException,))
@@ -45,48 +48,35 @@ def fetch_bill_detail(congress, bill_type, bill_number):
     return resp.json().get('bill', {})
 
 
-MAX_RESULTS = 500  # Exhaustive daily search
+class CongressGovConnector(BaseSourceConnector):
+    source_name = 'congress_gov'
+    category = 'legislation'
 
-
-def fetch_since(since_date, rate_limiter=None):
-    """Fetch relevant bills since the given date (capped at MAX_RESULTS)."""
-    results = []
-    offset = 0
-
-    while len(results) < MAX_RESULTS:
-        if rate_limiter:
-            rate_limiter.wait_if_needed('congress_gov')
-
+    def _fetch_page(self, since_date, **kwargs):
+        offset = (kwargs.get('page', 1) - 1) * 100
+        if offset >= MAX_RESULTS:
+            return [], False
         data = fetch_bills(since_date, offset=offset)
         bills = data.get('bills', [])
+        has_more = len(bills) >= 100 and (offset + 100) < MAX_RESULTS
+        return bills, has_more
 
-        if not bills:
-            break
-
-        for bill in bills:
-            results.append({
-                'source': 'congress_gov',
-                'source_id': f"{bill.get('type', '')}{bill.get('number', '')}-{bill.get('congress', '')}",
-                'title': bill.get('title', ''),
-                'bill_type': bill.get('type', ''),
-                'bill_number': bill.get('number', ''),
-                'congress': bill.get('congress', ''),
-                'date': (bill.get('updateDate') or '')[:10],
-                'latest_action': (bill.get('latestAction') or {}).get('text') or '',
-                'latest_action_date': (bill.get('latestAction') or {}).get('actionDate') or '',
-                'url': bill.get('url', ''),
-                'origin_chamber': bill.get('originChamber', ''),
-            })
-
-        if len(bills) < 100:
-            break
-        offset += 100
-
-    if len(results) >= MAX_RESULTS:
-        logger.warning(f'Congress.gov: hit {MAX_RESULTS}-result cap, some bills may be skipped')
-    logger.info(f'Congress.gov: fetched {len(results)} bills since {since_date}')
-    return results
+    def _parse_result(self, bill):
+        return {
+            'source_id': f"{bill.get('type', '')}{bill.get('number', '')}-{bill.get('congress', '')}",
+            'title': bill.get('title', ''),
+            'bill_type': bill.get('type', ''),
+            'bill_number': bill.get('number', ''),
+            'congress': bill.get('congress', ''),
+            'date': (bill.get('updateDate') or '')[:10],
+            'latest_action': (bill.get('latestAction') or {}).get('text') or '',
+            'latest_action_date': (bill.get('latestAction') or {}).get('actionDate') or '',
+            'url': bill.get('url', ''),
+            'origin_chamber': bill.get('originChamber', ''),
+        }
 
 
-def get_category(doc):
-    return 'legislation'
+# Backwards-compatible module-level functions
+_connector = CongressGovConnector()
+fetch_since = _connector.fetch_since
+get_category = _connector.get_category
