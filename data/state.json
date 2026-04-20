@@ -1,25 +1,25 @@
 {
   "last_successful_run": "2026-04-20",
-  "last_run_new_entries": 45,
+  "last_run_new_entries": 0,
   "sources": {
     "federal_register": {
-      "last_fetched_date": "2026-04-03",
-      "items_fetched": 1000,
+      "last_fetched_date": "2026-04-20",
+      "items_fetched": 103,
       "status": "success"
     },
     "congress": {
-      "last_fetched_date": "2026-04-03",
-      "items_fetched": 499,
+      "last_fetched_date": "2026-04-20",
+      "items_fetched": 0,
       "status": "success"
     },
     "courtlistener": {
-      "last_fetched_date": "2026-04-03",
-      "items_fetched": 1,
+      "last_fetched_date": "2026-04-20",
+      "items_fetched": 0,
       "status": "success"
     },
     "news": {
-      "last_fetched_date": "2026-04-03",
-      "items_fetched": 211,
+      "last_fetched_date": "2026-04-20",
+      "items_fetched": 0,
       "status": "success"
     }
   },
@@ -1743,7 +1743,7 @@
     ]
   },
   "cumulative_stats": {
-    "total_runs": 52,
+    "total_runs": 53,
     "total_entries_added": 160
   }
 }
