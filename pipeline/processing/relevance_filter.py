@@ -1,11 +1,12 @@
 """Fast keyword-based pre-filter to reduce Claude API calls."""
 import logging
+import os
 from ..config import RELEVANCE_KEYWORDS, TRACKED_BILLS
 
 logger = logging.getLogger('tckc_pipeline')
 
 # Max items to send to Claude screening (prevents timeout)
-MAX_SCREENING_ITEMS = 150
+MAX_SCREENING_ITEMS = int(os.environ.get('MAX_SCREENING_ITEMS', 150))
 
 # Normalize tracked bill IDs for matching
 _TRACKED_IDS = {bid.upper() for bid in TRACKED_BILLS}

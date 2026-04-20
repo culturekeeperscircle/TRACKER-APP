@@ -5,6 +5,7 @@ Uses Claude AI to screen relevance, generate entries, and validate quality.
 Updates data/data.json and commits changes for GitHub Pages deployment.
 """
 import json
+import os
 import sys
 import time
 from datetime import date, timedelta
@@ -133,7 +134,7 @@ def run():
     # ── Phase 3: Claude relevance screening (Tier 1) ──
     relevant_items = []
     screening_start = time.time()
-    SCREENING_TIME_BUDGET = 20 * 60  # 20 minutes max for screening
+    SCREENING_TIME_BUDGET = int(os.environ.get('SCREENING_TIME_BUDGET', 20 * 60))  # default 20 min
 
     for i, item in enumerate(filtered_items):
         elapsed = time.time() - screening_start
@@ -153,8 +154,8 @@ def run():
 
     logger.info(f'AI-relevant items: {len(relevant_items)} (screened in {int(time.time() - screening_start)}s)')
 
-    # Cap to prevent timeout — Sonnet generation ~60s/entry, budget ~15 min
-    MAX_ENTRIES_PER_RUN = 15
+    # Cap to prevent timeout — Sonnet generation ~60s/entry, budget ~15 min by default
+    MAX_ENTRIES_PER_RUN = int(os.environ.get('MAX_ENTRIES_PER_RUN', 15))
     if len(relevant_items) > MAX_ENTRIES_PER_RUN:
         relevant_items.sort(key=lambda x: x.get('_ai_threat', ''), reverse=True)
         logger.warning(f'Capping entry generation at {MAX_ENTRIES_PER_RUN} items (had {len(relevant_items)})')
