@@ -3,6 +3,19 @@ name: tckc-threat-tracker
 description: >
   The TCKC Cultural Threats Tracker — an AI-powered monitoring and research system that tracks federal government actions affecting the cultural resources of Indigenous, African-descendant, and other marginalized communities in the United States. Use this skill whenever Prince mentions: the tracker, threat tracker, tracker entries, tracker pipeline, adding entries, enrichment, impact analysis, 4Ps analysis, tracker data, tracker audit, tracker export, community impact, threat levels, SEVERE/HARMFUL/PROTECTIVE entries, federal actions tracking, Congress.gov, Federal Register, CourtListener, tracker HTML, tracker updates, or pipeline runs. Also trigger when working on the law review article's empirical backbone (630+ entries) or the TCKC website's tracker page.
 ---
+## WRITING STYLE RULES (MANDATORY)
+
+Every piece of prose produced for Prince in this project must follow the six enshrined rules in [WRITING_STYLE_RULES.md](../../WRITING_STYLE_RULES.md). Summary:
+
+1. No run-on sentences.
+2. No awkward uses of the colon.
+3. No em-dashes, ever.
+4. No "not X, but Y" constructions in any form.
+5. Argumentative writing must be logically sound and valid.
+6. Explanatory text uses strong, epistemically grounded, declarative sentences.
+
+Run the self-check in the canonical file before submitting any writing. Violations are regressions.
+
 
 # TCKC Cultural Threats Tracker
 
@@ -21,7 +34,7 @@ The tracker serves three purposes:
 ## Architecture
 
 ```
-TRACKER APP/
+TCKC Threat Tracker/
 ├── pipeline/                    # Python automated ingestion pipeline
 │   ├── main.py                 # Pipeline entry point
 │   ├── config.py               # API keys, model config, relevance keywords
@@ -178,7 +191,7 @@ Multiple enrichment passes have been run to improve data quality:
 
 ### Running the Pipeline
 ```bash
-cd "Culture Keepers Circle/TRACKER APP"
+cd "Culture Keepers Circle/TCKC Threat Tracker"
 python3 -m pipeline              # Full pipeline run
 python3 -m pipeline --dry-run    # Preview only
 python3 -m pipeline --source congress_gov  # Single source
@@ -223,7 +236,7 @@ NEWS_API_KEY=...                  # Required for News API source
 
 ### Running
 ```bash
-cd "Culture Keepers Circle/TRACKER APP"
+cd "Culture Keepers Circle/TCKC Threat Tracker"
 pip install -r requirements.txt
 export ANTHROPIC_API_KEY=...
 python3 -m pipeline

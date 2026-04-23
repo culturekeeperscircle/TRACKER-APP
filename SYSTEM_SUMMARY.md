@@ -181,7 +181,7 @@ Visual step-by-step guide:
 
 ### Pattern 1: Command Line (Fastest)
 ```bash
-cd "Culture Keepers Circle/TRACKER APP"
+cd "Culture Keepers Circle/TCKC Threat Tracker"
 ./scripts/update.sh --auto
 ```
 - **Time:** 30 seconds

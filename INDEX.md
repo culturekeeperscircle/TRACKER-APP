@@ -60,7 +60,7 @@
 
 ### Option 1: Command Line (Fastest)
 ```bash
-cd "Culture Keepers Circle/TRACKER APP"
+cd "Culture Keepers Circle/TCKC Threat Tracker"
 ./scripts/update.sh --auto
 ```
 **Time: 30 seconds**
@@ -86,7 +86,7 @@ Read first: [QUICKSTART.md](QUICKSTART.md)
 ## 📋 Complete File Structure
 
 ```
-TRACKER APP/
+TCKC Threat Tracker/
 │
 ├── 📄 QUICKSTART.md                    ← START HERE (5 min)
 ├── 📄 VS_CODE_BUTTON_GUIDE.md         ← For button users (5 min)

@@ -3,7 +3,7 @@
 ## One-Command Update
 
 ```bash
-cd "Culture Keepers Circle/TRACKER APP" && ./scripts/update.sh --auto
+cd "Culture Keepers Circle/TCKC Threat Tracker" && ./scripts/update.sh --auto
 ```
 
 **What you need:**

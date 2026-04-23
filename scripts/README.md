@@ -4,7 +4,7 @@
 
 ### Option 1: Shell Script (Easiest)
 ```bash
-cd "Culture Keepers Circle/TRACKER APP"
+cd "Culture Keepers Circle/TCKC Threat Tracker"
 ./scripts/update.sh              # Interactive mode
 ./scripts/update.sh --auto       # Fully automated
 ./scripts/update.sh --dry-run    # Preview only
@@ -67,7 +67,7 @@ Pre-configured in `.vscode/tasks.json` — use Terminal > Run Task menu
 ## Workflow for Creating New Entries
 
 ### Step 1: Create NEW_ENTRIES_APRIL_2026.json
-File should be in root of TRACKER APP directory with this structure:
+File should be in root of TCKC Threat Tracker directory with this structure:
 
 ```json
 {
@@ -154,7 +154,7 @@ git pull --rebase origin main
 ```
 
 ### "NEW_ENTRIES file not found"
-Create the file in the TRACKER APP root directory before running script:
+Create the file in the TCKC Threat Tracker root directory before running script:
 ```bash
 touch NEW_ENTRIES_APRIL_2026.json
 # Then populate with new entries
@@ -230,7 +230,7 @@ Each should be 200-300+ words for comprehensive coverage.
 ## File Locations
 
 ```
-TRACKER APP/
+TCKC Threat Tracker/
 ├── scripts/
 │   ├── comprehensive_update.py    # Main automation script
 │   ├── update.sh                  # Shell wrapper

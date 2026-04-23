@@ -188,7 +188,7 @@ Then you can just press **`Shift+Cmd+U`** to update! (or any shortcut you prefer
 
 ### Explorer View
 ```
-TRACKER APP/
+TCKC Threat Tracker/
 ├── scripts/
 │   ├── comprehensive_update.py       ← Automation engine
 │   ├── update.sh                     ← Shell script

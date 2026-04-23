@@ -1,5 +1,18 @@
 # TCKC Cultural Threats Tracker — AI Tool Instructions
 
+## WRITING STYLE RULES (MANDATORY)
+
+Every piece of prose produced for Prince in this project must follow the six enshrined rules in [WRITING_STYLE_RULES.md](../../WRITING_STYLE_RULES.md). Summary:
+
+1. No run-on sentences.
+2. No awkward uses of the colon.
+3. No em-dashes, ever.
+4. No "not X, but Y" constructions in any form.
+5. Argumentative writing must be logically sound and valid.
+6. Explanatory text uses strong, epistemically grounded, declarative sentences.
+
+Run the self-check in the canonical file before submitting any writing. Violations are regressions.
+
 ## What This Project Is
 
 A federal government action tracker monitoring threats to cultural resources of Indigenous, African-descendant, Latine, Asian American, Pacific Islander, and other marginalized communities. It powers The Culture Keepers Circle's public advocacy and Prince's law review article.

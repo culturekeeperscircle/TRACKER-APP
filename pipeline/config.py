@@ -1,8 +1,18 @@
 """Pipeline configuration — reads API keys from environment variables."""
 import os
 from datetime import date, timedelta
+from pathlib import Path
 
-# API Keys (set via GitHub Secrets or local env)
+# Load API keys from a project-local .env file if present (never committed; see .gitignore).
+# Shell exports and GitHub Actions secrets still win because load_dotenv does not override.
+try:
+    from dotenv import load_dotenv
+    _ENV_PATH = Path(__file__).resolve().parent.parent / '.env'
+    load_dotenv(_ENV_PATH, override=False)
+except ImportError:
+    pass  # dotenv optional; falls through to raw os.environ
+
+# API Keys (set via GitHub Secrets, shell env, or local .env)
 ANTHROPIC_API_KEY = os.environ.get('ANTHROPIC_API_KEY', '')
 CONGRESS_API_KEY = os.environ.get('CONGRESS_API_KEY', '')
 COURTLISTENER_TOKEN = os.environ.get('COURTLISTENER_TOKEN', '')

@@ -39,7 +39,7 @@ You now have a **complete automation system** for updating the TCKC Threat Track
 
 ### Pattern 1: Command Line (Fastest)
 ```bash
-cd "Culture Keepers Circle/TRACKER APP"
+cd "Culture Keepers Circle/TCKC Threat Tracker"
 ./scripts/update.sh --auto
 ```
 **Time:** 30 seconds | **Confirmations:** None
@@ -309,7 +309,7 @@ python3 scripts/comprehensive_update.py --auto 2>&1 | tee debug.log
 ## 📚 File Structure
 
 ```
-TRACKER APP/
+TCKC Threat Tracker/
 ├── scripts/
 │   ├── comprehensive_update.py          ← Main automation (630 lines)
 │   ├── update.sh                        ← Shell wrapper (100 lines)
@@ -326,7 +326,7 @@ TRACKER APP/
 │   └── ...existing data files
 │
 ├── NEW_ENTRIES_APRIL_2026.json         ← Input file (you create this)
-├── TRACKER APP.code-workspace          ← VS Code workspace
+├── TCKC Threat Tracker.code-workspace          ← VS Code workspace
 ├── README.md                            ← Project README
 └── ...other tracker files
 ```

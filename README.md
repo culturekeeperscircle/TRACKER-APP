@@ -10,7 +10,7 @@ A comprehensive monitoring system tracking 666+ federal government actions affec
 The tracker is a **single-page HTML application** backed by a JSON database and a Python automation pipeline.
 
 ```
-TRACKER APP/
+TCKC Threat Tracker/
 ├── index.html                  # Public tracker UI (6.2 MB, self-contained HTML/CSS/JS)
 ├── data/
 │   ├── data.json               # Main database (666 entries, ~58 MB)
@@ -109,7 +109,7 @@ allCommunities
 
 ### Run the pipeline
 ```bash
-cd "Culture Keepers Circle/TRACKER APP"
+cd "Culture Keepers Circle/TCKC Threat Tracker"
 pip install -r requirements.txt
 export ANTHROPIC_API_KEY=... CONGRESS_API_KEY=... COURTLISTENER_TOKEN=... NEWS_API_KEY=...
 python3 -m pipeline                          # Full run

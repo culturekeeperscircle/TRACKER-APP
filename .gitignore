@@ -20,9 +20,13 @@ pipeline/logs/
 # IDE
 .vscode/
 .idea/
+.claude/
 *.swp
 *.swo
 *~
+
+# Pipeline run logs (timestamped, generated per run)
+update_log_*.txt
 
 # OS
 .DS_Store
