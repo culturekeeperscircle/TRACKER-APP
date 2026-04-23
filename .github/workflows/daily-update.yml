@@ -27,7 +27,10 @@ permissions:
 jobs:
   update-tracker:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    # Raised from 60 to 90 minutes on 2026-04-23 to accommodate the
+    # raised MAX_ENTRIES_PER_RUN default of 50 (~50 min Sonnet generation
+    # + ~5 min screening + ~5 min dedup/save + buffer).
+    timeout-minutes: 90
 
     steps:
       - name: Checkout repository

@@ -1,101 +1,126 @@
 # TCKC Cultural Threats Tracker
 
-A comprehensive monitoring system tracking 666+ federal government actions affecting the cultural resources of Indigenous, African-descendant, Latine, Asian American, Pacific Islander, and other marginalized communities in the United States.
+An AI-powered monitoring system tracking U.S. federal government actions affecting the cultural resources of five primary ethnic communities.
 
-**Public URL**: www.culturekeeperscircle.org/tracker
-**Current state**: 666 entries across 5 categories (as of April 2, 2026)
+**Public URL:** [www.culturekeeperscircle.org/tracker](https://www.culturekeeperscircle.org/tracker)
+**Current state (2026-04-23):** ~755 entries across 6 categories.
+
+## The Canonical Research Question
+
+Every entry answers the same question:
+
+> **Which laws and policies from [GOVERNMENT ENTITY] will severely harm the cultural resources (People, Places, Practices, and Treasures) paramount to the cultural continuity of [CULTURAL COMMUNITY], moderately harm those same cultural resources, or protect those same cultural resources?**
+
+- **[GOVERNMENT ENTITY]** = U.S. federal entity (White House, agency, Congress, federal court, international body).
+- **[CULTURAL COMMUNITY]** = one of five primary ethnic communities: **Indigenous** / **African-descendant** / **Latiné** / **Asian** / **Pacific Islander**.
+- **Answers:** SEVERE / HARMFUL / PROTECTIVE (with WATCH for developing threats).
+
+**Writing style.** Cultural continuity is the **severity rubric**. Prose in impact analysis leans into **imminent, immediate, concrete harms** (specific places, ceremonies, funding, families, leaders) — not formulaic generational rhetoric.
+
+Full framing in [CLAUDE.md](CLAUDE.md#the-canonical-research-question-locked-2026-04-23).
+
+---
+
+## Documentation Map
+
+| Audience | Start here |
+|---|---|
+| I'm an AI agent working on this project | [CLAUDE.md](CLAUDE.md) |
+| I want to run or update the tracker | [docs/AUTOMATION.md](docs/AUTOMATION.md) |
+| I just need the commands | [docs/QUICKSTART.md](docs/QUICKSTART.md) |
+| I'm evaluating the tracker's research methodology | [docs/2026 04 23 - [METHODOLOGY] - Pipeline Queries and Research Questions Full Disclosure.md](docs/2026%2004%2023%20-%20%5BMETHODOLOGY%5D%20-%20Pipeline%20Queries%20and%20Research%20Questions%20Full%20Disclosure.md) |
+| I want to read about the historical-backfill plan | [docs/2026 04 23 - [STRATEGY] - Historical Backfill and QA Plan Since Jan 19 2025.md](docs/2026%2004%2023%20-%20%5BSTRATEGY%5D%20-%20Historical%20Backfill%20and%20QA%20Plan%20Since%20Jan%2019%202025.md) |
+| I'm an agent / need trigger skill | [SKILL.md](SKILL.md) |
+
+---
 
 ## Architecture
 
-The tracker is a **single-page HTML application** backed by a JSON database and a Python automation pipeline.
+The tracker is a self-contained single-page web app backed by a JSON database and a Python automated ingestion pipeline.
 
 ```
 TCKC Threat Tracker/
-├── index.html                  # Public tracker UI (6.2 MB, self-contained HTML/CSS/JS)
+├── CLAUDE.md              # AI operating instructions
+├── SKILL.md               # Agent-triggered skill file
+├── README.md              # You are here
+├── index.html             # Public UI (6.2 MB, self-contained HTML/CSS/JS)
 ├── data/
-│   ├── data.json               # Main database (666 entries, ~58 MB)
-│   └── state.json              # Pipeline metadata (last run, entry counts)
-├── pipeline/                   # Python automated ingestion pipeline
-│   ├── main.py                 # Entry point (python -m pipeline)
-│   ├── config.py               # API keys, models, relevance keywords
-│   ├── sources/                # API connectors (Congress.gov, Federal Register,
-│   │   ├── base.py             #   CourtListener, News API) with shared base class
-│   │   ├── congress_gov.py
-│   │   ├── federal_register.py
-│   │   ├── courtlistener.py
-│   │   └── news_api.py
-│   ├── processing/             # Analysis chain
-│   │   ├── relevance_filter.py #   Keyword + Claude screening
-│   │   ├── claude_analyzer.py  #   Entry generation + 4Ps analysis
-│   │   ├── deduplicator.py     #   Cross-source dedup
-│   │   └── validator.py        #   Schema validation
-│   ├── data/
-│   │   ├── schema.py           # Entry field definitions + community taxonomy
-│   │   └── data_manager.py     # JSON I/O
-│   ├── prompts/                # Claude prompt templates
-│   └── utils/                  # Logger, rate limiter, retry
-├── scripts/
-│   ├── comprehensive_update.py # Core automation (git sync + JSON merge + push)
-│   ├── update.sh               # Shell wrapper (interactive/auto/dry-run)
-│   ├── enrich_entries.py       # Unified enrichment (indigenous, african-descendant,
-│   │                           #   targeted-gaps, fix-impacts)
-│   ├── audit_toolkit.py        # Unified audit (word counts, structure, date ranges)
-│   ├── add_legislation_batch.py
-│   └── validate_forms.py
-├── tckc-litigation-tracker/    # Node.js sub-app for litigation-specific tracking
-├── International/              # Python sub-system for treaty/obligation extraction
-├── Archive/                    # Legacy files and old script versions
-├── .github/workflows/          # GitHub Actions (daily + manual + validation)
-└── .vscode/tasks.json          # VS Code task buttons
+│   ├── data.json                                # Source of truth (~58 MB, ~755 entries)
+│   ├── state.json                               # Pipeline state (dedup IDs, last-run)
+│   ├── state_level_archive_20260422.json        # Exported state-level entries (recoverable)
+│   ├── data.json.bak-20260422-pre-mute          # Most recent rollback point
+│   └── archive/                                 # Older backups and audit outputs
+├── pipeline/              # Automated ingestion
+│   ├── main.py
+│   ├── config.py                                # API keys, keywords, subject filters
+│   ├── sources/                                 # Federal Register, Congress.gov,
+│   │                                            #   CourtListener, NewsAPI connectors
+│   ├── processing/                              # Relevance, dedup, validation
+│   ├── prompts/                                 # Claude prompt templates
+│   ├── data/                                    # Schema + data manager
+│   └── utils/                                   # Logger, rate limiter, retry
+├── scripts/               # Manual tools (update.sh, audit, enrichment)
+├── docs/
+│   ├── AUTOMATION.md                            # Full update-workflow guide
+│   ├── QUICKSTART.md                            # One-page cheat sheet
+│   ├── 2026 04 23 - [METHODOLOGY] - ...         # Full research-question disclosure
+│   ├── 2026 04 23 - [STRATEGY] - ...            # Historical backfill plan
+│   ├── 2026 04 23 - [AUDIT] - ...               # Most recent triage report
+│   └── archive/                                 # Old update summaries + deprecated docs
+├── .github/workflows/                           # Daily cron, manual update, deep-sweep
+├── Archive/                                     # Pre-pipeline legacy files
+├── Aesthetics/                                  # Branding, logos, CSS snippets
+├── International/                               # Treaty/UN obligation sub-system
+└── tckc-litigation-tracker/                     # Node.js sub-app
 ```
 
-## Data Schema
+---
 
-### Entry Fields (abbreviated keys for compact JSON)
+## Pipeline at a Glance
 
-| Key | Field | Type | Example |
-|-----|-------|------|---------|
-| `i` | Unique ID | string | `"eo-policy-name-2026"` |
-| `t` | Document type | string | `"Executive Order"`, `"Public Law"` |
-| `n` | Number/designation | string | `"EO 13933"`, `"H.R. 7822"` |
-| `T` | Full title | string | HTML with color span for threat level |
-| `s` | Summary slug | string | 2-5 word description |
-| `d` | Date | string | ISO `YYYY-MM-DD` |
-| `a` | Administration | string | `"Trump II"`, `"Biden"` |
-| `A` | Agencies | array | `["DOI", "EPA"]` |
-| `S` | Status | string | Current status description |
-| `L` | Threat level | string | `"SEVERE"`, `"HARMFUL"`, `"PROTECTIVE"` |
-| `D` | Description | string | 500-1500 words, HTML formatted |
-| `I` | Impact analysis | object | Community keys -> 4Ps fields |
-| `c` | Communities | array | `["indigenous", "africanAmerican"]` |
-| `U` | Source URL | string | Official source link |
-| `_source` | Data source | string | `"federal_register"`, `"congress_gov"` |
-
-### Impact Analysis (4Ps / PPPT)
-
-Each affected community gets four analysis dimensions (200-300 words each):
-
-```json
-"I": {
-  "indigenous": {
-    "people": "Who is affected...",
-    "places": "Geographic/spatial impact...",
-    "practices": "Cultural practices affected...",
-    "treasures": "Material/cultural resources at risk..."
-  }
-}
+```
+4 sources → keyword filter → Claude Haiku screening → Claude Sonnet generation → dedup → validate → data.json
 ```
 
-### Threat Levels
+- **Sources:** Federal Register (no key), Congress.gov (key), CourtListener (token), NewsAPI (key)
+- **Cap:** 50 entries per run by default (configurable via `MAX_ENTRIES_PER_RUN`)
+- **Screening budget:** 20 min max per run
+- **Run locally:** `python3 -m pipeline`
+- **Runs automatically:** GitHub Actions daily at 5:00 AM ET (Mon–Fri)
 
-| Level | Meaning |
-|-------|---------|
-| **SEVERE** | Direct, irreversible harm to cultural resources |
-| **HARMFUL** | Significant but potentially reversible damage |
-| **WATCH** | Monitoring level, moderate concern |
-| **PROTECTIVE** | Defensive action (litigation, protective legislation) |
+Detailed methodology: [docs/2026 04 23 - [METHODOLOGY]...](docs/2026%2004%2023%20-%20%5BMETHODOLOGY%5D%20-%20Pipeline%20Queries%20and%20Research%20Questions%20Full%20Disclosure.md).
 
-### Community Taxonomy (27 identifiers)
+---
+
+## Entry Schema (compact JSON)
+
+Each entry carries 14–17 fields using single-letter keys for compactness. Most important:
+
+| Key | Field | Example |
+|---|---|---|
+| `i` | Unique ID | `eo-14173`, `hr-1234-119`, `doi-notice-2026-001` |
+| `T` | Title (HTML colored by threat) | `<span style="color:#991B1B;">EO 14173:</span> …` |
+| `L` | Threat level | `SEVERE` / `HARMFUL` / `PROTECTIVE` / `WATCH` |
+| `I` | Impact by Community (PPPT) | `{"indigenous": {"people":…, "places":…, "practices":…, "treasures":…}}` |
+| `U` | Official source URL | Federal Register, Congress.gov, courtlistener.com, etc. |
+| `muted` | Hidden from public view | `true` (with `_mutedReason`, `_mutedDate`) |
+
+Full schema: [CLAUDE.md § Entry Schema](CLAUDE.md#entry-schema-single-letter-abbreviated-keys).
+
+---
+
+## Entry Categories (6)
+
+`executive_actions` · `agency_actions` · `legislation` · `litigation` · `other_domestic` · `international`
+
+## Threat Levels
+
+- **SEVERE** (`#991B1B` red) — direct, immediate, often irreversible harm
+- **HARMFUL** (`#CA8A04` amber) — significant but reversible harm
+- **WATCH** — monitoring level (rare)
+- **PROTECTIVE** (`#065F46` green) — defensive or positive action
+
+## Community Taxonomy (27)
 
 ```
 africanAmerican, indigenous, latine, asianAmerican, pacificIslander,
@@ -105,57 +130,54 @@ academicCommunity, faithCommunities, arts, nonprofit, federalEmployees,
 allCommunities
 ```
 
-## Quick Start
+---
 
-### Run the pipeline
-```bash
-cd "Culture Keepers Circle/TCKC Threat Tracker"
-pip install -r requirements.txt
-export ANTHROPIC_API_KEY=... CONGRESS_API_KEY=... COURTLISTENER_TOKEN=... NEWS_API_KEY=...
-python3 -m pipeline                          # Full run
-python3 -m pipeline --dry-run                # Preview only
-python3 -m pipeline --source congress_gov    # Single source
-```
+## Scope (locked 2026-04-23)
 
-### Push updates
-```bash
-./scripts/update.sh              # Interactive
-./scripts/update.sh --auto       # Fully automated
-./scripts/update.sh --dry-run    # Preview
-```
+**Federal actions only.** State/municipal/campus actions are out of scope; if they slip in, they get muted (`muted: true`), never deleted. Federal cases with state parties stay federal. NAGPRA notices: individual entries for federal-actor notices (DOI, NPS, Army Corps, BIA, SI); a single monthly "NAGPRA Roundup" PROTECTIVE aggregate for state/university/private-institution notices.
 
-### Enrich entries
-```bash
-python3 scripts/enrich_entries.py --community indigenous --dry-run
-python3 scripts/enrich_entries.py --community african-descendant --all
-python3 scripts/enrich_entries.py --community targeted-gaps --all
-python3 scripts/enrich_entries.py --community all --dry-run
-```
+Full scope rules: [CLAUDE.md § Scope Rules](CLAUDE.md#scope-rules-locked-2026-04-23).
 
-### Audit data quality
-```bash
-python3 scripts/audit_toolkit.py --full                            # All entries
-python3 scripts/audit_toolkit.py --word-counts --period 2025-01 2025-03
-python3 scripts/audit_toolkit.py --structure --since 2025-10
-python3 scripts/audit_toolkit.py --summary
-```
+---
 
 ## Dependencies
 
 ```
-anthropic>=0.40.0    # Claude API for analysis
-requests>=2.31.0     # HTTP API calls
+anthropic>=0.40.0
+requests>=2.31.0
+python-dotenv>=1.0.0
 ```
+
+Install with `pip install -r requirements.txt`.
 
 ## Environment Variables
 
-| Variable | Required For | Notes |
-|----------|-------------|-------|
-| `ANTHROPIC_API_KEY` | Claude analysis | Set in GitHub Secrets or local env |
-| `CONGRESS_API_KEY` | Congress.gov source | api.congress.gov |
-| `COURTLISTENER_TOKEN` | CourtListener source | courtlistener.com API |
-| `NEWS_API_KEY` | News API source | newsapi.org |
+| Variable | Purpose |
+|---|---|
+| `ANTHROPIC_API_KEY` | Claude screening, generation, validation |
+| `CONGRESS_API_KEY` | Congress.gov source |
+| `COURTLISTENER_TOKEN` | CourtListener source |
+| `NEWS_API_KEY` | NewsAPI source |
+| `MAX_ENTRIES_PER_RUN` | Optional cap override (default 50) |
+| `SCREENING_TIME_BUDGET` | Optional Haiku screening budget override |
+| `LOOKBACK_DAYS` | Optional lookback override (default: use state.json) |
+| `DRY_RUN` | Preview mode (default false) |
+| `SOURCE_FILTER` | Single-source filter (default: all) |
+
+All loaded from `.env` (git-ignored) or shell exports. Template in `.env.example`.
 
 ---
 
-*The Culture Keepers Circle - Protecting Cultural Continuity Through Comprehensive Documentation*
+## Partners
+
+The Tracker is the empirical backbone for:
+
+- **Prince Albert III's law review article** (*Redefining Culture*) — 9.3:1 ratio of SEVERE/HARMFUL to PROTECTIVE is a headline finding.
+- **Prince's book** (*Against the Peoples Who Built the Nation*) — provides the hegemonic-encounter documentation.
+- **BGHPN Storymap Partnership** — state-level data layer consuming muted state entries (first five-state pilot due 2026-05-28).
+- **Cultural Heritage Partners** litigation firm — Tracker feeds their case-identification pipeline (overlaps with *Fight Back* litigation).
+- **NPCA National Cultural Resource Coalition (NCRC)** — CKC founding member.
+
+---
+
+*Last updated 2026-04-23.*

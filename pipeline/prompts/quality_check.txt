@@ -1,16 +1,25 @@
-Review this Cultural Resource Threat Tracker entry for accuracy, completeness, and schema compliance.
+Review this Cultural Resource Threat Tracker entry for accuracy, completeness, schema compliance, AND conformance with the canonical research question (locked 2026-04-23).
+
+The canonical research question:
+> Which laws and policies from [GOVERNMENT ENTITY] will severely harm the cultural resources (People, Places, Practices, and Treasures) paramount to the cultural continuity of [CULTURAL COMMUNITY], moderately harm those same cultural resources, or protect those same cultural resources?
+
+Where [CULTURAL COMMUNITY] is one of five primary ethnic communities: Indigenous (incl. Alaska Native, Native Hawaiian), African-descendant (incl. Afro-Caribbean, Afro-Latiné), Latiné, Asian (incl. South, Southeast, East Asian, AANHPI), Pacific Islander (incl. Compact of Free Association populations).
 
 Check:
-1. Threat level matches the impact described (SEVERE = direct elimination/defunding, HARMFUL = significant negative impact, PROTECTIVE = safeguarding action)
-2. Community impacts are SPECIFIC (real names, places, programs) not generic
-3. Legal mechanisms are correctly cited (correct EO numbers, public law numbers, court case names)
-4. Date format is YYYY-MM-DD
-5. Administration matches the date
-6. All required fields are present: i/id, t, n, T, s, d, a, A, S, L, D, I, c, U
-7. Title has correct HTML color span for threat level (SEVERE=#991B1B red, HARMFUL=#CA8A04 amber, PROTECTIVE=#065F46 green)
-8. Description is substantive (500+ words)
-9. Impact 4P fields are each 150+ words
-10. U field contains a valid official source URL (Federal Register, Congress.gov, CourtListener, etc.)
+1. Threat level matches the impact described. SEVERE = direct, immediate, often irreversible harm to PPPT resources paramount to cultural continuity. HARMFUL = significant but reversible harm. PROTECTIVE = safeguarding action. WATCH = developing threat not yet crystallized.
+2. Community impacts are SPECIFIC (real names, places, programs, leaders, ceremonies, objects) and concrete, not generic.
+3. **Impact analysis describes imminent, immediate, concrete harms already happening or about to happen.** Do NOT accept formulaic generational rhetoric ("threatens intergenerational transmission") as a substitute for named, specific harm. Flag as "major" if the entry buries the specific harm inside abstract "continuity" language without concrete facts.
+4. Entry codes at least one of the five primary ethnic communities in `c` and `I`. Flag as "minor" if entry is coded only with secondary communities (LGBTQ+, women, disabled, immigrant, faith, etc.) without naming which primary communities are intersectionally affected.
+5. If the action specifically affects a diasporic subset (Alaska Native subsistence, Pacific Islander Compact of Free Association populations, Latiné national origins, Asian language groups), the analysis names that subset explicitly.
+6. Legal mechanisms are correctly cited (correct EO numbers, public law numbers, court case names).
+7. Date format is YYYY-MM-DD.
+8. Administration matches the date.
+9. All required fields are present: i/id, t, n, T, s, d, a, A, S, L, D, I, c, U.
+10. Title has correct HTML color span for threat level (SEVERE=#991B1B red, HARMFUL=#CA8A04 amber, PROTECTIVE=#065F46 green).
+11. Description is substantive (500+ words).
+12. Impact 4P fields are each 150+ words AND contain concrete named facts.
+13. U field contains a valid official source URL (Federal Register, Congress.gov, CourtListener, etc.), not a news article.
+14. Entry is federal-scope (not state/local). State/local actions should be flagged as `muted: true` rather than coded as federal. Federal cases with state parties stay federal.
 
 ENTRY:
 {ENTRY_DATA}

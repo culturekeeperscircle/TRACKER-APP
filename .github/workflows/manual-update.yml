@@ -29,7 +29,9 @@ permissions:
 jobs:
   manual-update:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    # Raised from 60 to 90 minutes on 2026-04-23 to match daily-update.yml
+    # after MAX_ENTRIES_PER_RUN default was raised from 15 to 50.
+    timeout-minutes: 90
 
     steps:
       - uses: actions/checkout@v4
