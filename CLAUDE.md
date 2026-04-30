@@ -140,6 +140,39 @@ _mutedDate   = "YYYY-MM-DD"                    # When muted
 _crossRef = [{merged_from, merged_source_url, merged_date}]  # For merged duplicates
 ```
 
+### Structured sources (Phase 1, added 2026-04-30)
+
+Two new optional fields separate primary government documents from secondary and contextualizing sources. Older entries embed sources inline as `<a href>` tags inside `D`; the structured fields are additive and do not require migration. New entries from 2026-04-30 forward SHOULD populate these fields; existing entries are migrated organically as we revisit them.
+
+```
+P = [                                          # Primary sources
+  {
+    "url": "...",                              # canonical URL
+    "title": "...",                            # document or page title
+    "agency": "...",                           # issuing body (White House, DOJ, SCOTUS, etc.)
+    "doc_type": "EO|Proclamation|Slip Opinion|Final Rule|..."
+  }
+]
+
+S = [                                          # Secondary and contextualizing sources
+  {
+    "url": "...",
+    "title": "...",
+    "outlet": "...",                           # publication name
+    "outlet_type": "community_news|mainstream_news|legal_industry|academic|advocacy|wikipedia|substack|video|social_media|unknown",
+    "date": "YYYY-MM-DD"                       # publication date
+  }
+]
+```
+
+Outlet-type tags align with `scripts/audit_critical_review.py` classification heuristics. Community-led outlets (Native News Online, ICT, Capital B, The Root, Atlanta Black Star, AsAm News, Honolulu Civil Beat, Democracy Now!, Truthout, Mongabay, etc.) use `community_news`. Major papers and broadcasters use `mainstream_news`. Law-firm client alerts use `legal_industry`. Government documents and court opinions go in `P` rather than `S`.
+
+Each `S` entry should ideally point back to a `P` source. The audit's Lens 5 (Evidence Rigor and Source Diversity) checks for this pointer-to-primary discipline.
+
+The frontend `index.html` does not yet render `P` and `S` separately. Phase 2 of the structured-sources rollout will update the UI to display two clearly labeled blocks at the bottom of each entry card with outlet-type chips for each `S` entry. Phase 3 is organic migration of existing entries as we revisit them.
+
+Backwards compatibility: the legacy single-URL `U` field remains required (frontend filtering and search still depend on it). Inline `<a>` tags in `D` remain valid. Scripts that produce new entries should populate `U` (legacy), `P` (structured primary), and `S` (structured secondary) all three.
+
 ### PPPT (Impact by Community)
 ```json
 "I": {

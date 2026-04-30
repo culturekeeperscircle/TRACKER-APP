@@ -115,6 +115,8 @@ Full scope rules: [CLAUDE.md § Scope Rules](CLAUDE.md#scope-rules-locked-2026-0
 | Muted reason | `_mutedReason` | Plain-English rationale |
 | Muted date | `_mutedDate` | `YYYY-MM-DD` |
 | Cross-ref | `_crossRef` | Array for merged-duplicate provenance |
+| Primary sources (Phase 1) | `P` | Array of `{url, title, agency, doc_type}` for government documents and court opinions. Optional but recommended for new entries from 2026-04-30 forward. |
+| Secondary sources (Phase 1) | `S` | Array of `{url, title, outlet, outlet_type, date}` for newspapers, community-led outlets, Substack, credible video, etc. `outlet_type` aligns with `scripts/audit_critical_review.py` classification (community_news, mainstream_news, legal_industry, academic, advocacy, wikipedia, substack, video, social_media, unknown). Each `S` entry should ideally cross-reference a `P` source. |
 
 ---
 
