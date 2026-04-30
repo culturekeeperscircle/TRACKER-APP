@@ -433,7 +433,7 @@ def audit_entry(client, model_id, cat, entry_id, entry, source_inventory):
 
     response = client.messages.create(
         model=model_id,
-        max_tokens=2048,
+        max_tokens=8192,
         system=[
             {
                 "type": "text",
@@ -444,15 +444,24 @@ def audit_entry(client, model_id, cat, entry_id, entry, source_inventory):
         messages=[{"role": "user", "content": user_msg}],
     )
     text = "".join(block.text for block in response.content if hasattr(block, 'text'))
-    # Try to parse JSON. Strip any markdown code fences.
-    m = re.search(r'\{[\s\S]*\}', text)
-    if not m:
-        return None, text, response.usage
+    # Strip markdown code fences if present
+    cleaned = re.sub(r'^```(?:json)?\s*\n?', '', text, flags=re.M)
+    cleaned = re.sub(r'\n?```\s*$', '', cleaned, flags=re.M).strip()
+    # Try direct parse first
     try:
-        parsed = json.loads(m.group(0))
+        parsed = json.loads(cleaned)
         return parsed, text, response.usage
     except json.JSONDecodeError:
-        return None, text, response.usage
+        pass
+    # Fall back to regex extraction (handles prose around JSON)
+    m = re.search(r'\{[\s\S]*\}', cleaned)
+    if m:
+        try:
+            parsed = json.loads(m.group(0))
+            return parsed, text, response.usage
+        except json.JSONDecodeError:
+            pass
+    return None, text, response.usage
 
 
 def render_report(args, model_id, results, total_usage, total_cost, started_at):
