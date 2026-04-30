@@ -1,0 +1,136 @@
+name: Agency Coverage Audit
+
+# ----------------------------------------------------------------------
+# Manual-trigger only. Runs scripts/audit_agency_coverage.py to do
+# per-agency gap analysis: pulls Federal Register actions since
+# 2025-01-19 (default), cross-references against existing tracker
+# entries, and identifies untracked items via Claude Haiku relevance
+# screening.
+#
+# Use this audit to find what is MISSING from the tracker. Use the
+# critical-review audit (audit-critical-review.yml) to find what
+# EXISTING entries need revision.
+#
+# Cost: free Federal Register API; LLM screening cost varies by
+# scope. A typical priority-agency run is $1-$5 with Haiku.
+# ----------------------------------------------------------------------
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Audit mode'
+        required: true
+        type: choice
+        default: 'priority'
+        options:
+          - 'priority'      # all priority agencies
+          - 'single'        # one agency (use agency input)
+          - 'list'          # comma-separated list (use agency_list input)
+      agency:
+        description: 'Single agency code (when mode=single). See --list-agencies for options'
+        required: false
+        default: 'DOI'
+      agency_list:
+        description: 'Comma-separated agency codes (when mode=list)'
+        required: false
+        default: 'DOI,DOJ,ED,HHS'
+      since:
+        description: 'Start date (YYYY-MM-DD)'
+        required: false
+        default: '2025-01-19'
+      until:
+        description: 'End date (YYYY-MM-DD); leave blank for today'
+        required: false
+        default: ''
+      model:
+        description: 'Anthropic model for screening'
+        required: false
+        type: choice
+        default: 'haiku'
+        options:
+          - 'haiku'
+          - 'sonnet'
+          - 'opus'
+      max_screen_per_agency:
+        description: 'Cap LLM-screening calls per agency'
+        required: false
+        default: '200'
+      dry_run:
+        description: 'Skip LLM screening (just fetch and cross-reference)'
+        required: false
+        default: false
+        type: boolean
+      commit_report:
+        description: 'Commit reports to audit-reports/ on main'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  agency-coverage-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install anthropic
+
+      - name: Build audit command
+        id: cmd
+        run: |
+          ARGS="--model ${{ github.event.inputs.model }}"
+          ARGS="$ARGS --since ${{ github.event.inputs.since }}"
+          if [ -n "${{ github.event.inputs.until }}" ]; then
+            ARGS="$ARGS --until ${{ github.event.inputs.until }}"
+          fi
+          ARGS="$ARGS --max-screen-per-agency ${{ github.event.inputs.max_screen_per_agency }}"
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          MODE="${{ github.event.inputs.mode }}"
+          if [ "$MODE" = "priority" ]; then
+            ARGS="$ARGS --all-priority-agencies"
+          elif [ "$MODE" = "single" ]; then
+            ARGS="$ARGS --agency ${{ github.event.inputs.agency }}"
+          elif [ "$MODE" = "list" ]; then
+            ARGS="$ARGS --agency-list '${{ github.event.inputs.agency_list }}'"
+          fi
+          echo "args=$ARGS" >> $GITHUB_OUTPUT
+          echo "Will run: python scripts/audit_agency_coverage.py $ARGS"
+
+      - name: Run agency-coverage audit
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          eval python scripts/audit_agency_coverage.py ${{ steps.cmd.outputs.args }}
+
+      - name: Upload audit reports as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: agency-coverage-audit-${{ github.run_id }}
+          path: audit-reports/
+          retention-days: 90
+
+      - name: Commit reports (optional)
+        if: github.event.inputs.commit_report == 'true' && github.event.inputs.dry_run != 'true'
+        run: |
+          git config user.name "TCKC Audit Bot"
+          git config user.email "audit@culturekeeperscircle.org"
+          mkdir -p audit-reports
+          git add audit-reports/
+          git diff --staged --quiet || git commit -m "Agency coverage audit reports [$(date +%Y-%m-%d-%H%M%S)]"
+          git push
