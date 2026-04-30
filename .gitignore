@@ -28,6 +28,10 @@ pipeline/logs/
 # Pipeline run logs (timestamped, generated per run)
 update_log_*.txt
 
+# Pre-edit data.json backups (created automatically by scripts/add_*.py and scripts/update_*.py)
+data/*.bak-*
+data/data.json.bak-*
+
 # OS
 .DS_Store
 Thumbs.db
