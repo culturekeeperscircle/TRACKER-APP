@@ -1,0 +1,156 @@
+name: Critical Review Audit
+
+# ----------------------------------------------------------------------
+# Manual-trigger only. Runs scripts/audit_critical_review.py against
+# tracker entries through four lenses tied to Prince Albert III's
+# scholarly orientation:
+#
+#   1. PPPT framework consistency
+#   2. Cultural sustainability scholarship
+#   3. Critical legal scholarship (CRT, LatCrit, TWAIL, Indigenous CT)
+#   4. Self-determination of all communities (no zero-sum framings)
+#
+# Default sample size is 10 entries with Haiku 4.5 (cheapest model).
+# Use --full and Sonnet or Opus for deeper passes when infrastructure
+# and budget allow. Output is a markdown audit report committed to
+# audit-reports/ and uploaded as a workflow artifact.
+#
+# This workflow does NOT run on a schedule. It only runs when triggered
+# manually via the GitHub Actions UI or `gh workflow run`.
+# ----------------------------------------------------------------------
+
+on:
+  workflow_dispatch:
+    inputs:
+      sample:
+        description: 'Random sample size (ignored if "full" is true)'
+        required: false
+        default: '10'
+      full:
+        description: 'Audit ALL filtered entries (caution: cost)'
+        required: false
+        default: false
+        type: boolean
+      category:
+        description: 'Filter to one category'
+        required: false
+        type: choice
+        default: 'all'
+        options:
+          - 'all'
+          - 'executive_actions'
+          - 'agency_actions'
+          - 'legislation'
+          - 'litigation'
+          - 'other_domestic'
+          - 'international'
+      community:
+        description: 'Filter to one community tag (Indigenous, African-descendant, Latine, Asian, Pacific Islander, lgbtq, etc.)'
+        required: false
+        default: ''
+      threat_level:
+        description: 'Filter to one threat level'
+        required: false
+        type: choice
+        default: 'all'
+        options:
+          - 'all'
+          - 'SEVERE'
+          - 'HARMFUL'
+          - 'WATCH'
+          - 'PROTECTIVE'
+      since:
+        description: 'Filter to entries with date >= YYYY-MM-DD'
+        required: false
+        default: ''
+      model:
+        description: 'Anthropic model to use'
+        required: false
+        type: choice
+        default: 'haiku'
+        options:
+          - 'haiku'
+          - 'sonnet'
+          - 'opus'
+      dry_run:
+        description: 'Preview entries and cost estimate without calling the API'
+        required: false
+        default: false
+        type: boolean
+      commit_report:
+        description: 'Commit the audit report to audit-reports/ on main'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  critical-review-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install anthropic
+
+      - name: Build audit command
+        id: cmd
+        run: |
+          ARGS="--model ${{ github.event.inputs.model }}"
+          if [ "${{ github.event.inputs.full }}" = "true" ]; then
+            ARGS="$ARGS --full"
+          else
+            ARGS="$ARGS --sample ${{ github.event.inputs.sample }}"
+          fi
+          if [ -n "${{ github.event.inputs.category }}" ] && [ "${{ github.event.inputs.category }}" != "all" ]; then
+            ARGS="$ARGS --category ${{ github.event.inputs.category }}"
+          fi
+          if [ -n "${{ github.event.inputs.community }}" ]; then
+            ARGS="$ARGS --community '${{ github.event.inputs.community }}'"
+          fi
+          if [ -n "${{ github.event.inputs.threat_level }}" ] && [ "${{ github.event.inputs.threat_level }}" != "all" ]; then
+            ARGS="$ARGS --threat-level ${{ github.event.inputs.threat_level }}"
+          fi
+          if [ -n "${{ github.event.inputs.since }}" ]; then
+            ARGS="$ARGS --since ${{ github.event.inputs.since }}"
+          fi
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          echo "args=$ARGS" >> $GITHUB_OUTPUT
+          echo "Will run: python scripts/audit_critical_review.py $ARGS"
+
+      - name: Run critical-review audit
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          eval python scripts/audit_critical_review.py ${{ steps.cmd.outputs.args }}
+
+      - name: Upload audit report as artifact
+        if: always() && github.event.inputs.dry_run != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: critical-review-audit-${{ github.run_id }}
+          path: audit-reports/
+          retention-days: 90
+
+      - name: Commit audit report (optional)
+        if: github.event.inputs.commit_report == 'true' && github.event.inputs.dry_run != 'true'
+        run: |
+          git config user.name "TCKC Audit Bot"
+          git config user.email "audit@culturekeeperscircle.org"
+          mkdir -p audit-reports
+          git add audit-reports/
+          git diff --staged --quiet || git commit -m "Critical-review audit report [$(date +%Y-%m-%d-%H%M%S)]"
+          git push
