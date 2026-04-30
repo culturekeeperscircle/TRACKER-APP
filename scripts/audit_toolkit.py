@@ -29,7 +29,10 @@ TRACKER_DIR = Path(__file__).parent.parent
 DATA_FILE = TRACKER_DIR / "data" / "data.json"
 
 IMPACT_FIELDS = {'people', 'places', 'practices', 'treasures'}
-MIN_WORDS = 250
+# Lowered 2026-04-30 from 250 per Prince's directive: tighter PPPT
+# prose can be substantively complete, and the threshold should not
+# penalize entries with genuinely narrow community-specific impact.
+MIN_WORDS = 200
 CATEGORIES = ['executive_actions', 'legislation', 'litigation',
               'agency_actions', 'international']
 
