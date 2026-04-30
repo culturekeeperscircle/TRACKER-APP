@@ -1,13 +1,25 @@
 name: Validate Google Form IDs
 
+# ----------------------------------------------------------------------
+# AUTOMATED TRIGGERS DISABLED 2026-04-30 per Prince's directive.
+# Both the push trigger and the weekly Monday cron are commented out
+# because Prince does not currently have the infrastructure (API keys,
+# billing, secret rotation) to support recurring validation runs.
+# Recent automated runs were failing (2026-04-23 push run, 2026-04-27
+# schedule run).
+#
+# Manual runs remain available via `workflow_dispatch`. To re-enable
+# automation, uncomment the push and schedule blocks below.
+# ----------------------------------------------------------------------
+
 on:
-  push:
-    paths:
-      - 'index.html'
-      - 'scripts/validate_forms.py'
-  schedule:
-    # Every Monday at 9:00 AM EST (14:00 UTC) — weekly check
-    - cron: '0 14 * * 1'
+  # push:
+  #   paths:
+  #     - 'index.html'
+  #     - 'scripts/validate_forms.py'
+  # schedule:
+  #   # Every Monday at 9:00 AM EST (14:00 UTC) — weekly check
+  #   - cron: '0 14 * * 1'
   workflow_dispatch:
 
 jobs:
