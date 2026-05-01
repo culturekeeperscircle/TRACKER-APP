@@ -3211,7 +3211,7 @@
 
     <!-- Headline summary: raw database universe + aggregate-container disclosure -->
     <p class="tracker-headline-summary" id="trackerHeadlineSummary">
-      <span id="headlineTotal">833</span> federal actions tracked, including <span id="headlineAggregates">20</span> aggregate analyses covering an additional 120+ component actions.
+      <span id="headlineTotal">829</span> federal actions tracked, including <span id="headlineAggregates">16</span> aggregate analyses covering an additional 100+ component actions.
       <a class="headline-summary-link" href="#" onclick="openTotalsTab(event)">See Statistical Totals and Tabulations.</a>
     </p>
 
@@ -4135,14 +4135,14 @@
 
               <div class="totals-grid">
                 <div class="totals-card">
-                  <div class="totals-num" id="statsRawTotal">833</div>
+                  <div class="totals-num" id="statsRawTotal">829</div>
                   <div class="totals-label">Total records published</div>
-                  <div class="totals-note">Every research card in the tracker. This figure includes both single-action entries and the thematic aggregate analyses described below.</div>
+                  <div class="totals-note">Every research card currently surfaced on the tracker. This figure includes both single-action entries and the thematic aggregate analyses described below.</div>
                 </div>
                 <div class="totals-card">
-                  <div class="totals-num" id="statsVisibleAggregates">20</div>
+                  <div class="totals-num" id="statsVisibleAggregates">16</div>
                   <div class="totals-label">Aggregate analyses</div>
-                  <div class="totals-note">Thematic research cards that bundle several related federal actions for clearer reading. Examples include the community-wide threat analyses for each cultural and identity community the tracker recognizes, BIA tribal-leasing roundups, and the BLM Alaska oil and gas leasing pivot.</div>
+                  <div class="totals-note">Thematic research cards that bundle several related federal actions for clearer reading. Examples include the community-wide threat analyses for each cultural and identity community the tracker recognizes.</div>
                 </div>
                 <div class="totals-card">
                   <div class="totals-num" id="statsVisibleDiscrete">813</div>
@@ -4150,7 +4150,7 @@
                   <div class="totals-note">Individual federal actions tracked as their own card. The threat-level tallies (Severe, Harmful, Protective) draw from this set.</div>
                 </div>
                 <div class="totals-card">
-                  <div class="totals-num">120+</div>
+                  <div class="totals-num">100+</div>
                   <div class="totals-label">Component actions inside aggregates</div>
                   <div class="totals-note">Conservative count of individual federal actions summarized within the aggregate analyses. The figure grows as new aggregates publish.</div>
                 </div>
@@ -5733,49 +5733,48 @@
       const harmfulEl = document.getElementById('harmfulCount'); if (harmfulEl) harmfulEl.textContent = harmful;
       const protectiveEl = document.getElementById('protectiveCount'); if (protectiveEl) protectiveEl.textContent = protective;
 
-      // Headline category counts include every record the tracker
-      // publishes (single-action entries plus thematic aggregate
-      // analyses). The Statistical Totals and Tabulations panel in
-      // the Research Information Key explains how this count relates
-      // to the discrete-action universe used by the threat tallies.
+      // Public-facing counts. The published record set is the universe
+      // of entries currently surfaced on the site. Drafts staged in the
+      // database under the mute flag are not counted publicly. The
+      // Statistical Totals and Tabulations panel in the Research
+      // Information Key explains how the published total relates to
+      // the discrete-action universe used by the threat tallies.
       const D = (typeof window !== 'undefined' && window.DATA) ? window.DATA : (typeof DATA !== 'undefined' ? DATA : {});
       const rawAll = [];
       ['executive_actions', 'agency_actions', 'legislation', 'litigation', 'other_domestic', 'international'].forEach(cat => {
         (D[cat] || []).forEach(item => {
-          // Auto-categorize items mentioning international organizations
-          // so the per-category counts match the displayed cards.
           const effectiveCategory = (cat !== 'international' && typeof matchesInternationalOrg === 'function' && matchesInternationalOrg(item)) ? 'international' : cat;
           rawAll.push({ ...item, _category: effectiveCategory, _originalCategory: cat });
         });
       });
+      const isVisible = (typeof isVisibleItem === 'function') ? isVisibleItem : (i => !i || !i.muted);
+      const publishedRecords = rawAll.filter(isVisible);
 
-      const countAllEl = document.getElementById('countAll'); if (countAllEl) countAllEl.textContent = rawAll.length;
+      const countAllEl = document.getElementById('countAll'); if (countAllEl) countAllEl.textContent = publishedRecords.length;
 
       const countEOEl = document.getElementById('countEO');
-      if (countEOEl) countEOEl.textContent = rawAll.filter(i => i._category === 'executive_actions').length;
+      if (countEOEl) countEOEl.textContent = publishedRecords.filter(i => i._category === 'executive_actions').length;
 
       const countAgencyEl = document.getElementById('countAgency');
-      if (countAgencyEl) countAgencyEl.textContent = rawAll.filter(i => i._category === 'agency_actions').length;
+      if (countAgencyEl) countAgencyEl.textContent = publishedRecords.filter(i => i._category === 'agency_actions').length;
 
       const countLegEl = document.getElementById('countLeg');
-      if (countLegEl) countLegEl.textContent = rawAll.filter(i => i._category === 'legislation').length;
+      if (countLegEl) countLegEl.textContent = publishedRecords.filter(i => i._category === 'legislation').length;
 
       const countLitEl = document.getElementById('countLit');
-      if (countLitEl) countLitEl.textContent = rawAll.filter(i => i._category === 'litigation').length;
+      if (countLitEl) countLitEl.textContent = publishedRecords.filter(i => i._category === 'litigation').length;
 
       const countIntlEl = document.getElementById('countIntl');
-      if (countIntlEl) countIntlEl.textContent = rawAll.filter(i => i._category === 'international').length;
+      if (countIntlEl) countIntlEl.textContent = publishedRecords.filter(i => i._category === 'international').length;
 
-      // Headline summary line and Statistical Totals and Tabulations
-      // panel. Counts are derived from the published record set.
-      const aggregateRecords = rawAll.filter(isAggregateItem);
-      const discreteRecords = rawAll.filter(i => !isAggregateItem(i));
+      const aggregateRecords = publishedRecords.filter(isAggregateItem);
+      const discreteRecords = publishedRecords.filter(i => !isAggregateItem(i));
 
       const setText = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
-      setText('headlineTotal', rawAll.length);
+      setText('headlineTotal', publishedRecords.length);
       setText('headlineAggregates', aggregateRecords.length);
 
-      setText('statsRawTotal', rawAll.length);
+      setText('statsRawTotal', publishedRecords.length);
       setText('statsVisibleAggregates', aggregateRecords.length);
       setText('statsVisibleDiscrete', discreteRecords.length);
       setText('statsThreatSevere', severe);
