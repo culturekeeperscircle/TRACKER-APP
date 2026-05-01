@@ -4130,39 +4130,29 @@
           <div class="ref-content" id="totalsContent">
             <div class="totals-panel">
               <p class="totals-intro">
-                The headline number and the threat-level tallies count different universes. The headline reports the full database of tracked federal-action records. The threat-level tallies report the visible discrete-action universe (every public-facing entry minus the aggregate-analysis containers). The breakdown below explains each figure and the relationship between them.
+                The tracker counts records in two complementary ways. The headline reports every research card the tracker publishes, including thematic aggregate analyses that bundle several related federal actions into a single read. The threat-level tallies (Severe, Harmful, Protective) report only the discrete federal actions, since each aggregate analysis spans multiple severities at once and cannot fit a single color. Both figures are accurate. They answer different research questions and the breakdown below shows how they relate.
               </p>
 
               <div class="totals-grid">
                 <div class="totals-card">
-                  <div class="totals-num" id="statsRawTotal">882</div>
-                  <div class="totals-label">Raw database total</div>
-                  <div class="totals-note">Every entry in <code>data/data.json</code> across the six categories. This figure is the headline count.</div>
-                </div>
-                <div class="totals-card">
-                  <div class="totals-num" id="statsMutedCount">56</div>
-                  <div class="totals-label">Muted entries</div>
-                  <div class="totals-note">State, municipal, or out-of-scope items hidden from public view and retained for sibling-project recoverability.</div>
-                </div>
-                <div class="totals-card">
-                  <div class="totals-num" id="statsVisibleTotal">826</div>
-                  <div class="totals-label">Visible entries</div>
-                  <div class="totals-note">Public-facing records (raw total minus muted entries).</div>
+                  <div class="totals-num" id="statsRawTotal">825</div>
+                  <div class="totals-label">Total records published</div>
+                  <div class="totals-note">Every research card in the tracker. This figure includes both single-action entries and the thematic aggregate analyses described below.</div>
                 </div>
                 <div class="totals-card">
                   <div class="totals-num" id="statsVisibleAggregates">12</div>
                   <div class="totals-label">Aggregate analyses</div>
-                  <div class="totals-note">Thematic containers such as the NAGPRA monthly roundups and the Tier 3 aggregate impact analyses. Each container summarizes many component federal actions inside a single visible card.</div>
+                  <div class="totals-note">Thematic research cards that bundle several related federal actions for clearer reading. Examples include the community-wide threat analyses for each of the five primary cultural communities, BIA tribal-leasing roundups, and the BLM Alaska oil and gas leasing pivot.</div>
                 </div>
                 <div class="totals-card">
-                  <div class="totals-num" id="statsVisibleDiscrete">814</div>
+                  <div class="totals-num" id="statsVisibleDiscrete">813</div>
                   <div class="totals-label">Discrete federal actions</div>
-                  <div class="totals-note">Visible entries minus aggregate containers. The threat-level tallies (Severe, Harmful, Protective) draw from this universe.</div>
+                  <div class="totals-note">Individual federal actions tracked as their own card. The threat-level tallies (Severe, Harmful, Protective) draw from this set.</div>
                 </div>
                 <div class="totals-card">
                   <div class="totals-num">80+</div>
-                  <div class="totals-label">Additional component actions inside aggregates</div>
-                  <div class="totals-note">Estimated count of distinct federal actions summarized within the 12 aggregate containers. The estimate is conservative and grows as new monthly roundups publish.</div>
+                  <div class="totals-label">Component actions inside aggregates</div>
+                  <div class="totals-note">Conservative count of individual federal actions summarized within the 12 aggregate analyses. The figure grows as new aggregates publish.</div>
                 </div>
               </div>
 
@@ -4179,15 +4169,15 @@
                   <span class="totals-threat-num" id="statsThreatProtective">0</span>
                   <span class="totals-threat-label">Protective</span>
                 </div>
-                <p class="totals-threat-note">Threat-level tallies use the discrete-action universe. Aggregate containers carry their own internal threat distributions and are excluded from these counts.</p>
+                <p class="totals-threat-note">Threat-level tallies are computed from the discrete federal actions. Aggregate analyses span multiple severities at once and are presented separately rather than rolled into a single color.</p>
               </div>
 
               <div class="totals-disparity">
-                <h4>Why the numbers diverge</h4>
+                <h4>Why the headline and threat tallies differ</h4>
                 <ul>
-                  <li><b>Mute policy.</b> State, county, and municipal items entered before the 2026-04-23 federal-only scope lock remain in the file with <code>muted: true</code>. They are retained for the BGHPN storymap and other sibling state-layer projects. Auditors can surface them with the URL parameter <code>?show_muted=1</code>.</li>
-                  <li><b>Aggregate containers.</b> One <i>NAGPRA Roundup: &lt;Month&gt; &lt;Year&gt;</i> entry replaces tens of state, university, and private-institution NAGPRA notices each month. A handful of additional Tier 3 aggregates summarize themed clusters (e.g., AmeriCorps service-program rescissions, NEH and IMLS grant terminations). Each aggregate is one visible card and many component actions.</li>
-                  <li><b>Discrete-action denominator.</b> Threat-level percentages and category cards refer to the discrete-action universe. The headline figure refers to the raw record universe. The two answer different questions and should not be substituted for each other.</li>
+                  <li><b>Aggregate analyses count toward the headline.</b> Each aggregate is a real research card the tracker publishes. The headline is the full count of cards, so aggregates are included.</li>
+                  <li><b>Aggregate analyses are not in the threat tallies.</b> A single aggregate may describe federal actions that are simultaneously Severe, Harmful, and Protective. Forcing the analysis into one color would misrepresent the underlying federal landscape, so aggregates are read on their own and the threat tallies use only the discrete actions.</li>
+                  <li><b>Both questions are useful.</b> The headline answers "How much federal activity has the tracker covered?" The threat tallies answer "Of the discrete federal actions tracked, how many fall under each threat level?" The numbers differ on purpose.</li>
                 </ul>
               </div>
             </div>
@@ -5743,12 +5733,11 @@
       const harmfulEl = document.getElementById('harmfulCount'); if (harmfulEl) harmfulEl.textContent = harmful;
       const protectiveEl = document.getElementById('protectiveCount'); if (protectiveEl) protectiveEl.textContent = protective;
 
-      // Headline category counts use the RAW database total (every entry
-      // in data.json, including muted entries and aggregate containers).
-      // Per the Statistical Totals and Tabulations panel in the Research
-      // Information Key, the headline 882-style total is the universe of
-      // tracked federal-action entries, while filtered subsets (visible
-      // discrete actions, threat-level tallies, etc.) appear elsewhere.
+      // Headline category counts include every record the tracker
+      // publishes (single-action entries plus thematic aggregate
+      // analyses). The Statistical Totals and Tabulations panel in
+      // the Research Information Key explains how this count relates
+      // to the discrete-action universe used by the threat tallies.
       const D = (typeof window !== 'undefined' && window.DATA) ? window.DATA : (typeof DATA !== 'undefined' ? DATA : {});
       const rawAll = [];
       ['executive_actions', 'agency_actions', 'legislation', 'litigation', 'other_domestic', 'international'].forEach(cat => {
@@ -5777,24 +5766,18 @@
       const countIntlEl = document.getElementById('countIntl');
       if (countIntlEl) countIntlEl.textContent = rawAll.filter(i => i._category === 'international').length;
 
-      // Headline summary line: raw universe + visible aggregate-container count.
-      // Also feeds the Statistical Totals and Tabulations panel under the
-      // Research Information Key.
-      const visibleAll = rawAll.filter(i => !i.muted);
-      const visibleAggregates = visibleAll.filter(isAggregateItem);
-      const visibleDiscrete = visibleAll.filter(i => !isAggregateItem(i));
-      const mutedCount = rawAll.length - visibleAll.length;
+      // Headline summary line and Statistical Totals and Tabulations
+      // panel. Counts are derived from the published record set.
+      const aggregateRecords = rawAll.filter(isAggregateItem);
+      const discreteRecords = rawAll.filter(i => !isAggregateItem(i));
 
       const setText = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
       setText('headlineTotal', rawAll.length);
-      setText('headlineAggregates', visibleAggregates.length);
+      setText('headlineAggregates', aggregateRecords.length);
 
-      // Stats panel breakdown (populated when the panel is rendered).
       setText('statsRawTotal', rawAll.length);
-      setText('statsMutedCount', mutedCount);
-      setText('statsVisibleTotal', visibleAll.length);
-      setText('statsVisibleAggregates', visibleAggregates.length);
-      setText('statsVisibleDiscrete', visibleDiscrete.length);
+      setText('statsVisibleAggregates', aggregateRecords.length);
+      setText('statsVisibleDiscrete', discreteRecords.length);
       setText('statsThreatSevere', severe);
       setText('statsThreatHarmful', harmful);
       setText('statsThreatProtective', protective);
