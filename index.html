@@ -137,6 +137,37 @@
       margin-top: 10px;
     }
 
+    /* Headline summary: raw database universe + aggregate-container disclosure */
+    .tracker-headline-summary {
+      max-width: 960px;
+      margin: 14px auto 18px;
+      padding: 10px 16px;
+      text-align: center;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: #2d1a0a;
+      background: #fff7ec;
+      border: 1px solid #e8d6b3;
+      border-radius: 10px;
+    }
+
+    .tracker-headline-summary #headlineTotal,
+    .tracker-headline-summary #headlineAggregates {
+      font-weight: 700;
+      color: #7a3b00;
+    }
+
+    .tracker-headline-summary .headline-summary-link {
+      margin-left: 6px;
+      color: #7a3b00;
+      text-decoration: underline;
+      font-weight: 600;
+    }
+
+    .tracker-headline-summary .headline-summary-link:hover {
+      color: #4a1f00;
+    }
+
     /* Category Stats */
     .category-stats {
       display: flex;
@@ -582,6 +613,153 @@
 
     .ref-content.show {
       display: block;
+    }
+
+    /* Statistical Totals and Tabulations */
+    .totals-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 12px;
+    }
+
+    .totals-intro {
+      font-size: 0.9rem;
+      line-height: 1.55;
+      color: #2d2d2d;
+      margin: 0;
+    }
+
+    .totals-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    @media (max-width: 768px) {
+      .totals-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .totals-card {
+      padding: 12px 14px;
+      border-radius: 10px;
+      background: #fff7ec;
+      border: 1px solid #e8d6b3;
+    }
+
+    .totals-card .totals-num {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #7a3b00;
+      line-height: 1.1;
+    }
+
+    .totals-card .totals-label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #2d1a0a;
+      margin-top: 4px;
+      margin-bottom: 6px;
+    }
+
+    .totals-card .totals-note {
+      font-size: 0.78rem;
+      line-height: 1.45;
+      color: #4a4a4a;
+    }
+
+    .totals-threat-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr) 2fr;
+      gap: 10px;
+      align-items: center;
+    }
+
+    @media (max-width: 768px) {
+      .totals-threat-row {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .totals-threat-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      border-radius: 8px;
+      border-left: 4px solid;
+      background: #fafafa;
+    }
+
+    .totals-threat-card.severe {
+      border-color: #991B1B;
+      background: #fef2f2;
+    }
+
+    .totals-threat-card.harmful {
+      border-color: #CA8A04;
+      background: #fffbeb;
+    }
+
+    .totals-threat-card.protective {
+      border-color: #065F46;
+      background: #ecfdf5;
+    }
+
+    .totals-threat-num {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #1a1a1a;
+    }
+
+    .totals-threat-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #333;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .totals-threat-note {
+      font-size: 0.78rem;
+      line-height: 1.45;
+      color: #555;
+      margin: 0;
+    }
+
+    .totals-disparity {
+      padding: 12px 14px;
+      border-radius: 10px;
+      background: #f7f3ec;
+      border: 1px solid #d9cfb6;
+    }
+
+    .totals-disparity h4 {
+      margin: 0 0 8px;
+      font-size: 0.95rem;
+      color: #2d1a0a;
+    }
+
+    .totals-disparity ul {
+      margin: 0;
+      padding-left: 18px;
+      font-size: 0.85rem;
+      line-height: 1.55;
+      color: #2d2d2d;
+    }
+
+    .totals-disparity li {
+      margin-bottom: 6px;
+    }
+
+    .totals-disparity code {
+      background: #fff;
+      padding: 1px 5px;
+      border-radius: 3px;
+      font-size: 0.8rem;
+      border: 1px solid #e0e0e0;
     }
 
     /* Threat Level Criteria */
@@ -3031,11 +3209,17 @@
       <p class="verified-date" id="headerVerified">Verified from January 1, 2025 through ...</p>
     </header>
 
+    <!-- Headline summary: raw database universe + aggregate-container disclosure -->
+    <p class="tracker-headline-summary" id="trackerHeadlineSummary">
+      <span id="headlineTotal">882</span> federal actions tracked, including <span id="headlineAggregates">12</span> aggregate analyses covering an additional 80+ component actions.
+      <a class="headline-summary-link" href="#" onclick="openTotalsTab(event)">See Statistical Totals and Tabulations.</a>
+    </p>
+
     <!-- Category Stats Grid -->
     <div class="category-stats">
       <div class="cat-stat active" onclick="selectCategory('all')">
         <div class="icon">📋</div>
-        <div class="num" id="countAll">535</div>
+        <div class="num" id="countAll">882</div>
         <div class="label">All Actions</div>
       </div>
       <div class="cat-stat" onclick="selectCategory('executive_actions')">
@@ -3936,6 +4120,78 @@
               </div>
             </div>
           </div>
+
+          <!-- Statistical Totals and Tabulations -->
+          <div class="ref-toggle" onclick="toggleRef('totals')">
+            <span class="icon">📊</span>
+            <span id="totalsToggleText">View Statistical Totals and Tabulations</span>
+            <span id="totalsArrow">▼</span>
+          </div>
+          <div class="ref-content" id="totalsContent">
+            <div class="totals-panel">
+              <p class="totals-intro">
+                The headline number and the threat-level tallies count different universes. The headline reports the full database of tracked federal-action records. The threat-level tallies report the visible discrete-action universe (every public-facing entry minus the aggregate-analysis containers). The breakdown below explains each figure and the relationship between them.
+              </p>
+
+              <div class="totals-grid">
+                <div class="totals-card">
+                  <div class="totals-num" id="statsRawTotal">882</div>
+                  <div class="totals-label">Raw database total</div>
+                  <div class="totals-note">Every entry in <code>data/data.json</code> across the six categories. This figure is the headline count.</div>
+                </div>
+                <div class="totals-card">
+                  <div class="totals-num" id="statsMutedCount">56</div>
+                  <div class="totals-label">Muted entries</div>
+                  <div class="totals-note">State, municipal, or out-of-scope items hidden from public view and retained for sibling-project recoverability.</div>
+                </div>
+                <div class="totals-card">
+                  <div class="totals-num" id="statsVisibleTotal">826</div>
+                  <div class="totals-label">Visible entries</div>
+                  <div class="totals-note">Public-facing records (raw total minus muted entries).</div>
+                </div>
+                <div class="totals-card">
+                  <div class="totals-num" id="statsVisibleAggregates">12</div>
+                  <div class="totals-label">Aggregate analyses</div>
+                  <div class="totals-note">Thematic containers such as the NAGPRA monthly roundups and the Tier 3 aggregate impact analyses. Each container summarizes many component federal actions inside a single visible card.</div>
+                </div>
+                <div class="totals-card">
+                  <div class="totals-num" id="statsVisibleDiscrete">814</div>
+                  <div class="totals-label">Discrete federal actions</div>
+                  <div class="totals-note">Visible entries minus aggregate containers. The threat-level tallies (Severe, Harmful, Protective) draw from this universe.</div>
+                </div>
+                <div class="totals-card">
+                  <div class="totals-num">80+</div>
+                  <div class="totals-label">Additional component actions inside aggregates</div>
+                  <div class="totals-note">Estimated count of distinct federal actions summarized within the 12 aggregate containers. The estimate is conservative and grows as new monthly roundups publish.</div>
+                </div>
+              </div>
+
+              <div class="totals-threat-row">
+                <div class="totals-threat-card severe">
+                  <span class="totals-threat-num" id="statsThreatSevere">0</span>
+                  <span class="totals-threat-label">Severe</span>
+                </div>
+                <div class="totals-threat-card harmful">
+                  <span class="totals-threat-num" id="statsThreatHarmful">0</span>
+                  <span class="totals-threat-label">Harmful</span>
+                </div>
+                <div class="totals-threat-card protective">
+                  <span class="totals-threat-num" id="statsThreatProtective">0</span>
+                  <span class="totals-threat-label">Protective</span>
+                </div>
+                <p class="totals-threat-note">Threat-level tallies use the discrete-action universe. Aggregate containers carry their own internal threat distributions and are excluded from these counts.</p>
+              </div>
+
+              <div class="totals-disparity">
+                <h4>Why the numbers diverge</h4>
+                <ul>
+                  <li><b>Mute policy.</b> State, county, and municipal items entered before the 2026-04-23 federal-only scope lock remain in the file with <code>muted: true</code>. They are retained for the BGHPN storymap and other sibling state-layer projects. Auditors can surface them with the URL parameter <code>?show_muted=1</code>.</li>
+                  <li><b>Aggregate containers.</b> One <i>NAGPRA Roundup: &lt;Month&gt; &lt;Year&gt;</i> entry replaces tens of state, university, and private-institution NAGPRA notices each month. A handful of additional Tier 3 aggregates summarize themed clusters (e.g., AmeriCorps service-program rescissions, NEH and IMLS grant terminations). Each aggregate is one visible card and many component actions.</li>
+                  <li><b>Discrete-action denominator.</b> Threat-level percentages and category cards refer to the discrete-action universe. The headline figure refers to the raw record universe. The two answer different questions and should not be substituted for each other.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div><!-- End research-key-content -->
@@ -4664,7 +4920,8 @@
       const labels = {
         criteria: 'Threat Level Classification Criteria',
         resources: 'Definitions of Cultural Resources',
-        agencies: 'Agency Organizational Charts'
+        agencies: 'Agency Organizational Charts',
+        totals: 'Statistical Totals and Tabulations'
       };
       if (text) text.textContent = (content.classList.contains('show') ? 'Hide ' : 'View ') + (labels[section] || '');
     }
@@ -5472,7 +5729,10 @@
       // Helper to check if item is an aggregate analysis
       const isAggregateItem = (i) => (i.T || '').toLowerCase().includes('aggregate') || (i.t || '').toLowerCase().includes('impact analy');
 
-      // Filter out aggregate items for all counts
+      // Threat-level counts use the visible non-aggregate items (the
+      // discrete-action universe). Aggregate containers are excluded
+      // from threat-level tallies because they do not represent a
+      // single discrete federal action.
       const nonAggregateItems = items.filter(i => !isAggregateItem(i));
 
       const severe = nonAggregateItems.filter(i => i.L === 'SEVERE').length;
@@ -5483,26 +5743,85 @@
       const harmfulEl = document.getElementById('harmfulCount'); if (harmfulEl) harmfulEl.textContent = harmful;
       const protectiveEl = document.getElementById('protectiveCount'); if (protectiveEl) protectiveEl.textContent = protective;
 
-      // Update category counts based on effective categories (excluding aggregate analyses)
-      const all = (typeof getAllItems === 'function') ? getAllItems() : [];
-      const allNonAggregate = all.filter(i => !isAggregateItem(i));
-      const countAllEl = document.getElementById('countAll'); if (countAllEl) countAllEl.textContent = allNonAggregate.length;
+      // Headline category counts use the RAW database total (every entry
+      // in data.json, including muted entries and aggregate containers).
+      // Per the Statistical Totals and Tabulations panel in the Research
+      // Information Key, the headline 882-style total is the universe of
+      // tracked federal-action entries, while filtered subsets (visible
+      // discrete actions, threat-level tallies, etc.) appear elsewhere.
+      const D = (typeof window !== 'undefined' && window.DATA) ? window.DATA : (typeof DATA !== 'undefined' ? DATA : {});
+      const rawAll = [];
+      ['executive_actions', 'agency_actions', 'legislation', 'litigation', 'other_domestic', 'international'].forEach(cat => {
+        (D[cat] || []).forEach(item => {
+          // Auto-categorize items mentioning international organizations
+          // so the per-category counts match the displayed cards.
+          const effectiveCategory = (cat !== 'international' && typeof matchesInternationalOrg === 'function' && matchesInternationalOrg(item)) ? 'international' : cat;
+          rawAll.push({ ...item, _category: effectiveCategory, _originalCategory: cat });
+        });
+      });
 
-      // Count by effective category (after auto-categorization, excluding aggregates)
+      const countAllEl = document.getElementById('countAll'); if (countAllEl) countAllEl.textContent = rawAll.length;
+
       const countEOEl = document.getElementById('countEO');
-      if (countEOEl) countEOEl.textContent = allNonAggregate.filter(i => i._category === 'executive_actions').length;
+      if (countEOEl) countEOEl.textContent = rawAll.filter(i => i._category === 'executive_actions').length;
 
       const countAgencyEl = document.getElementById('countAgency');
-      if (countAgencyEl) countAgencyEl.textContent = allNonAggregate.filter(i => i._category === 'agency_actions').length;
+      if (countAgencyEl) countAgencyEl.textContent = rawAll.filter(i => i._category === 'agency_actions').length;
 
       const countLegEl = document.getElementById('countLeg');
-      if (countLegEl) countLegEl.textContent = allNonAggregate.filter(i => i._category === 'legislation').length;
+      if (countLegEl) countLegEl.textContent = rawAll.filter(i => i._category === 'legislation').length;
 
       const countLitEl = document.getElementById('countLit');
-      if (countLitEl) countLitEl.textContent = allNonAggregate.filter(i => i._category === 'litigation').length;
+      if (countLitEl) countLitEl.textContent = rawAll.filter(i => i._category === 'litigation').length;
 
       const countIntlEl = document.getElementById('countIntl');
-      if (countIntlEl) countIntlEl.textContent = allNonAggregate.filter(i => i._category === 'international').length;
+      if (countIntlEl) countIntlEl.textContent = rawAll.filter(i => i._category === 'international').length;
+
+      // Headline summary line: raw universe + visible aggregate-container count.
+      // Also feeds the Statistical Totals and Tabulations panel under the
+      // Research Information Key.
+      const visibleAll = rawAll.filter(i => !i.muted);
+      const visibleAggregates = visibleAll.filter(isAggregateItem);
+      const visibleDiscrete = visibleAll.filter(i => !isAggregateItem(i));
+      const mutedCount = rawAll.length - visibleAll.length;
+
+      const setText = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
+      setText('headlineTotal', rawAll.length);
+      setText('headlineAggregates', visibleAggregates.length);
+
+      // Stats panel breakdown (populated when the panel is rendered).
+      setText('statsRawTotal', rawAll.length);
+      setText('statsMutedCount', mutedCount);
+      setText('statsVisibleTotal', visibleAll.length);
+      setText('statsVisibleAggregates', visibleAggregates.length);
+      setText('statsVisibleDiscrete', visibleDiscrete.length);
+      setText('statsThreatSevere', severe);
+      setText('statsThreatHarmful', harmful);
+      setText('statsThreatProtective', protective);
+    }
+
+    function openTotalsTab(e) {
+      if (e) e.preventDefault();
+      const refSection = document.getElementById('referenceSections');
+      const keyContent = document.getElementById('researchKeyContent');
+      const totalsContent = document.getElementById('totalsContent');
+      if (keyContent && !keyContent.classList.contains('show')) {
+        const arrow = document.getElementById('researchKeyArrow');
+        keyContent.classList.add('show');
+        if (arrow) arrow.textContent = '▲';
+      }
+      if (totalsContent && !totalsContent.classList.contains('show')) {
+        toggleRef('totals');
+      }
+      if (refSection && refSection.scrollIntoView) {
+        refSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      const target = document.getElementById('totalsContent');
+      if (target) {
+        target.style.transition = 'background 0.6s ease';
+        target.style.background = '#fff7ec';
+        setTimeout(() => { target.style.background = ''; }, 1200);
+      }
     }
 
     function exportCSV() {
