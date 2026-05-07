@@ -28,8 +28,24 @@ services:
       - key: TCKC_AGENT_CAP
         value: "50"
 
+  - type: cron
+    name: tckc-beat-immigration
+    runtime: python
+    schedule: "0 7 * * 2"     # Tuesday 7:00 UTC ≈ 03:00 ET
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m pipeline.tracker.runner --beat immigration --cap ${TCKC_AGENT_CAP}
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: SUPABASE_PROJECT_REF
+        value: xsqdjhjcqbawghuaqqwj
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: TCKC_AGENT_CAP
+        value: "50"
+
   # Add one block per beat as you build them out.
-  # - type: cron
-  #   name: tckc-beat-dhs
-  #   schedule: "0 7 * * 2"   # Tuesday
-  #   ...
+  # Recommended next: civil-rights (Wed), cultural-institutions (Thu),
+  # environment (Fri), health (Mon 11:00 UTC), education (Tue 11:00 UTC),
+  # foreign (Wed 11:00 UTC), personnel-deregulation (Thu 11:00 UTC),
+  # courts (Fri 11:00 UTC), and the gap-detector second-pass agent (Sat 15:00).
