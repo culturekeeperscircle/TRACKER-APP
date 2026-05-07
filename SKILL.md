@@ -148,8 +148,8 @@ Detailed methodology: [docs/2026 04 23 - [METHODOLOGY] - Pipeline Queries and Re
 # Run the full pipeline (fetch → screen → generate → dedup → save)
 python3 -m pipeline
 
-# Big catch-up run (raised cap)
-MAX_ENTRIES_PER_RUN=200 python3 -m pipeline
+# Throttle to a specific cap (testing only; default is no cap)
+MAX_ENTRIES_PER_RUN=50 python3 -m pipeline
 
 # Dry run (no writes)
 DRY_RUN=true python3 -m pipeline
@@ -177,7 +177,7 @@ One-page cheat sheet: [docs/QUICKSTART.md](docs/QUICKSTART.md).
 
 | Setting | Default | Override |
 |---|---|---|
-| `MAX_ENTRIES_PER_RUN` | 50 | Env var or `.env` |
+| `MAX_ENTRIES_PER_RUN` | none (unlimited) as of 2026-05-07 | Env var or `.env`; set positive int to opt back in |
 | `SCREENING_TIME_BUDGET` | 1200s | Env var |
 | `LOOKBACK_DAYS` | 0 (use state.json) | Env var |
 | `DRY_RUN` | false | Env var |

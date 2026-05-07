@@ -23,8 +23,8 @@ python3 -m pipeline
 
 **Options:**
 ```bash
-python3 -m pipeline                          # Default: since last_successful_run, cap 50
-MAX_ENTRIES_PER_RUN=200 python3 -m pipeline  # Big catch-up run
+python3 -m pipeline                          # Default: since last_successful_run, NO CAP
+MAX_ENTRIES_PER_RUN=50 python3 -m pipeline   # Opt back into a cap (testing only)
 LOOKBACK_DAYS=30 python3 -m pipeline         # Force a 30-day window
 DRY_RUN=true python3 -m pipeline             # Preview without writing
 SOURCE_FILTER=federal_register python3 -m pipeline  # Single source
@@ -107,7 +107,12 @@ ANTHROPIC_API_KEY=sk-ant-...
 CONGRESS_API_KEY=...
 COURTLISTENER_TOKEN=...
 NEWS_API_KEY=...
-MAX_ENTRIES_PER_RUN=50
+# Source expansion 2026-05-07: register one key at https://api.data.gov/signup
+# and use it for both regulations.gov v4 and govinfo.gov.
+REGULATIONS_GOV_API_KEY=...
+GOVINFO_API_KEY=...
+# MAX_ENTRIES_PER_RUN is unset by default (no cap). Set a positive integer
+# only for testing or to throttle a specific run.
 ```
 
 Get keys from:
@@ -166,13 +171,13 @@ Both fire on every pipeline run.
 
 | Setting | Default | Where | Purpose |
 |---|---|---|---|
-| `MAX_ENTRIES_PER_RUN` | **50** | `pipeline/main.py:158`; override via env var | Caps generation to fit in Actions workflow timeout |
+| `MAX_ENTRIES_PER_RUN` | **none (unlimited)** | `pipeline/main.py:161`; override via env var | Optional opt-in cap; positive int enforces, ≤0 or unset means no cap |
 | `SCREENING_TIME_BUDGET` | **20 min (1200s)** | `pipeline/main.py`; override via env var | Max time spent in Claude Haiku screening |
-| Actions workflow timeout (daily) | **90 min** | `.github/workflows/daily-update.yml` | Hard kill if pipeline hangs |
+| Actions workflow timeout (daily, manual) | **350 min** | `.github/workflows/daily-update.yml`, `manual-update.yml` | Hard kill if pipeline hangs; matches GitHub's 360-min job ceiling |
 | Actions workflow timeout (deep-sweep) | **300 min** | `.github/workflows/deep-sweep.yml` | For big catch-up runs |
 | Rate limiter | 5 req/sec | `pipeline/utils/rate_limiter.py` | Protects all API calls |
 
-**History:** The cap was 15 from 2026-02-27 to 2026-04-23, which silently dropped high-impact entries on heavy news days. Raised to 50 on 2026-04-23 after a 50-item test run exposed the loss. See `docs/archive/UPDATE_SUMMARY_2026_04_22.md`.
+**History:** The cap was 15 from 2026-02-27 to 2026-04-23, raised to 50 on 2026-04-23 after a 50-item test run exposed silent drops, then **removed entirely on 2026-05-07** at Prince's directive after the 50-cap continued to drop legitimate high-impact entries on heavy news days. Workflow timeouts raised the same day from 90 to 350 minutes to accommodate unlimited runs.
 
 ---
 

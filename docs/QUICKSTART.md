@@ -15,7 +15,8 @@ Fetches from 4 APIs since last run, screens with Claude, generates up to 50 entr
 
 **Common overrides:**
 ```bash
-MAX_ENTRIES_PER_RUN=200 python3 -m pipeline      # Big catch-up run
+python3 -m pipeline                              # Default: no cap, processes everything relevant
+MAX_ENTRIES_PER_RUN=50 python3 -m pipeline       # Throttle for testing only
 DRY_RUN=true python3 -m pipeline                  # Preview only
 LOOKBACK_DAYS=30 python3 -m pipeline              # Force 30-day window
 SOURCE_FILTER=federal_register python3 -m pipeline  # Single source
@@ -102,7 +103,7 @@ python3 scripts/enrich_entries.py --community targeted-gaps --all
 |---|---|
 | Pipeline blocks on "uncommitted changes" | `git stash -u` or commit first |
 | Pipeline returns 0 entries | Check dedup — items likely in `processed_ids`. Clear them or set `LOOKBACK_DAYS` |
-| Cap hit, entries dropped | `MAX_ENTRIES_PER_RUN=N python3 -m pipeline` with higher N, or reset state |
+| Cap hit, entries dropped | Should not happen as of 2026-05-07 (no cap by default). If you set `MAX_ENTRIES_PER_RUN`, unset it. |
 | `python-dotenv` import error | `pip install -r requirements.txt` |
 | API key missing | Check `.env` file in tracker root |
 

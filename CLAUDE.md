@@ -214,9 +214,9 @@ All connectors inherit from `pipeline/sources/base.py`.
 
 | Setting | Default | Purpose |
 |---|---|---|
-| `MAX_ENTRIES_PER_RUN` | **50** | Entry-generation cap per run |
+| `MAX_ENTRIES_PER_RUN` | **none (unlimited)** as of 2026-05-07 | Optional opt-in cap; positive int enforces, ≤0 or unset means no cap |
 | `SCREENING_TIME_BUDGET` | **1200s (20 min)** | Max Haiku screening time per run |
-| GitHub Actions workflow timeout | **90 min** (daily), **300 min** (deep-sweep) | Hard kill |
+| GitHub Actions workflow timeout | **350 min** (daily, manual), **300 min** (deep-sweep) | Hard kill |
 
 Full methodology disclosure: `docs/2026 04 23 - [METHODOLOGY] - Pipeline Queries and Research Questions Full Disclosure.md`.
 
@@ -236,7 +236,8 @@ Full methodology disclosure: `docs/2026 04 23 - [METHODOLOGY] - Pipeline Queries
 | Task | Command |
 |---|---|
 | Run pipeline | `python3 -m pipeline` |
-| Run pipeline (big catch-up) | `MAX_ENTRIES_PER_RUN=200 python3 -m pipeline` |
+| Run pipeline (no cap, default) | `python3 -m pipeline` |
+| Run pipeline (cap to 200 for testing) | `MAX_ENTRIES_PER_RUN=200 python3 -m pipeline` |
 | Push manual entries | `./scripts/update.sh --auto` |
 | Audit data | `python3 scripts/audit_toolkit.py --full` |
 | Enrich entries | `python3 scripts/enrich_entries.py --community <type> --dry-run` |

@@ -34,6 +34,24 @@ Full framing in [CLAUDE.md](CLAUDE.md#the-canonical-research-question-locked-202
 
 ---
 
+## Citation
+
+If you cite or reuse the tracker, please use this format:
+
+> Albert, Prince III. *The Culture Keepers Circle Cultural Resource Threat Tracker*, Version YYYY.MM.DD. The Culture Keepers Circle. https://doi.org/10.5281/zenodo.NNNNNNN.
+
+Each tagged release of this repository receives a Zenodo Version DOI plus a Software Heritage SWHID for content-addressed archival. A Concept DOI resolves to all versions.
+
+- **Datasheet** (Gebru et al. 2021 compliance): [DATASHEET.md](DATASHEET.md)
+- **Methodology catalog** (severity rubric, treaty grounding, reliability protocol, audit specs): [scripts/audit_peer_review_catalog.json](scripts/audit_peer_review_catalog.json)
+- **Audit suite** (thirteen automated peer-review-defense audits): [scripts/audit_peer_review_suite.py](scripts/audit_peer_review_suite.py)
+- **Citation file** (GitHub citation panel): [CITATION.cff](CITATION.cff)
+- **Zenodo metadata**: [.zenodo.json](.zenodo.json)
+
+The first DOI mints automatically when the maintainer enables the GitHub-Zenodo integration and tags a release. The placeholder above updates with the actual DOI at that point.
+
+---
+
 ## Architecture
 
 The tracker is a self-contained single-page web app backed by a JSON database and a Python automated ingestion pipeline.
@@ -82,8 +100,8 @@ TCKC Threat Tracker/
 4 sources → keyword filter → Claude Haiku screening → Claude Sonnet generation → dedup → validate → data.json
 ```
 
-- **Sources:** Federal Register (no key), Congress.gov (key), CourtListener (token), NewsAPI (key)
-- **Cap:** 50 entries per run by default (configurable via `MAX_ENTRIES_PER_RUN`)
+- **Sources (9 as of 2026-05-07):** Federal Register (no key), Congress.gov (key), CourtListener (token), NewsAPI (key), Oversight.gov / OIG reports (no key), GAO (no key), Agency RSS aggregator across 17 newsrooms (no key), Regulations.gov v4 (api.data.gov key), GovInfo.gov congressional hearings / CHRG (api.data.gov key)
+- **Cap:** none by default as of 2026-05-07 (set `MAX_ENTRIES_PER_RUN` to a positive integer to opt back in)
 - **Screening budget:** 20 min max per run
 - **Run locally:** `python3 -m pipeline`
 - **Runs automatically:** GitHub Actions daily at 5:00 AM ET (Mon–Fri)
@@ -158,7 +176,9 @@ Install with `pip install -r requirements.txt`.
 | `CONGRESS_API_KEY` | Congress.gov source |
 | `COURTLISTENER_TOKEN` | CourtListener source |
 | `NEWS_API_KEY` | NewsAPI source |
-| `MAX_ENTRIES_PER_RUN` | Optional cap override (default 50) |
+| `MAX_ENTRIES_PER_RUN` | Optional cap (default none; positive integer opts back in) |
+| `REGULATIONS_GOV_API_KEY` | api.data.gov key — unlocks regulations.gov v4 source |
+| `GOVINFO_API_KEY` | api.data.gov key (same value as REGULATIONS_GOV_API_KEY) — unlocks govinfo.gov CHRG source |
 | `SCREENING_TIME_BUDGET` | Optional Haiku screening budget override |
 | `LOOKBACK_DAYS` | Optional lookback override (default: use state.json) |
 | `DRY_RUN` | Preview mode (default false) |

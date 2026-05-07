@@ -75,22 +75,109 @@ What follows documents every query, prompt, and filter at every stage.
 
 ### Database 3: CourtListener (courtlistener.com)
 
-- **Search approach:** 13 keyword queries. Each runs independently; results merge.
-  1. `cultural resources historic preservation heritage`
-  2. `tribal sovereignty sacred sites NAGPRA indigenous`
-  3. `national monument Antiquities Act preservation`
-  4. `environmental justice civil rights Title VI discrimination`
-  5. `immigration deportation asylum TPS DACA refugee`
-  6. `NEA NEH arts funding Smithsonian IMLS`
-  7. `treaty rights Native American tribal consultation`
-  8. `African American civil rights racial equity HBCU`
-  9. `Latino Hispanic farmworker immigrant community`
-  10. `Asian American Pacific Islander AAPI hate crime`
-  11. `cultural practice traditional knowledge language preservation`
-  12. `museum library school university cultural programming education`
-  13. `foodways folk arts cultural arts celebration parade festival`
-- **Scope:** Up to **20 opinions per query per run** = 260 opinions max per run.
+- **Search approach:** **59 Boolean keyword queries** as of 2026-05-07 (replaces the prior 13). Each query crosses a federal agency or statute with a cultural-community or doctrinal axis. Each query runs independently; results merge.
+- **Scope:** Up to **20 opinions per query per run** = up to 1,180 opinions per run (real volume is far lower because most queries return well under 20 hits in any 90-day window).
 - **What is fetched:** Federal court opinions (district, circuit, Supreme).
+- **Operator note:** Every query uses explicit Boolean operators (`OR`, `AND`, parentheses, quoted phrases). The previous queries used implicit AND across all terms, which silently narrowed results; the rewrite fixes that.
+
+#### Indigenous / tribal (DOI cluster, statutes, tribal sovereignty)
+1. `("Bureau of Indian Affairs" OR BIA) AND (sovereignty OR consultation OR reservation OR treaty)`
+2. `("Bureau of Land Management" OR BLM) AND (tribal OR sacred OR "traditional cultural property")`
+3. `("National Park Service" OR NPS) AND ("sacred site" OR "tribal land" OR "co-management" OR consultation)`
+4. `("Fish and Wildlife Service" OR FWS) AND (tribal OR subsistence OR "incidental take")`
+5. `("Bureau of Indian Education" OR BIE OR "tribal college" OR TCU) AND (funding OR governance)`
+6. `NAGPRA AND (regulation OR "Review Committee" OR enforcement OR amendment)`
+7. `("Indian Child Welfare Act" OR ICWA) AND (custody OR placement OR jurisdiction)`
+8. `("Indian Self-Determination" OR "638 contracting" OR "Public Law 93-638") AND tribe`
+9. `("Antiquities Act" OR "national monument") AND (designation OR rescission OR boundary OR review)`
+10. `("Indian Health Service" OR IHS) AND (funding OR contracting OR self-determination)`
+11. `"treaty rights" AND (hunting OR fishing OR water OR gathering OR usufructuary)`
+12. `"tribal sovereignty" AND (immunity OR jurisdiction OR taxation OR Public Law 280)`
+13. `"Native Hawaiian" AND (homestead OR "ceded lands" OR "Hawaiian Home Lands" OR Kanaiolowalu)`
+14. `("Alaska Native" OR ANCSA OR ANILCA) AND (subsistence OR corporation OR village)`
+
+#### African-descendant
+15. `("Civil Rights Division" OR DOJ) AND ("pattern or practice" OR "Title VII" OR "Title VI")`
+16. `("Voting Rights Act" OR VRA) AND ("Section 2" OR "Section 5" OR redistricting OR preclearance)`
+17. `("Equal Employment Opportunity Commission" OR EEOC) AND (race OR "national origin")`
+18. `("Department of Housing" OR HUD) AND ("fair housing" OR "disparate impact" OR redlining)`
+19. `(HBCU OR "historically Black college") AND (funding OR "Title III" OR accreditation)`
+20. `("National Museum of African American History" OR NMAAHC) AND (funding OR governance OR programming)`
+21. `(Gullah OR Geechee OR "Reconstruction Era") AND (preservation OR "national park" OR "national monument")`
+22. `(reparations OR "racial equity" OR "racial justice") AND (federal OR Congress OR appropriation)`
+
+#### Latiné
+23. `(DACA OR "Deferred Action") AND (rescission OR injunction OR rule)`
+24. `(TPS OR "Temporary Protected Status") AND (designation OR termination OR renewal)`
+25. `(asylum OR refugee) AND (border OR "credible fear" OR "Title 8" OR DHS)`
+26. `("U.S. Citizenship and Immigration Services" OR USCIS) AND (naturalization OR "public charge" OR fee)`
+27. `("Immigration and Customs Enforcement" OR ICE) AND (detention OR "sensitive locations" OR enforcement)`
+28. `("Customs and Border Protection" OR CBP) AND (border OR detention OR "family separation")`
+29. `("language access" OR "English Learner" OR "bilingual education" OR "Title III") AND (ED OR HHS OR "Title VI")`
+30. `(farmworker OR "H-2A" OR "agricultural worker") AND (DOL OR USDA OR OSHA OR wage)`
+31. `(Latino OR Hispanic OR Latiné) AND (Census OR redistricting OR "Title VI")`
+
+#### Asian / AAPI
+32. `("Asian American" OR AAPI OR AANHPI) AND ("hate crime" OR discrimination OR "Title VI")`
+33. `("Japanese American" OR Manzanar OR "incarceration camp") AND (preservation OR redress)`
+34. `("South Asian" OR Sikh OR Hindu OR "anti-Muslim") AND ("hate crime" OR profiling OR FBI)`
+35. `("disaggregated data" OR "data disaggregation") AND (Asian OR Census OR HHS)`
+36. `("Chinese Exclusion" OR "Asian American history" OR "Filipino American history") AND education`
+
+#### Pacific Islander
+37. `("Compact of Free Association" OR COFA OR "Marshall Islands" OR Micronesia OR Palau) AND (federal OR Medicaid OR education)`
+38. `("Pacific Islander" OR "Native Hawaiian") AND ("climate displacement" OR "military base" OR sovereignty)`
+
+#### Cultural institutions
+39. `(Smithsonian OR "National Museum") AND (funding OR governance OR programming OR DEI)`
+40. `("National Endowment for the Arts" OR NEA OR "National Endowment for the Humanities" OR NEH) AND (grant OR rescission OR injunction)`
+41. `("Institute of Museum and Library Services" OR IMLS) AND (funding OR elimination OR rule)`
+42. `("Kennedy Center" OR "John F. Kennedy Center") AND (board OR programming OR appropriation)`
+43. `("Corporation for Public Broadcasting" OR CPB OR PBS OR NPR) AND (funding OR "First Amendment")`
+44. `("Library of Congress" OR LOC OR "National Archives" OR NARA) AND (record OR access OR removal)`
+45. `("Advisory Council on Historic Preservation" OR ACHP OR "Section 106") AND (review OR consultation)`
+
+#### Environment / land / water
+46. `("Environmental Protection Agency" OR EPA) AND ("environmental justice" OR "Title VI" OR "cumulative impact")`
+47. `("National Environmental Policy Act" OR NEPA) AND ("environmental review" OR consultation OR impact)`
+48. `("Clean Water Act" OR CWA) AND (tribe OR "treatment as state" OR "water rights")`
+49. `("Endangered Species Act" OR ESA) AND (consultation OR listing OR habitat OR tribal)`
+50. `("National Oceanic and Atmospheric Administration" OR NOAA) AND ("fishing rights" OR sanctuary OR Indigenous)`
+
+#### Education / religion / heritage
+51. `("Department of Education" OR "Office for Civil Rights" OR OCR) AND ("Title VI" OR "Title IX" OR DEI)`
+52. `("Religious Freedom Restoration Act" OR RFRA OR "Free Exercise") AND ("sacred site" OR ceremony OR practice)`
+53. `("National Historic Preservation Act" OR NHPA OR "National Register") AND (consultation OR listing)`
+
+#### Civil rights / workforce
+54. `("Diversity Equity Inclusion" OR DEI) AND (rescission OR ban OR contractor OR Executive)`
+55. `("Affirmative Action" OR "Executive Order 11246" OR OFCCP) AND (rescission OR contractor)`
+56. `("hate crime" OR "Matthew Shepard") AND (FBI OR DOJ OR statistics)`
+57. `("birthright citizenship" OR "Fourteenth Amendment" OR "14th Amendment") AND (citizenship OR "jus soli")`
+
+#### Foreign / international
+58. `("Department of State" OR DOS) AND (visa OR refugee OR "human rights" OR sanctions)`
+59. `("USAID" OR "U.S. Agency for International Development") AND (development OR culture OR Indigenous)`
+
+#### Coverage map (top-15 agencies in the tracker)
+
+| Rank | Agency | Entries | Queries that hit it |
+|---|---|---:|---|
+| 1 | DOI | 191 | 1, 2, 3, 4, 5, 6, 9, 10, 47, 49, 53 |
+| 2 | DHS | 120 | 25, 26, 27, 28, 57 |
+| 3 | DOJ | 90 | 15, 16, 56 |
+| 4 | ED | 71 | 5, 29, 51 |
+| 5 | EPA | 64 | 46, 47 |
+| 6 | HHS | 60 | 10, 29, 35 |
+| 7 | STATE | 48 | 25, 58, 59 |
+| 8 | NPS | 45 | 3, 9, 53 |
+| 9 | NEA | 42 | 40 |
+| 10 | NEH | 41 | 40 |
+| 11 | NOAA | 40 | 49, 50 |
+| 12 | BLM | 38 | 2, 47 |
+| 13 | ICE | 38 | 27 |
+| 14 | USDA | 35 | 30, 49 |
+| 15 | Smithsonian | 33 | 20, 39 |
 
 ### Database 4: NewsAPI (newsapi.org)
 
