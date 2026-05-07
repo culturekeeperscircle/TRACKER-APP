@@ -2,6 +2,7 @@
 .env
 .env.*
 !.env.example
+!landing/.env.local.example
 *.key
 credentials.json
 secrets.json
