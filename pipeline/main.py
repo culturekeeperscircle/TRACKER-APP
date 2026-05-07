@@ -14,7 +14,10 @@ from pathlib import Path
 from .config import LOOKBACK_DAYS, DRY_RUN, SOURCE_FILTER, ANTHROPIC_API_KEY
 from .utils.logger import setup_logger
 from .utils.rate_limiter import RateLimiter
-from .sources import federal_register, congress_gov, courtlistener, news_api
+from .sources import (
+    federal_register, congress_gov, courtlistener, news_api,
+    oversight_gov, gao, agency_rss, regulations_gov, govinfo,
+)
 from .processing.relevance_filter import filter_items
 from .processing.claude_analyzer import screen_relevance, generate_entry, validate_entry
 from .processing.deduplicator import deduplicate
@@ -30,9 +33,17 @@ STATE_PATH = Path(__file__).parent.parent / 'data' / 'state.json'
 
 SOURCES = {
     'federal_register': federal_register,
-    'congress': congress_gov,
-    'courtlistener': courtlistener,
-    'news': news_api,
+    'congress':         congress_gov,
+    'courtlistener':    courtlistener,
+    'news':             news_api,
+    # Source expansion 2026-05-07. The four below close the coverage gaps
+    # documented in the canonical strategy doc (OIG, GAO, agency newsroom,
+    # regs.gov dockets, congressional testimony).
+    'oversight_gov':    oversight_gov,    # OIG reports; no API key
+    'gao':              gao,              # GAO reports; no API key
+    'agency_rss':       agency_rss,       # 17 agency RSS feeds; no API key
+    'regulations_gov':  regulations_gov,  # rulemaking dockets; api.data.gov key
+    'govinfo_chrg':     govinfo,          # congressional hearings; api.data.gov key
 }
 
 
@@ -154,15 +165,18 @@ def run():
 
     logger.info(f'AI-relevant items: {len(relevant_items)} (screened in {int(time.time() - screening_start)}s)')
 
-    # Cap to prevent timeout — Sonnet generation ~60s/entry, budget ~50 min by default
-    # Raised from 15 to 50 on 2026-04-23 after audit showed the 15-cap was silently dropping
-    # high-impact candidate entries on heavy news days (e.g., 50 relevant items in a 3-day window).
-    # Workflow timeout must be ≥ 70 min to accommodate.
-    MAX_ENTRIES_PER_RUN = int(os.environ.get('MAX_ENTRIES_PER_RUN', 50))
-    if len(relevant_items) > MAX_ENTRIES_PER_RUN:
+    # Per-run cap removed 2026-05-07 at Prince's directive after the 50-cap
+    # was repeatedly dropping legitimate high-impact entries on heavy news days.
+    # Default is now NO CAP. To opt back in for a specific run (e.g. a testing
+    # dry-run), set MAX_ENTRIES_PER_RUN to a positive integer; any value <= 0
+    # or unset means unlimited.
+    _cap = int(os.environ.get('MAX_ENTRIES_PER_RUN', '0') or '0')
+    if _cap > 0 and len(relevant_items) > _cap:
         relevant_items.sort(key=lambda x: x.get('_ai_threat', ''), reverse=True)
-        logger.warning(f'Capping entry generation at {MAX_ENTRIES_PER_RUN} items (had {len(relevant_items)})')
-        relevant_items = relevant_items[:MAX_ENTRIES_PER_RUN]
+        logger.warning(f'Capping entry generation at {_cap} items (had {len(relevant_items)})')
+        relevant_items = relevant_items[:_cap]
+    else:
+        logger.info(f'No per-run cap; processing all {len(relevant_items)} relevant items')
 
     # ── Phase 4: Generate full entries (Tier 2) ──
     new_entries_by_category = {}

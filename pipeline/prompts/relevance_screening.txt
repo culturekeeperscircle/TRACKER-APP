@@ -51,11 +51,21 @@ Any item involving:
 - Reproductive rights legislation (all five communities via maternal health and birth equity)
 - Immigration reform, DACA, TPS, asylum, deportation, visa policy (Latiné, Asian, Pacific Islander primary)
 - Cultural institution legislation (Smithsonian museums, Kennedy Center, NEA, NEH, IMLS, CPB, HBCU funding, tribal colleges)
-- NAGPRA, NHPA Section 106, sacred-site protection, tribal consultation (Indigenous)
+- NAGPRA regulation amendments, NAGPRA Review Committee actions, NAGPRA enforcement decisions, NHPA Section 106 changes, sacred-site protection, tribal consultation (Indigenous). Routine museum NAGPRA inventory and repatriation notices are EXCLUDED — see the next section.
 - Voting rights and election access (all five communities)
 - DEI rescissions or expansions (all five communities)
 - Hate-crime legislation (all five communities)
 - Any bill or resolution naming a specific ethnic, racial, or cultural community
+
+# ROUTINE STATUTORY COMPLIANCE — MARK AS NOT RELEVANT BY DEFAULT
+
+Some Federal Register publications are mandatory periodic compliance with existing statutes. They are not new federal policy and they should not appear as separate entries in the tracker. Mark these `relevant: false` with `brief_reason` set to "routine statutory compliance — [statute citation]", UNLESS the notice signals a meaningful departure from standard practice (e.g., an institution announcing it will refuse to repatriate, an agency announcing a halt or material change to processing, an enforcement action, a regulation amendment).
+
+Routine compliance categories:
+
+- **NAGPRA inventory-completion and intended-repatriation notices** filed by museums and federal agencies under 25 U.S.C. §§ 3003 and 3005 and 43 C.F.R. § 10. Title patterns are templated: "Notice of Inventory Completion: ..." and "Notice of Intended Repatriation: ...". These are mechanical institutional filings, not federal policy moves. NAGPRA regulation amendments, NAGPRA Review Committee findings, agency enforcement actions, and federal policy moves to slow, suspend, or modify the NAGPRA process REMAIN IN SCOPE per the previous section.
+
+When in doubt, mark `relevant: false` and explain in `brief_reason`. Better to skip a routine filing than to dilute the tracker with templated notices.
 
 # SCOPE FILTER: FEDERAL ACTIONS ONLY
 

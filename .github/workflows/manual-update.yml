@@ -29,9 +29,9 @@ permissions:
 jobs:
   manual-update:
     runs-on: ubuntu-latest
-    # Raised from 60 to 90 minutes on 2026-04-23 to match daily-update.yml
-    # after MAX_ENTRIES_PER_RUN default was raised from 15 to 50.
-    timeout-minutes: 90
+    # Raised to 350 minutes on 2026-05-07 after MAX_ENTRIES_PER_RUN was removed.
+    # Matches daily-update.yml. GitHub Actions caps at 360 min per job.
+    timeout-minutes: 350
 
     steps:
       - uses: actions/checkout@v4
@@ -47,6 +47,9 @@ jobs:
           CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
           COURTLISTENER_TOKEN: ${{ secrets.COURTLISTENER_TOKEN }}
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+          # Source expansion 2026-05-07. Connectors gracefully no-op when unset.
+          REGULATIONS_GOV_API_KEY: ${{ secrets.REGULATIONS_GOV_API_KEY }}
+          GOVINFO_API_KEY: ${{ secrets.GOVINFO_API_KEY }}
           LOOKBACK_DAYS: ${{ github.event.inputs.lookback_days }}
           SOURCE_FILTER: ${{ github.event.inputs.source }}
           DRY_RUN: ${{ github.event.inputs.dry_run }}

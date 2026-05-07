@@ -18,6 +18,12 @@ CONGRESS_API_KEY = os.environ.get('CONGRESS_API_KEY', '')
 COURTLISTENER_TOKEN = os.environ.get('COURTLISTENER_TOKEN', '')
 NEWS_API_KEY = os.environ.get('NEWS_API_KEY', '')
 
+# api.data.gov-issued single key works for both regulations.gov v4 and
+# govinfo.gov. Source expansion added 2026-05-07. Sources that expect these
+# keys gracefully no-op when unset, so you can stage rollout.
+REGULATIONS_GOV_API_KEY = os.environ.get('REGULATIONS_GOV_API_KEY', '')
+GOVINFO_API_KEY = os.environ.get('GOVINFO_API_KEY', '') or REGULATIONS_GOV_API_KEY
+
 # Paths
 DATA_JSON_PATH = os.path.join(os.path.dirname(__file__), '..', 'data', 'data.json')
 STATE_JSON_PATH = os.path.join(os.path.dirname(__file__), '..', 'data', 'state.json')

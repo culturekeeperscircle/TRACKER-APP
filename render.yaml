@@ -1,0 +1,35 @@
+# Render blueprint for TCKC beat-agents.
+# https://render.com/docs/blueprint-spec
+#
+# Deploy:
+#   1. Push this repo to GitHub.
+#   2. In Render, New + → Blueprint → connect this repo.
+#   3. Set the four secrets in the Render dashboard:
+#        ANTHROPIC_API_KEY
+#        SUPABASE_PROJECT_REF (default xsqdjhjcqbawghuaqqwj)
+#        SUPABASE_SERVICE_ROLE_KEY
+#        TCKC_AGENT_CAP (optional; default 50)
+#   4. Cron jobs run on the schedule below. One beat per day, rotating.
+
+services:
+  - type: cron
+    name: tckc-beat-doi
+    runtime: python
+    schedule: "0 7 * * 1"     # Monday 7:00 UTC ≈ 03:00 ET
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m pipeline.tracker.runner --beat doi --cap ${TCKC_AGENT_CAP}
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: SUPABASE_PROJECT_REF
+        value: xsqdjhjcqbawghuaqqwj
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: TCKC_AGENT_CAP
+        value: "50"
+
+  # Add one block per beat as you build them out.
+  # - type: cron
+  #   name: tckc-beat-dhs
+  #   schedule: "0 7 * * 2"   # Tuesday
+  #   ...

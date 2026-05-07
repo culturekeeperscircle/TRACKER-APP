@@ -59,6 +59,8 @@ jobs:
           CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
           COURTLISTENER_TOKEN: ${{ secrets.COURTLISTENER_TOKEN }}
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+          REGULATIONS_GOV_API_KEY: ${{ secrets.REGULATIONS_GOV_API_KEY }}
+          GOVINFO_API_KEY: ${{ secrets.GOVINFO_API_KEY }}
           LOOKBACK_DAYS: ${{ github.event.inputs.lookback_days }}
           SOURCE_FILTER: ${{ github.event.inputs.source }}
           DRY_RUN: ${{ github.event.inputs.dry_run }}

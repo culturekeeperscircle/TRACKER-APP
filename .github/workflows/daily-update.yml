@@ -34,10 +34,11 @@ permissions:
 jobs:
   update-tracker:
     runs-on: ubuntu-latest
-    # Raised from 60 to 90 minutes on 2026-04-23 to accommodate the
-    # raised MAX_ENTRIES_PER_RUN default of 50 (~50 min Sonnet generation
-    # + ~5 min screening + ~5 min dedup/save + buffer).
-    timeout-minutes: 90
+    # Raised to 350 minutes on 2026-05-07 after MAX_ENTRIES_PER_RUN was removed.
+    # GitHub Actions caps a single job at 6 hours (360 min); this leaves 10 min
+    # headroom. Sonnet generation runs ~60s per entry, so the budget covers
+    # roughly 300 entries in one run, which clears any realistic news-day spike.
+    timeout-minutes: 350
 
     steps:
       - name: Checkout repository
@@ -52,15 +53,48 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      # ----------------------------------------------------------------------
+      # Path B: Supabase is the source of truth. data.json is a generated
+      # artifact committed to git for citation, archival, and the static
+      # index.html dashboard. Order:
+      #   1. Pull current Supabase state -> data.json (catches manual Studio edits).
+      #   2. Pipeline runs and appends new entries to data.json.
+      #   3. Push only NEW entries to Supabase (insert-only, preserves edits).
+      #   4. Re-export to lock data.json to canonical Supabase state.
+      # ----------------------------------------------------------------------
+      - name: Pull Supabase state into data.json
+        env:
+          SUPABASE_PROJECT_REF: xsqdjhjcqbawghuaqqwj
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: python -m pipeline.supabase.export
+
       - name: Run pipeline
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
           COURTLISTENER_TOKEN: ${{ secrets.COURTLISTENER_TOKEN }}
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+          # Source expansion 2026-05-07. Connectors gracefully no-op when
+          # these are unset, so a missing GitHub secret is safe.
+          REGULATIONS_GOV_API_KEY: ${{ secrets.REGULATIONS_GOV_API_KEY }}
+          GOVINFO_API_KEY: ${{ secrets.GOVINFO_API_KEY }}
           LOOKBACK_DAYS: ${{ github.event.inputs.lookback_days || '0' }}
           DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
         run: python -m pipeline
+
+      - name: Sync new entries to Supabase (insert-only)
+        if: github.event.inputs.dry_run != 'true'
+        env:
+          SUPABASE_PROJECT_REF: xsqdjhjcqbawghuaqqwj
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: python -m pipeline.supabase.sync
+
+      - name: Re-export to canonical data.json
+        if: github.event.inputs.dry_run != 'true'
+        env:
+          SUPABASE_PROJECT_REF: xsqdjhjcqbawghuaqqwj
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: python -m pipeline.supabase.export
 
       - name: Validate data.json
         run: |
