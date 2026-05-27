@@ -886,9 +886,11 @@
 
     .heritage-card .resource-tag {
       background: white;
+      color: var(--black);
       padding: 3px 8px;
       border-radius: 12px;
       font-size: 0.7rem;
+      font-weight: 600;
     }
 
     .fourps-grid {
@@ -911,6 +913,7 @@
       align-items: center;
       gap: 8px;
       margin-bottom: 4px;
+      color: var(--black);
     }
 
     .fourps-card h4 .icon {
@@ -921,16 +924,17 @@
       font-size: 0.65rem;
       padding: 2px 8px;
       border-radius: 10px;
+      font-weight: 600;
     }
 
     .fourps-card .category-tag.tangible {
       background: var(--purple-bg);
-      color: var(--purple);
+      color: #4C1D95;
     }
 
     .fourps-card .category-tag.intangible {
       background: var(--cyan-bg);
-      color: var(--cyan);
+      color: #155E75;
     }
 
     .fourps-card .description {
@@ -3279,8 +3283,8 @@
         </div>
         <button class="tckc-btn tckc-btn-bookmark" id="bookmarkFilterBtn" onclick="toggleBookmarkFilter()">&#9733; Saved (0)</button>
         <button class="tckc-btn tckc-btn-secondary" onclick="clearFilters()">Clear</button>
-        <button class="tckc-btn tckc-btn-export" onclick="exportCSV()">📤 Export</button>
-        <button class="tckc-btn tckc-btn-export" onclick="generateComprehensivePull()" title="Generate a prompt for Claude to search for new entries across all agencies">🔄 Comprehensive Pull</button>
+        <button class="tckc-btn tckc-btn-export tckc-admin-only" id="exportBtn" onclick="exportCSV()" style="display:none">📤 Export</button>
+        <button class="tckc-btn tckc-btn-export tckc-admin-only" id="comprehensivePullBtn" onclick="generateComprehensivePull()" title="Generate a prompt for Claude to search for new entries across all agencies" style="display:none">🔄 Comprehensive Pull</button>
       </div>
 
       <!-- Filters Section -->
@@ -4858,6 +4862,24 @@
       if (item.muted === true && !_showMutedOverride()) return false;
       return true;
     }
+
+    // Admin-only controls (Export, Comprehensive Pull). Hidden from public view.
+    // Reveal via `?admin=1` in the URL. Mirrors the `?show_muted=1` auditor pattern.
+    (function _revealAdminControls() {
+      try {
+        const p = new URLSearchParams(window.location.search);
+        if (p.get('admin') !== '1') return;
+        const apply = () => {
+          document.querySelectorAll('.tckc-admin-only').forEach(el => { el.style.display = ''; });
+        };
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', apply);
+        } else {
+          apply();
+        }
+      } catch (e) { /* no-op */ }
+    })();
+
 
     function getAllItems() {
       const items = [];
